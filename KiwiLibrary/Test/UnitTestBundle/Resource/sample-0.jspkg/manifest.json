@@ -1,0 +1,6 @@
+{
+  threads: {
+    sample0: "sample0.js"
+  }
+}
+

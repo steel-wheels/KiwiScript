@@ -1,0 +1,9 @@
+# Function: isUndefined
+Check the given object is undefined or not.
+
+<pre>
+m4_include(func-isUndefined.d.ts)
+</pre>
+
+m4_include(Footer.md)
+

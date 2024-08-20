@@ -1,0 +1,8 @@
+# ComparisonResult
+
+<pre>
+m4_include(enum-ComparisonResult.d.ts)
+</pre>
+
+m4_include(Footer.md)
+

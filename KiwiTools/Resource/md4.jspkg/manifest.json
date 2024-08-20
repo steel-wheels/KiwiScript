@@ -1,0 +1,9 @@
+{
+  application: "main.js"
+  libraries: [
+    "config.js"
+    "command.js"
+    "translate.js"
+  ]
+}
+

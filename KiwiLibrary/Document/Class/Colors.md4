@@ -1,0 +1,14 @@
+# Colors
+
+## Global variable
+<pre>
+declare var Colors: ColorsIF ;
+</pre>
+
+## Interface
+<pre>
+m4_include(`interface-ColorsIF.d.ts')
+</pre>
+
+m4_include(`Footer.md')
+

@@ -1,0 +1,8 @@
+# Authorize
+
+<pre>
+m4_include(enum-Authorize.d.ts)
+</pre>
+
+m4_include(Footer.md)
+

@@ -1,0 +1,9 @@
+# Function: isRect
+Check the given object is [rect](Type/Rect.md) or not.
+
+<code>
+m4_include(func-isPoint.d.ts)
+</code>
+
+m4_include(Footer.md)
+

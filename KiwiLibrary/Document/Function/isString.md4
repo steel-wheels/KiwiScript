@@ -1,0 +1,9 @@
+# Function: isString
+Check the given object is string or not.
+
+<pre>
+m4_include(func-isString.d.ts)
+</pre>
+
+m4_include(Footer.md)
+

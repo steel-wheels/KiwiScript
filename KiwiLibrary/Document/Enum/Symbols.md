@@ -1,0 +1,47 @@
+# Symbols
+
+<ore>
+declare enum Symbols {
+  character = "character",
+  checkmarkSquare = "checkmark.square",
+  chevronBackward = "chevron.backward",
+  chevronDown = "chevron.down",
+  chevronForward = "chevron.forward",
+  chevronUp = "chevron.up",
+  gamecontroller = "gamecontroller",
+  gearshape = "gearshape",
+  handPointUp = "hand.point.up",
+  handRaised = "hand.raised",
+  house = "house",
+  line16p = "line.16p",
+  line1p = "line.1p",
+  line2p = "line.2p",
+  line4p = "line.4p",
+  line8p = "line.8p",
+  lineDiagonal = "line.diagonal",
+  magnifyingglass = "magnifyingglass",
+  moonStars = "moon.stars",
+  oval = "oval",
+  ovalFill = "oval.fill",
+  paintbrush = "paintbrush",
+  pencil = "pencil",
+  pencilCircle = "pencil.circle",
+  pencilCircleFill = "pencil.circle.fill",
+  play = "play",
+  questionmark = "questionmark",
+  rainbow = "rainbow",
+  rectangle = "rectangle",
+  rectangleFill = "rectangle.fill",
+  square = "square",
+  sunMax = "sun.max",
+  sunMin = "sun.min",
+  terminal = "apple.terminal"
+}
+
+</ore>
+
+# Related links
+* [Steel Wheels Project](https://gitlab.com/steewheels/project/-/blob/main/README.md): Developer's home page
+* [KiwiLibrary Framework](https://gitlab.com/steewheels/kiwiscript/-/blob/main/KiwiLibrary/README.md): The framework contains this library.
+
+

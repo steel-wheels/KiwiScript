@@ -1,0 +1,2 @@
+This is contents of text-0.txt
+

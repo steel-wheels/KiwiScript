@@ -1,0 +1,2 @@
+declare function Pipe(): PipeIF ;
+

@@ -1,0 +1,11 @@
+# Function: Thread
+Construct the Thread object.
+
+<pre>
+m4_include(Thread.d.ts)
+</pre>
+
+This function is defined in <code>Thread.ts</code> in KiwiLibrary resource.
+
+m4_include(Footer.md)
+

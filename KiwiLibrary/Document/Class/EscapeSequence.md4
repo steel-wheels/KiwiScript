@@ -1,0 +1,9 @@
+# class: EscapeSequence
+
+## Interface
+<pre>
+m4_include(interface-EscapeSequenceIF.d.ts)
+<pre>
+
+m4_include(Footer.md)
+

@@ -1,0 +1,9 @@
+# Function: isNull
+Check the given object is null or not.
+
+<pre>
+m4_include(func-isNull.d.ts)
+</pre>
+
+m4_include(Footer.md)
+

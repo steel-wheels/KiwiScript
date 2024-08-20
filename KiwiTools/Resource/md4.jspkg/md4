@@ -1,0 +1,7 @@
+#!/bin/bash
+if /Users/tomoo/tools/bin/jsrun /Users/tomoo/tools/lib/md4.jspkg $* ; then
+	exit 0 ;
+else
+	exit 1 ;
+fi
+

@@ -1,0 +1,23 @@
+# edecl
+
+## Name
+`edecl` - The embedded type declaration generator
+
+## Synopsys
+````
+edecl [options] [json file]
+````
+
+## Description
+The `edecl` command generates built-in type declarations in [KiwiLibrary framework](https://gitlab.com/steewheels/kiwiscript/-/tree/main/KiwiLibrary). The definition of functions and classes are implemented in the framework by swift language.
+
+### Options
+#### `-h`, `--help`
+Output help message and quit the command.
+
+#### `--version`
+Output the version information and quit the command.
+
+### Arguments
+
+

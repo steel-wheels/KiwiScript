@@ -1,0 +1,3 @@
+interface EscapeSequenceIF {
+  toString(): string ;
+}

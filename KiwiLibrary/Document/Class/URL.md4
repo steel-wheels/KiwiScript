@@ -1,0 +1,14 @@
+# URL class
+
+## Constructor
+<pre>
+URL(str: string): URLIF | null ;
+</pre>
+
+## Interface
+<pre>
+@include(interface-URLIF.d.ts)
+</pre>
+
+m4_include(Footer.md)
+

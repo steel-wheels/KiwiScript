@@ -1,0 +1,9 @@
+{
+  application: "main.js",
+  properties: {
+      prop_0: {
+          data: "prop-0.json",
+          type: "prop-0.d.ts"
+        }
+    }
+}

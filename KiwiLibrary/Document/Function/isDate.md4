@@ -1,0 +1,9 @@
+# Function: isDate
+Check the given object is [Date](../Class/Date.md) or not.
+
+<pre>
+m4_include(func-isDate.d.ts)
+</pre>
+
+m4_include(Footer.md)
+

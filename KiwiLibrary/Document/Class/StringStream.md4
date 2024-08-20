@@ -1,0 +1,14 @@
+# StringStream class
+
+## Constructor
+<pre>
+StringStream(str: string): StringStreamIF
+</pre>
+
+## Interface
+<pre>
+m4_include(interface-StringStreamIF.d.ts)
+</pre>
+
+m4_include(Footer.md)
+

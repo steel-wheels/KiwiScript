@@ -1,0 +1,9 @@
+# Function: isEOF
+Check the given string is EOF (end of file) or not.
+
+<pre>
+m4_include(func-isEOF.d.ts)
+</pre>
+
+m4_include(Footer.md)
+

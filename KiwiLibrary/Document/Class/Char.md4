@@ -1,0 +1,10 @@
+# Char
+
+## Interface
+You can get ASCII control charaxters from property of this object.
+<pre>
+m4_include(interface-CharIF.d.ts)
+</pre>
+
+m4_include(Footer.md)
+

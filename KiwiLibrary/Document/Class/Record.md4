@@ -1,0 +1,9 @@
+# Record
+
+## Interface
+<pre>
+m4_include(interface-RecordIF.d.ts)
+</pre>
+
+m4_include(Footer.md)
+

@@ -1,0 +1,11 @@
+# Type: Rect
+
+The *Rect* is data structure for 2D rectangle.
+
+## Interface
+<pre>
+m4_include(interface-RectIF.d.ts)
+</pre>
+
+m4_include(Footer.md)
+

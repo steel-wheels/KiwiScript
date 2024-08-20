@@ -1,0 +1,8 @@
+# SymbolSize
+
+<pre>
+m4_include(enum-SymbolSize.d.ts)
+</pre>
+
+m4_include(Footer.md)
+

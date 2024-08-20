@@ -1,0 +1,8 @@
+# FontSize
+
+<pre>
+m4_include(enum-FontSize.d.ts)
+</pre>
+
+m4_include(Footer.md)
+

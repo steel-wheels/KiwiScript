@@ -1,0 +1,17 @@
+# Table
+
+## Constructor
+<pre>
+m4_include(func-Table.d.ts)
+</pre>
+
+## Interface
+<pre>
+m4_include(interface-TableIF.d.ts)
+</pre>
+
+## File format
+The file format to load/save this object is defined in [Table file format](../Format/Table.md).
+
+m4_include(Footer.md)
+

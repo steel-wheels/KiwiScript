@@ -1,0 +1,9 @@
+# EscapeCodes
+
+## Interface
+<pre>
+m4_include(interface-EscapeCodesIF.d.ts)
+</pre>
+
+m4_include(Footer.md)
+

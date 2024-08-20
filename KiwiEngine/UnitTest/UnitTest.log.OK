@@ -1,0 +1,154 @@
+*** Script1
+SyntaxError: Unexpected end of script
+*** Script2
+SyntaxError: Unexpected identifier 'hoge'. Expected a ';' following a return statement.
+testError : OK
+* Setup compiler
+* compile
+'use strict' ;
+/* Define Enum: AccessType */
+let AccessType = {
+	read : 0,
+	write : 1,
+	append : 2
+};
+/* Define Enum: Alignment */
+let Alignment = {
+	leading : 0,
+	trailing : 1,
+	fill : 2,
+	center : 3
+};
+/* Define Enum: Authorize */
+let Authorize = {
+	undetermined : 0,
+	denied : 2,
+	authorized : 3
+};
+/* Define Enum: Axis */
+let Axis = {
+	horizontal : 0,
+	vertical : 1
+};
+/* Define Enum: Color */
+let Color = {
+	black : 0,
+	red : 1,
+	green : 2,
+	yellow : 3,
+	blue : 4,
+	magenta : 5,
+	cyan : 6,
+	white : 7,
+	min : 0,
+	max : 7
+};
+/* Define Enum: Distribution */
+let Distribution = {
+	fillProportinally : 0,
+	fillEqually : 1,
+	equalSpacing : 2
+};
+/* Define Enum: ExitCode */
+let ExitCode = {
+	noError : 0,
+	internalError : 1,
+	commaneLineError : 2,
+	syntaxError : 3,
+	exception : 4
+};
+/* Define Enum: FileType */
+let FileType = {
+	notExist : 0,
+	file : 1,
+	directory : 2
+};
+/* Define Enum: LogLevel */
+let LogLevel = {
+	nolog : 0,
+	error : 1,
+	warning : 2,
+	debug : 3,
+	detail : 4
+};
+/* Define Enum: TextAlign */
+let TextAlign = {
+	left : 0,
+	center : 2,
+	right : 1,
+	justfied : 3,
+	normal : 4
+};
+Compile ... OK
+testCompiler : OK
+testExec : OK
+/* Bool: true */
+b0 = true ;
+Optional("true")
+/* Number: 123 */
+i0 = 123 ;
+Optional("123")
+/* Number: 123.4 */
+f0 = 123.4 ;
+Optional("123.4")
+/* String: "hello" */
+s0 = "hello" ;
+Optional("hello")
+p0 = {x:10.0, y:11.1} ;
+Optional("[object Object]")
+/* Array: [0, 1, 2, 3, 3.1] */
+a0 = [0, 1, 2, 3, 3.1] ;
+Optional("0,1,2,3,3.1")
+/* Dictionary: {a:0, b:1, c:2, d:3, e:3.1} */
+d0 = {a:0, b:1, c:2, d:3, e:3.1} ;
+Optional("[object Object]")
+/* Dictionary: {origin: {x:10.0, y:11.0}, size: {width:20.0, height: 21.0}} */
+d1 = {origin: {x:10.0, y:11.0}, size: {width:20.0, height: 21.0}};
+Optional("[object Object]")
+/* Dictionary: d2 = {
+  imageFile:      "Images/blue-symbol.png",
+  scale:          0.5,
+  alpha:          1.0,
+  position:       {x:10.0, y:10.0},
+  rotation:       0.5,
+  duration:       1.0
+} */
+d2 = {
+  imageFile:      "Images/blue-symbol.png",
+  scale:          0.5,
+  alpha:          1.0,
+  position:       {x:10.0, y:10.0},
+  rotation:       0.5,
+  duration:       1.0
+}Optional("[object Object]")
+/* class A { 
+ constructor(){ this.x = 10 ; }
+ funcA(){ return 1 ; }
+} ; 
+aobject = new A() ; */
+class A { 
+ constructor(){ this.x = 10 ; }
+ funcA(){ return 1 ; }
+} ; 
+aobject = new A() ;
+Optional("[object Object]")
+testValue : OK
+/* Dump resource */
+{
+  URL: file:///Users/tomoo/build/DerivedData/KiwiEngine-eoeakqjnqhdxnqevjxgsocekhuwr/Build/Products/Debug/UnitTest.bundle/Contents/Resources/Sample.jspkg
+  application: {
+    _default: {
+      "main.js"
+    }
+  }
+  libraries: {
+    _default: {
+      "liba.js"
+      "libb.js"
+    }
+  }
+  threads: {
+  }
+}
+testManifest : OK
+SUMMARY: OK

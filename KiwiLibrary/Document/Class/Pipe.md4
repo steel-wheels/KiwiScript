@@ -1,0 +1,14 @@
+# class: Pipe
+
+## Constructor
+<pre>
+m4_include(func-Pipe.d.ts)
+</pre>
+
+## Interface
+<pre>
+m4_include(interface-PipeIF.d.ts)
+</pre>
+
+m4_include(Footer.md)
+

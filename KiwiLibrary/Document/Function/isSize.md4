@@ -1,0 +1,9 @@
+# Function: isSize
+Check the given object is [size](Type/Size.md) or not.
+
+<pre>
+m4_include(func-isSize.d.ts)
+</pre>
+
+m4_include(Footer.md)
+

@@ -1,0 +1,14 @@
+# Thread
+
+The thread object is allocated by <code>Thread</code> function.
+
+## Constructor
+See [Theead function](../Function/Thread.md).
+
+## Interface
+<pre>
+m4_include(interface-ThreadIF.d.ts)
+</pre>
+
+m4_include(Footer.md)
+

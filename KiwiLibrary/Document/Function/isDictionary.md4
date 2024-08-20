@@ -1,0 +1,10 @@
+# Function: isDictionary
+Check the given object is dictionary or not.
+
+<pre>
+m4_include(func-isDictionary.d.ts)
+</pre>
+
+m4_include(Footer.md)
+
+

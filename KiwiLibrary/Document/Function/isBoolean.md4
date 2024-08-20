@@ -1,0 +1,9 @@
+# Function: isBoolean
+Check the given object is boolean or not.
+
+<pre>
+m4_include(func-isBoolean.d.ts)
+</pre>
+
+m4_include(Footer.md)
+

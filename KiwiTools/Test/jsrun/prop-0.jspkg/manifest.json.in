@@ -1,0 +1,10 @@
+{
+  application: "main.ts"
+  properties: {
+    prop_0: {
+      type: "prop-0.d.ts"
+      data: "prop-0.json"
+    }
+  }
+}
+

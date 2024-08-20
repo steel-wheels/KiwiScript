@@ -1,0 +1,14 @@
+# class: SpriteNode
+
+## Interface
+<pre>
+m4_include(interface-SpriteNodeIF.d.ts)
+</pre>
+
+## Source code
+<pre>
+m4_include(SpriteNode.ts)
+</pre>
+
+m4_include(Footer.md)
+

@@ -1,0 +1,9 @@
+# Function: isBitmap
+Check the given object is an instance of Bitmap class or not.
+
+<pre>
+m4_include(func-isBitmap.d.ts)
+</pre>
+
+m4_include(Footer.md)
+

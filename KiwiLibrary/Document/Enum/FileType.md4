@@ -1,0 +1,8 @@
+# FileType
+
+<pre>
+m4_include(enum-FileType.d.ts)
+</pre>
+
+m4_include(Footer.md)
+

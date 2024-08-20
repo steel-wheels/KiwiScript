@@ -1,0 +1,2 @@
+declare function SpriteActions(): SpriteActionsIF ;
+

@@ -1,0 +1,1511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		050005A32929196B00813E82 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050005A22929196B00813E82 /* main.swift */; };
+		050F511929A1CB030021C7E1 /* Cobalt.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056F212629291AF90056186C /* Cobalt.xcframework */; };
+		050F511A29A1CB030021C7E1 /* CoconutData.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056F212C29291B230056186C /* CoconutData.xcframework */; };
+		050F511B29A1CB030021C7E1 /* CoconutDatabase.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056F212D29291B230056186C /* CoconutDatabase.xcframework */; };
+		050F511D29A1CB030021C7E1 /* KiwiEngine.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056F213529291B410056186C /* KiwiEngine.xcframework */; };
+		05130F3D2A866AC6003114B1 /* KiwiShell.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05130F3A2A866A62003114B1 /* KiwiShell.xcframework */; };
+		05130F3E2A866AC6003114B1 /* KiwiShell.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 05130F3A2A866A62003114B1 /* KiwiShell.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05130F472A866C70003114B1 /* Cobalt.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056F212629291AF90056186C /* Cobalt.xcframework */; };
+		05130F482A866C70003114B1 /* Cobalt.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 056F212629291AF90056186C /* Cobalt.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05130F492A866C70003114B1 /* CoconutData.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056F212C29291B230056186C /* CoconutData.xcframework */; };
+		05130F4A2A866C70003114B1 /* CoconutData.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 056F212C29291B230056186C /* CoconutData.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05130F4B2A866C70003114B1 /* CoconutDatabase.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056F212D29291B230056186C /* CoconutDatabase.xcframework */; };
+		05130F4C2A866C70003114B1 /* CoconutDatabase.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 056F212D29291B230056186C /* CoconutDatabase.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05130F4D2A866C70003114B1 /* KiwiEngine.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056F213529291B410056186C /* KiwiEngine.xcframework */; };
+		05130F4E2A866C70003114B1 /* KiwiEngine.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 056F213529291B410056186C /* KiwiEngine.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05130F4F2A866C70003114B1 /* KiwiLibrary.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05F1014929A1CFB400DA6979 /* KiwiLibrary.xcframework */; };
+		05130F502A866C70003114B1 /* KiwiLibrary.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05F1014929A1CFB400DA6979 /* KiwiLibrary.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05130F512A866C70003114B1 /* KiwiShell.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05130F3A2A866A62003114B1 /* KiwiShell.xcframework */; };
+		05130F522A866C70003114B1 /* KiwiShell.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05130F3A2A866A62003114B1 /* KiwiShell.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05130F5E2A866CF7003114B1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05130F5D2A866CF7003114B1 /* main.swift */; };
+		05959257292A21CC00F431D3 /* config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05959256292A21CC00F431D3 /* config.swift */; };
+		05AD1BFA2997108F0045EBC0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AD1BF92997108F0045EBC0 /* main.swift */; };
+		05AD1C01299713D90045EBC0 /* config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AD1C00299713D90045EBC0 /* config.swift */; };
+		05DFBBB829A1D1D3003502F1 /* Cobalt.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056F212629291AF90056186C /* Cobalt.xcframework */; };
+		05DFBBB929A1D1D3003502F1 /* Cobalt.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 056F212629291AF90056186C /* Cobalt.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05DFBBBA29A1D1D3003502F1 /* CoconutData.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056F212C29291B230056186C /* CoconutData.xcframework */; };
+		05DFBBBB29A1D1D3003502F1 /* CoconutData.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 056F212C29291B230056186C /* CoconutData.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05DFBBBC29A1D1D3003502F1 /* CoconutDatabase.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056F212D29291B230056186C /* CoconutDatabase.xcframework */; };
+		05DFBBBD29A1D1D3003502F1 /* CoconutDatabase.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 056F212D29291B230056186C /* CoconutDatabase.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05DFBBC029A1D1D3003502F1 /* KiwiEngine.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056F213529291B410056186C /* KiwiEngine.xcframework */; };
+		05DFBBC129A1D1D3003502F1 /* KiwiEngine.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 056F213529291B410056186C /* KiwiEngine.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05F1014429A1CF9A00DA6979 /* KiwiEngine.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 056F213529291B410056186C /* KiwiEngine.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05F1014529A1CF9A00DA6979 /* CoconutData.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 056F212C29291B230056186C /* CoconutData.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05F1014629A1CF9A00DA6979 /* CoconutDatabase.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 056F212D29291B230056186C /* CoconutDatabase.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05F1014829A1CF9A00DA6979 /* Cobalt.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 056F212629291AF90056186C /* Cobalt.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05F1014A29A1CFB400DA6979 /* KiwiLibrary.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 05F1014929A1CFB400DA6979 /* KiwiLibrary.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		050101C82ABC3F2D0070D25F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 050005972929196B00813E82 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05DFBBB329A1D1B8003502F1;
+			remoteInfo = edecl_bundle;
+		};
+		050F510E29A1C5E00021C7E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 050005972929196B00813E82 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0500059E2929196B00813E82;
+			remoteInfo = edecl;
+		};
+		05130F6D2A866F85003114B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 050005972929196B00813E82 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05130F5A2A866CF7003114B1;
+			remoteInfo = jsh;
+		};
+		05130F732A867497003114B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 050005972929196B00813E82 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05130F422A866C03003114B1;
+			remoteInfo = jsh_bundle;
+		};
+		05130F752A8674C6003114B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 050005972929196B00813E82 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05130F6F2A867483003114B1;
+			remoteInfo = install_jsh_bundle;
+		};
+		056F215729291B800056186C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 050005972929196B00813E82 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 056F215129291B750056186C;
+			remoteInfo = install_Bundle;
+		};
+		05F1014F29A1CFF400DA6979 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 050005972929196B00813E82 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 050F511329A1CA950021C7E1;
+			remoteInfo = jsrun_bundle;
+		};
+		05F1015129A1D03200DA6979 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 050005972929196B00813E82 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05F1014B29A1CFD800DA6979;
+			remoteInfo = install_jsrun_bundle;
+		};
+		05F1015729A1D09E00DA6979 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 050005972929196B00813E82 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05AD1BF62997108F0045EBC0;
+			remoteInfo = jsrun;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0500059D2929196B00813E82 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		05130F532A866C70003114B1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				05130F4C2A866C70003114B1 /* CoconutDatabase.xcframework in Embed Frameworks */,
+				05130F482A866C70003114B1 /* Cobalt.xcframework in Embed Frameworks */,
+				05130F4A2A866C70003114B1 /* CoconutData.xcframework in Embed Frameworks */,
+				05130F4E2A866C70003114B1 /* KiwiEngine.xcframework in Embed Frameworks */,
+				05130F522A866C70003114B1 /* KiwiShell.xcframework in Embed Frameworks */,
+				05130F502A866C70003114B1 /* KiwiLibrary.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05130F592A866CF7003114B1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		05AD1BF52997108F0045EBC0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		05DFBBC229A1D1D3003502F1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				05DFBBC129A1D1D3003502F1 /* KiwiEngine.xcframework in Embed Frameworks */,
+				05DFBBBD29A1D1D3003502F1 /* CoconutDatabase.xcframework in Embed Frameworks */,
+				05DFBBB929A1D1D3003502F1 /* Cobalt.xcframework in Embed Frameworks */,
+				05DFBBBB29A1D1D3003502F1 /* CoconutData.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05F1014329A1CF8B00DA6979 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				05F1014A29A1CFB400DA6979 /* KiwiLibrary.xcframework in CopyFiles */,
+				05F1014429A1CF9A00DA6979 /* KiwiEngine.xcframework in CopyFiles */,
+				05F1014529A1CF9A00DA6979 /* CoconutData.xcframework in CopyFiles */,
+				05F1014629A1CF9A00DA6979 /* CoconutDatabase.xcframework in CopyFiles */,
+				05130F3E2A866AC6003114B1 /* KiwiShell.xcframework in CopyFiles */,
+				05F1014829A1CF9A00DA6979 /* Cobalt.xcframework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0500059F2929196B00813E82 /* edecl */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = edecl; sourceTree = BUILT_PRODUCTS_DIR; };
+		050005A22929196B00813E82 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		050F511429A1CA950021C7E1 /* jsrun_bundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jsrun_bundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		05130F3A2A866A62003114B1 /* KiwiShell.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KiwiShell.xcframework; path = ../../../../Library/Frameworks/KiwiShell.xcframework; sourceTree = "<group>"; };
+		05130F432A866C03003114B1 /* jsh_bundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jsh_bundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		05130F542A866C70003114B1 /* KiwiControls.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KiwiControls.xcframework; path = ../../../../Library/Frameworks/KiwiControls.xcframework; sourceTree = "<group>"; };
+		05130F5B2A866CF7003114B1 /* jsh */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = jsh; sourceTree = BUILT_PRODUCTS_DIR; };
+		05130F5D2A866CF7003114B1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		056F211D29291ACA0056186C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		056F212629291AF90056186C /* Cobalt.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Cobalt.xcframework; path = ../../../../Library/Frameworks/Cobalt.xcframework; sourceTree = "<group>"; };
+		056F212C29291B230056186C /* CoconutData.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CoconutData.xcframework; path = ../../../../Library/Frameworks/CoconutData.xcframework; sourceTree = "<group>"; };
+		056F212D29291B230056186C /* CoconutDatabase.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CoconutDatabase.xcframework; path = ../../../../Library/Frameworks/CoconutDatabase.xcframework; sourceTree = "<group>"; };
+		056F213529291B410056186C /* KiwiEngine.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KiwiEngine.xcframework; path = ../../../../Library/Frameworks/KiwiEngine.xcframework; sourceTree = "<group>"; };
+		05959256292A21CC00F431D3 /* config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = config.swift; sourceTree = "<group>"; };
+		05AD1BF72997108F0045EBC0 /* jsrun */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = jsrun; sourceTree = BUILT_PRODUCTS_DIR; };
+		05AD1BF92997108F0045EBC0 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		05AD1C00299713D90045EBC0 /* config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = config.swift; sourceTree = "<group>"; };
+		05DFBBB429A1D1B8003502F1 /* edecl_bundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = edecl_bundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		05F1014929A1CFB400DA6979 /* KiwiLibrary.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KiwiLibrary.xcframework; path = ../../../../Library/Frameworks/KiwiLibrary.xcframework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0500059C2929196B00813E82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		050F511129A1CA950021C7E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				050F511929A1CB030021C7E1 /* Cobalt.xcframework in Frameworks */,
+				050F511A29A1CB030021C7E1 /* CoconutData.xcframework in Frameworks */,
+				050F511B29A1CB030021C7E1 /* CoconutDatabase.xcframework in Frameworks */,
+				05130F3D2A866AC6003114B1 /* KiwiShell.xcframework in Frameworks */,
+				050F511D29A1CB030021C7E1 /* KiwiEngine.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05130F402A866C03003114B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05130F4B2A866C70003114B1 /* CoconutDatabase.xcframework in Frameworks */,
+				05130F472A866C70003114B1 /* Cobalt.xcframework in Frameworks */,
+				05130F492A866C70003114B1 /* CoconutData.xcframework in Frameworks */,
+				05130F4D2A866C70003114B1 /* KiwiEngine.xcframework in Frameworks */,
+				05130F512A866C70003114B1 /* KiwiShell.xcframework in Frameworks */,
+				05130F4F2A866C70003114B1 /* KiwiLibrary.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05130F582A866CF7003114B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05AD1BF42997108F0045EBC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05DFBBB129A1D1B8003502F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05DFBBC029A1D1D3003502F1 /* KiwiEngine.xcframework in Frameworks */,
+				05DFBBBC29A1D1D3003502F1 /* CoconutDatabase.xcframework in Frameworks */,
+				05DFBBB829A1D1D3003502F1 /* Cobalt.xcframework in Frameworks */,
+				05DFBBBA29A1D1D3003502F1 /* CoconutData.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		050005962929196B00813E82 = {
+			isa = PBXGroup;
+			children = (
+				05F1014929A1CFB400DA6979 /* KiwiLibrary.xcframework */,
+				056F211329291A4B0056186C /* Source */,
+				050005A12929196B00813E82 /* KiwiTools */,
+				056F211C29291ACA0056186C /* KiwiToolsBundle */,
+				050005A02929196B00813E82 /* Products */,
+				056F212529291AF90056186C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		050005A02929196B00813E82 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0500059F2929196B00813E82 /* edecl */,
+				05AD1BF72997108F0045EBC0 /* jsrun */,
+				050F511429A1CA950021C7E1 /* jsrun_bundle.bundle */,
+				05DFBBB429A1D1B8003502F1 /* edecl_bundle.bundle */,
+				05130F432A866C03003114B1 /* jsh_bundle.bundle */,
+				05130F5B2A866CF7003114B1 /* jsh */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		050005A12929196B00813E82 /* KiwiTools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = KiwiTools;
+			sourceTree = "<group>";
+		};
+		05130F642A866D29003114B1 /* jsh */ = {
+			isa = PBXGroup;
+			children = (
+				05130F5D2A866CF7003114B1 /* main.swift */,
+			);
+			path = jsh;
+			sourceTree = "<group>";
+		};
+		056F211329291A4B0056186C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				05130F642A866D29003114B1 /* jsh */,
+				05AD1BF82997108F0045EBC0 /* jsrun */,
+				056F211429291A5F0056186C /* edecl */,
+			);
+			name = Source;
+			path = ../Source;
+			sourceTree = "<group>";
+		};
+		056F211429291A5F0056186C /* edecl */ = {
+			isa = PBXGroup;
+			children = (
+				050005A22929196B00813E82 /* main.swift */,
+				05959256292A21CC00F431D3 /* config.swift */,
+			);
+			path = edecl;
+			sourceTree = "<group>";
+		};
+		056F211C29291ACA0056186C /* KiwiToolsBundle */ = {
+			isa = PBXGroup;
+			children = (
+				056F211D29291ACA0056186C /* Info.plist */,
+			);
+			path = KiwiToolsBundle;
+			sourceTree = "<group>";
+		};
+		056F212529291AF90056186C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05130F542A866C70003114B1 /* KiwiControls.xcframework */,
+				05130F3A2A866A62003114B1 /* KiwiShell.xcframework */,
+				056F213529291B410056186C /* KiwiEngine.xcframework */,
+				056F212C29291B230056186C /* CoconutData.xcframework */,
+				056F212D29291B230056186C /* CoconutDatabase.xcframework */,
+				056F212629291AF90056186C /* Cobalt.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		05AD1BF82997108F0045EBC0 /* jsrun */ = {
+			isa = PBXGroup;
+			children = (
+				05AD1BF92997108F0045EBC0 /* main.swift */,
+				05AD1C00299713D90045EBC0 /* config.swift */,
+			);
+			path = jsrun;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		050F510A29A1C5B10021C7E1 /* install_edecl_cmd */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "-f ../../Script/install_tool.mk install_edecl";
+			buildConfigurationList = 050F510B29A1C5B10021C7E1 /* Build configuration list for PBXLegacyTarget "install_edecl_cmd" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "";
+			dependencies = (
+				050F510F29A1C5E00021C7E1 /* PBXTargetDependency */,
+			);
+			name = install_edecl_cmd;
+			passBuildSettingsInEnvironment = 1;
+			productName = install_edecl_cmd;
+		};
+		05130F692A866F74003114B1 /* install_jsh_cmd */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "-f ../../Script/install_tool.mk install_jsrun";
+			buildConfigurationList = 05130F6A2A866F74003114B1 /* Build configuration list for PBXLegacyTarget "install_jsh_cmd" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "";
+			dependencies = (
+				05130F6E2A866F85003114B1 /* PBXTargetDependency */,
+			);
+			name = install_jsh_cmd;
+			passBuildSettingsInEnvironment = 1;
+			productName = install_jsh_cmd;
+		};
+		05130F6F2A867483003114B1 /* install_jsh_bundle */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "-f ../../Script/install_tool.mk install_jsh_bundle";
+			buildConfigurationList = 05130F702A867483003114B1 /* Build configuration list for PBXLegacyTarget "install_jsh_bundle" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "";
+			dependencies = (
+				05130F742A867497003114B1 /* PBXTargetDependency */,
+			);
+			name = install_jsh_bundle;
+			passBuildSettingsInEnvironment = 1;
+			productName = install_jsh_bundle;
+		};
+		056F215129291B750056186C /* install_edecl_bundle */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "-f ../../Script/install_tool.mk install_edecl_bundle";
+			buildConfigurationList = 056F215229291B750056186C /* Build configuration list for PBXLegacyTarget "install_edecl_bundle" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "";
+			dependencies = (
+				050101C92ABC3F2D0070D25F /* PBXTargetDependency */,
+			);
+			name = install_edecl_bundle;
+			passBuildSettingsInEnvironment = 1;
+			productName = install_Bundle;
+		};
+		05F1014B29A1CFD800DA6979 /* install_jsrun_bundle */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "-f ../../Script/install_tool.mk install_jsrun_bundle";
+			buildConfigurationList = 05F1014C29A1CFD800DA6979 /* Build configuration list for PBXLegacyTarget "install_jsrun_bundle" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "";
+			dependencies = (
+				05F1015029A1CFF400DA6979 /* PBXTargetDependency */,
+			);
+			name = install_jsrun_bundle;
+			passBuildSettingsInEnvironment = 1;
+			productName = install_jsrun_bundle;
+		};
+		05F1015329A1D09400DA6979 /* install_jsrun_cmd */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "-f ../../Script/install_tool.mk install_jsrun";
+			buildConfigurationList = 05F1015429A1D09400DA6979 /* Build configuration list for PBXLegacyTarget "install_jsrun_cmd" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "";
+			dependencies = (
+				05F1015829A1D09E00DA6979 /* PBXTargetDependency */,
+			);
+			name = install_jsrun_cmd;
+			passBuildSettingsInEnvironment = 1;
+			productName = install_jsrun_cmd;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		0500059E2929196B00813E82 /* edecl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 050005A62929196B00813E82 /* Build configuration list for PBXNativeTarget "edecl" */;
+			buildPhases = (
+				0500059B2929196B00813E82 /* Sources */,
+				0500059C2929196B00813E82 /* Frameworks */,
+				0500059D2929196B00813E82 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				056F215829291B800056186C /* PBXTargetDependency */,
+			);
+			name = edecl;
+			productName = KiwiTools;
+			productReference = 0500059F2929196B00813E82 /* edecl */;
+			productType = "com.apple.product-type.tool";
+		};
+		050F511329A1CA950021C7E1 /* jsrun_bundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 050F511529A1CA950021C7E1 /* Build configuration list for PBXNativeTarget "jsrun_bundle" */;
+			buildPhases = (
+				050F511029A1CA950021C7E1 /* Sources */,
+				050F511129A1CA950021C7E1 /* Frameworks */,
+				050F511229A1CA950021C7E1 /* Resources */,
+				05F1014329A1CF8B00DA6979 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = jsrun_bundle;
+			productName = jsrun_bundle;
+			productReference = 050F511429A1CA950021C7E1 /* jsrun_bundle.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		05130F422A866C03003114B1 /* jsh_bundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05130F442A866C03003114B1 /* Build configuration list for PBXNativeTarget "jsh_bundle" */;
+			buildPhases = (
+				05130F3F2A866C03003114B1 /* Sources */,
+				05130F402A866C03003114B1 /* Frameworks */,
+				05130F412A866C03003114B1 /* Resources */,
+				05130F532A866C70003114B1 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = jsh_bundle;
+			productName = jsh_bundle;
+			productReference = 05130F432A866C03003114B1 /* jsh_bundle.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		05130F5A2A866CF7003114B1 /* jsh */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05130F5F2A866CF7003114B1 /* Build configuration list for PBXNativeTarget "jsh" */;
+			buildPhases = (
+				05130F572A866CF7003114B1 /* Sources */,
+				05130F582A866CF7003114B1 /* Frameworks */,
+				05130F592A866CF7003114B1 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05130F762A8674C6003114B1 /* PBXTargetDependency */,
+			);
+			name = jsh;
+			productName = jsh;
+			productReference = 05130F5B2A866CF7003114B1 /* jsh */;
+			productType = "com.apple.product-type.tool";
+		};
+		05AD1BF62997108F0045EBC0 /* jsrun */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05AD1BFD2997108F0045EBC0 /* Build configuration list for PBXNativeTarget "jsrun" */;
+			buildPhases = (
+				05AD1BF32997108F0045EBC0 /* Sources */,
+				05AD1BF42997108F0045EBC0 /* Frameworks */,
+				05AD1BF52997108F0045EBC0 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05F1015229A1D03200DA6979 /* PBXTargetDependency */,
+			);
+			name = jsrun;
+			productName = jsrun;
+			productReference = 05AD1BF72997108F0045EBC0 /* jsrun */;
+			productType = "com.apple.product-type.tool";
+		};
+		05DFBBB329A1D1B8003502F1 /* edecl_bundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05DFBBB729A1D1B8003502F1 /* Build configuration list for PBXNativeTarget "edecl_bundle" */;
+			buildPhases = (
+				05DFBBB029A1D1B8003502F1 /* Sources */,
+				05DFBBB129A1D1B8003502F1 /* Frameworks */,
+				05DFBBB229A1D1B8003502F1 /* Resources */,
+				05DFBBC229A1D1D3003502F1 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = edecl_bundle;
+			productName = edecl_bundle;
+			productReference = 05DFBBB429A1D1B8003502F1 /* edecl_bundle.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		050005972929196B00813E82 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					0500059E2929196B00813E82 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					050F510A29A1C5B10021C7E1 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					050F511329A1CA950021C7E1 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					05130F422A866C03003114B1 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					05130F5A2A866CF7003114B1 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					05130F692A866F74003114B1 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					05130F6F2A867483003114B1 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					056F215129291B750056186C = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					05AD1BF62997108F0045EBC0 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					05DFBBB329A1D1B8003502F1 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					05F1014B29A1CFD800DA6979 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					05F1015329A1D09400DA6979 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 0500059A2929196B00813E82 /* Build configuration list for PBXProject "KiwiTools" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 050005962929196B00813E82;
+			productRefGroup = 050005A02929196B00813E82 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				05DFBBB329A1D1B8003502F1 /* edecl_bundle */,
+				056F215129291B750056186C /* install_edecl_bundle */,
+				0500059E2929196B00813E82 /* edecl */,
+				050F510A29A1C5B10021C7E1 /* install_edecl_cmd */,
+				050F511329A1CA950021C7E1 /* jsrun_bundle */,
+				05F1014B29A1CFD800DA6979 /* install_jsrun_bundle */,
+				05AD1BF62997108F0045EBC0 /* jsrun */,
+				05F1015329A1D09400DA6979 /* install_jsrun_cmd */,
+				05130F422A866C03003114B1 /* jsh_bundle */,
+				05130F6F2A867483003114B1 /* install_jsh_bundle */,
+				05130F5A2A866CF7003114B1 /* jsh */,
+				05130F692A866F74003114B1 /* install_jsh_cmd */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		050F511229A1CA950021C7E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05130F412A866C03003114B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05DFBBB229A1D1B8003502F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0500059B2929196B00813E82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				050005A32929196B00813E82 /* main.swift in Sources */,
+				05959257292A21CC00F431D3 /* config.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		050F511029A1CA950021C7E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05130F3F2A866C03003114B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05130F572A866CF7003114B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05130F5E2A866CF7003114B1 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05AD1BF32997108F0045EBC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05AD1BFA2997108F0045EBC0 /* main.swift in Sources */,
+				05AD1C01299713D90045EBC0 /* config.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05DFBBB029A1D1B8003502F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		050101C92ABC3F2D0070D25F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05DFBBB329A1D1B8003502F1 /* edecl_bundle */;
+			targetProxy = 050101C82ABC3F2D0070D25F /* PBXContainerItemProxy */;
+		};
+		050F510F29A1C5E00021C7E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0500059E2929196B00813E82 /* edecl */;
+			targetProxy = 050F510E29A1C5E00021C7E1 /* PBXContainerItemProxy */;
+		};
+		05130F6E2A866F85003114B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05130F5A2A866CF7003114B1 /* jsh */;
+			targetProxy = 05130F6D2A866F85003114B1 /* PBXContainerItemProxy */;
+		};
+		05130F742A867497003114B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05130F422A866C03003114B1 /* jsh_bundle */;
+			targetProxy = 05130F732A867497003114B1 /* PBXContainerItemProxy */;
+		};
+		05130F762A8674C6003114B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05130F6F2A867483003114B1 /* install_jsh_bundle */;
+			targetProxy = 05130F752A8674C6003114B1 /* PBXContainerItemProxy */;
+		};
+		056F215829291B800056186C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 056F215129291B750056186C /* install_edecl_bundle */;
+			targetProxy = 056F215729291B800056186C /* PBXContainerItemProxy */;
+		};
+		05F1015029A1CFF400DA6979 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 050F511329A1CA950021C7E1 /* jsrun_bundle */;
+			targetProxy = 05F1014F29A1CFF400DA6979 /* PBXContainerItemProxy */;
+		};
+		05F1015229A1D03200DA6979 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05F1014B29A1CFD800DA6979 /* install_jsrun_bundle */;
+			targetProxy = 05F1015129A1D03200DA6979 /* PBXContainerItemProxy */;
+		};
+		05F1015829A1D09E00DA6979 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05AD1BF62997108F0045EBC0 /* jsrun */;
+			targetProxy = 05F1015729A1D09E00DA6979 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		050005A42929196B00813E82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Distribution";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		050005A52929196B00813E82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Distribution";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		050005A72929196B00813E82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = command.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Manual;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = TR2DNF3P93;
+				ENABLE_HARDENED_RUNTIME = YES;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=*]" = x86_64;
+				FRAMEWORK_SEARCH_PATHS = "$(HOME)/tools/bundles/edecl_bundle.bundle/Contents/Frameworks";
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				INSTALL_PATH = "$(PROJECT_DIR)/../Product/bin";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/edecl_bundle.bundle/Contents/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				OTHER_CODE_SIGN_FLAGS = "--timestamp";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gitlab.steelwheels.edecl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		050005A82929196B00813E82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = command.entitlements;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Manual;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = TR2DNF3P93;
+				ENABLE_HARDENED_RUNTIME = YES;
+				"EXCLUDED_ARCHS[sdk=*]" = x86_64;
+				FRAMEWORK_SEARCH_PATHS = "$(HOME)/tools/bundles/edecl_bundle.bundle/Contents/Frameworks";
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				INSTALL_PATH = "$(PROJECT_DIR)/../Product/bin";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/edecl_bundle.bundle/Contents/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				OTHER_CODE_SIGN_FLAGS = "--timestamp";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gitlab.steelwheels.edecl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		050F510C29A1C5B10021C7E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		050F510D29A1C5B10021C7E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		050F511629A1CA950021C7E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = TR2DNF3P93;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPrincipalClass = "";
+				INSTALL_PATH = "$(HOME)/tools/bundles";
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.steelwheels.jsrun-bundle";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		050F511729A1CA950021C7E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = TR2DNF3P93;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPrincipalClass = "";
+				INSTALL_PATH = "$(HOME)/tools/bundles";
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.steelwheels.jsrun-bundle";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		05130F452A866C03003114B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = TR2DNF3P93;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPrincipalClass = "";
+				INSTALL_PATH = "$(HOME)/tools/bundles";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.steelwheels.jsh-bundle";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		05130F462A866C03003114B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = TR2DNF3P93;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPrincipalClass = "";
+				INSTALL_PATH = "$(HOME)/tools/bundles";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.steelwheels.jsh-bundle";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		05130F602A866CF7003114B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_ENTITLEMENTS = command.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = TR2DNF3P93;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				INSTALL_PATH = "$(PROJECT_DIR)/../Product/bin";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/jsh_bundle.bundle/Contents/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				OTHER_CODE_SIGN_FLAGS = "--timestamp";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gitlab.steelwheels.jsh;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		05130F612A866CF7003114B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_ENTITLEMENTS = command.entitlements;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = TR2DNF3P93;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				INSTALL_PATH = "$(PROJECT_DIR)/../Product/bin";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/jsh_bundle.bundle/Contents/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				OTHER_CODE_SIGN_FLAGS = "--timestamp";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gitlab.steelwheels.jsh;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		05130F6B2A866F74003114B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		05130F6C2A866F74003114B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		05130F712A867483003114B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		05130F722A867483003114B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		056F215329291B750056186C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		056F215429291B750056186C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		05AD1BFB2997108F0045EBC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_ENTITLEMENTS = command.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = TR2DNF3P93;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				INSTALL_PATH = "$(PROJECT_DIR)/../Product/bin";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/jsrun_bundle.bundle/Contents/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				OTHER_CODE_SIGN_FLAGS = "--timestamp";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gitlab.steelwheels.jsrun;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		05AD1BFC2997108F0045EBC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_ENTITLEMENTS = command.entitlements;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = TR2DNF3P93;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				INSTALL_PATH = "$(PROJECT_DIR)/../Product/bin";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/jsrun_bundle.bundle/Contents/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				OTHER_CODE_SIGN_FLAGS = "--timestamp";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gitlab.steelwheels.jsrun;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		05DFBBB529A1D1B8003502F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = TR2DNF3P93;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPrincipalClass = "";
+				INSTALL_PATH = "$(HOME)/tools/bundles";
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.steelwheels.edecl-bundle";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		05DFBBB629A1D1B8003502F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = TR2DNF3P93;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPrincipalClass = "";
+				INSTALL_PATH = "$(HOME)/tools/bundles";
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.steelwheels.edecl-bundle";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		05F1014D29A1CFD800DA6979 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		05F1014E29A1CFD800DA6979 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		05F1015529A1D09400DA6979 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		05F1015629A1D09400DA6979 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0500059A2929196B00813E82 /* Build configuration list for PBXProject "KiwiTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				050005A42929196B00813E82 /* Debug */,
+				050005A52929196B00813E82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		050005A62929196B00813E82 /* Build configuration list for PBXNativeTarget "edecl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				050005A72929196B00813E82 /* Debug */,
+				050005A82929196B00813E82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		050F510B29A1C5B10021C7E1 /* Build configuration list for PBXLegacyTarget "install_edecl_cmd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				050F510C29A1C5B10021C7E1 /* Debug */,
+				050F510D29A1C5B10021C7E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		050F511529A1CA950021C7E1 /* Build configuration list for PBXNativeTarget "jsrun_bundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				050F511629A1CA950021C7E1 /* Debug */,
+				050F511729A1CA950021C7E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05130F442A866C03003114B1 /* Build configuration list for PBXNativeTarget "jsh_bundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05130F452A866C03003114B1 /* Debug */,
+				05130F462A866C03003114B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05130F5F2A866CF7003114B1 /* Build configuration list for PBXNativeTarget "jsh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05130F602A866CF7003114B1 /* Debug */,
+				05130F612A866CF7003114B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05130F6A2A866F74003114B1 /* Build configuration list for PBXLegacyTarget "install_jsh_cmd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05130F6B2A866F74003114B1 /* Debug */,
+				05130F6C2A866F74003114B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05130F702A867483003114B1 /* Build configuration list for PBXLegacyTarget "install_jsh_bundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05130F712A867483003114B1 /* Debug */,
+				05130F722A867483003114B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		056F215229291B750056186C /* Build configuration list for PBXLegacyTarget "install_edecl_bundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				056F215329291B750056186C /* Debug */,
+				056F215429291B750056186C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05AD1BFD2997108F0045EBC0 /* Build configuration list for PBXNativeTarget "jsrun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05AD1BFB2997108F0045EBC0 /* Debug */,
+				05AD1BFC2997108F0045EBC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05DFBBB729A1D1B8003502F1 /* Build configuration list for PBXNativeTarget "edecl_bundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05DFBBB529A1D1B8003502F1 /* Debug */,
+				05DFBBB629A1D1B8003502F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05F1014C29A1CFD800DA6979 /* Build configuration list for PBXLegacyTarget "install_jsrun_bundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05F1014D29A1CFD800DA6979 /* Debug */,
+				05F1014E29A1CFD800DA6979 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05F1015429A1D09400DA6979 /* Build configuration list for PBXLegacyTarget "install_jsrun_cmd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05F1015529A1D09400DA6979 /* Debug */,
+				05F1015629A1D09400DA6979 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 050005972929196B00813E82 /* Project object */;
+}

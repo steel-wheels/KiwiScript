@@ -1,0 +1,9 @@
+# class: Graphics
+
+## Interface
+<pre>
+m4_include(Graphics.d.ts)
+</pre>
+
+m4_include(Footer.md)
+

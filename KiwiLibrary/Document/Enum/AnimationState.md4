@@ -1,0 +1,8 @@
+# AnimationState
+
+<pre>
+m4_include(enum-AnimationState.d.ts)
+</pre>
+
+m4_include(Footer.md)
+

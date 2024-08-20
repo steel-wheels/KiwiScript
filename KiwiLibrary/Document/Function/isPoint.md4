@@ -1,0 +1,9 @@
+# Function: isPoint
+Check the given object is [point](../Type/Point.md) or not.
+
+<pre>
+m4_include(func-isPoint.d.ts)
+</pre>
+
+m4_include(Footer.md)
+

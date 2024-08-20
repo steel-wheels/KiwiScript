@@ -1,0 +1,12 @@
+{
+  application: "main.js",
+  definitions: [
+      "table-0.d.ts"
+    ],
+  tables: {
+      table_1: {
+          data: "table-0.json",
+          type: "table-0.d.ts"
+        }
+    }
+}

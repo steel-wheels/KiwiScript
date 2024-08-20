@@ -1,0 +1,9 @@
+# Date
+
+## Interface
+<pre>
+m4_include(`interface-DateIF.d.ts')
+</pre>
+
+m4_include(`Footer.md')
+

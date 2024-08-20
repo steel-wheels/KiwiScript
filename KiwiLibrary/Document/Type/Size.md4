@@ -1,0 +1,10 @@
+# Type: Size
+The <code>Size</code> is data structure to store 2D size.
+
+## Interface
+<pre>
+m4_include(interface-SizeIF.d.ts)
+</pre>
+
+m4_include(Footer.md)
+

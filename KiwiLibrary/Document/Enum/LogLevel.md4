@@ -1,0 +1,8 @@
+# LogLevel
+
+<pre>
+m4_include(enum-LogLevel.d.ts)
+</pre>
+
+m4_include(Footer.md)
+

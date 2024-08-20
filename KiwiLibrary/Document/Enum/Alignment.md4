@@ -1,0 +1,8 @@
+# AlignmentType
+
+<pre>
+m4_include(enum-Alignment.d.ts)
+</pre>
+
+m4_include(Footer.md)
+

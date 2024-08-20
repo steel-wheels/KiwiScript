@@ -1,0 +1,10 @@
+# function: sleep
+Suspend execution for an interval of time (unit second).
+
+# Prototype
+<pre>
+m4_include(func-sleep.d.ts)
+</pre>
+
+m4_include(Footer.md)
+

@@ -1,0 +1,8 @@
+# Device
+
+<pre>
+m4_include(enum-Device.d.ts)
+</pre>
+
+m4_include(Footer.md)
+

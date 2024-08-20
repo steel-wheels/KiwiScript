@@ -1,0 +1,119 @@
+# Kiwi Standard Library
+The built-in class, function, data types for JavaScript.
+
+## Types
+* [Point](./Type/Point.md): 2D point data presented as (x, y).
+* [Range](./Type/Range.md): The data range presented by the location and the length.
+* [Rect](./Type/Rect.md): 2D rectangle data presented as (width. height)
+* [Result](./Type/Result.md): The return value of the function which contains success or failure result.
+* [Size](./Type/Size.md): 2D object size data presented as (width. height)
+
+## Enums
+This is a list of built-in enum types.
+* [AccessType](./Enum/AccessType.md): Type of file access
+* [AlertType](./Enum/AlertType.md): Type of the alert.
+* [Alignmenmt](./Enum/Alignment.md): Alignment of the GUI components.
+* [AnimationState](./Enum/AnimationState.md): State of the graphics object in the animation.
+* [Authorize](./Enum/Autorize.md): The state of authorization process.
+* [Axis](./Enum/Axis.md): Axis for 2D graphics.
+* [ButtonState](./Enum/ButtonState.md): The state of the button.
+* [ComparisonResult](./Enum/ComparisonResult.md): The result of comparison.
+* [Device](./Enum/Device.md): Kind of device which is supported by software.
+* [Distribution](./Enum/Distribution.md): Distribution of the GUI components.
+* [ExitCode](./Enum/ExitCode.md): Exit code of the application.
+* [FileType](./Enum/FileType.md): Type of the file on file system.
+* [FontSize](./Enum/FontSize.md): Size of the font.
+* [Language](./Enum/Language.md): Kind of language such as English, Japanese, ...
+* [LogLevel](./Enum/LogLevel.md): Level of the log.
+* [SortOrder](./Enum/SortOrder.md): Order of the sorted items.
+* [SymbolSize](./Enum/SymbolSize.md): Size of the symbol.
+* [Symbols](./Enum/Symbols.md): Kind of symbols.
+* [TokenType](./Enum/TokenType.md): Type of token.
+
+## Built-in functions
+### Type checker
+* [isArray](./Function/isArray.md): Check the given object is array or not.
+* [isBitmap](./Function/isBitmap.md): Check the given object is [Bitmap](./Class/BitmapContext.md) or not.
+* [isBoolean](./Function/isBoolean.md): Check the given object is boolean or not.
+* [isDate](./Function/isDate.md): Check the given object is [Date](./Class/Date.md) or not.
+* [isDictionary](./Function/isDictionary): Check the given object is dictionary or not.
+* [isNull](./Function/isNull.md): Check the given object is null or not.
+* [isNumber](./Function/isNumber.md): Check the given object is number or not.
+* [isObject](./Function/isObject.md): Check the given object is object or not.
+* [isPoint](./Function/isPoint.md): Check the given object is [Point](./Type/Point.md) or not.
+* [isRect](./Function/isRect.md): Check the given object is [Rect](./Type/Rect.md) or not.
+* [isSize](./Function/isSize.md): Check the given object is [Size](./Type/Size.md) or not.
+* [isURL](./Function/isURL.md): Check the given object is [URL](./Class/URL.md) or not.
+* [isUndefined](./Function/isUndefined.md): Check the given object is undefined or not.
+
+### String
+* [isAlphaNumetics](./Function/isAlphaNumerics): Check the given string contains only alphabet and number or not.
+* [isEOF](./Function/isEOF.md): Check the given string have EOF.
+* [isIdentifier](./Function/isIdentifer.md): Check the given string is identifier or not.
+* [isSpace](./Function/isSpace.md): Check the given string have only white spaces or not.
+
+### Process control
+* [exit](./Function/exit.md): Exit to the caller process with exit code
+* [sleep](./Function/sleep.md): Suspend execution for an interval of time (seconds)
+* character: [asciiCodeName](./Function/AsciiCodeName.md): Get ascii code name for given character
+* [openURL](./Function/openURL.md): Functions for networking
+* [run](./Function/run.md): Execute the given JavaScript program
+* [system](./Function/System.md): Execute shell command
+* [Thread](./Function/Thread.md): Generate thread to execute JavaScript.
+
+## Constructor function
+* [URL](./Class/URL.md): Allocate URL object.
+
+## Singleton Objects
+* [Char](./Class/Char.md): Properties of characters.
+* [Colors](./Class/Colors.md): The color table.
+* [env](./Class/Environment.md): Environment variable
+* [console](./Class/Console.md)
+
+There are some pre-defined objects. They are instance of built-in classes:
+* [Curses](./Curses.md): The object to control terminal.
+* [Math](./Class/Math.md): The singleton object which has class methods for mathematical operation and such as @PI@, @sin()@, @cos()@.
+* [SFSymbol](./Class/SFSymbol.md): The class operates built-in symbol images.
+
+## Classes
+### Preference
+* [Preference](./Class/Preference.md): Access preference value of this application and system software.
+
+### Process control
+* [Semaphore](./Class/Semaphore.md): Semaphore to synchronize multiple proceses and threads.
+* [Thread](./Class/Thread.md): The object presents the thread. This is constructed by [thread](./Function/Thread.md) function.
+* [Environment](./Class/Environment.md): Operate environment variables such as @PWD@, @TMPDIR@ and etc.
+
+### File management
+* [FileManager](./Class/FileManager.md): The file manager
+* [File](./Class/File.md): The file object to access it's contents.
+* [Pipe](./Document/Class/Pipe.md): The object to present the pipe.
+* [JSON](./Class/JSON.md): The object to operate JSON file.
+* [URL](./Class/URL.md): Data representation of URL
+
+### Terminal
+* [Curses](./Class/Curses.md): CUI management on the terminal.
+* [EscapeSequence](./Class/EscapeSequence.md): The object which operates [escape sequence](https://en.wikipedia.org/wiki/Escape_sequence).
+* [EscapeSequences](./Class/EscapeSequences.md): The constructor of [EscapeSequence](./Class/EscapeSequence.md) object.
+
+### Graphics
+* [Color](./Class/Color.md): The color infomation
+* [GraphicsContext](./Class/GraphicsContext.md): The class for 2D graphics drawing
+* [Image class](./Class/Image.md): The class for image object.
+* [SpriteNode](./Class/SpriteNode.md): The base class to operate sprite node
+* [SpriteScene](./Class/SpriteScene.md): The base class to operate sprite scene
+* [Graphics](./Class/Graphics.md): The class contans graphics functions.
+
+### Data
+* [Table](./Class/Table.md): Database to manage multiple [Records](./Class/Record.md).
+* [Record](./Class/Record.md): Package of multiple data.
+* [StringStream](./Class/StringStream.md): Operate the string as stream.
+
+## File format
+* [eJSON](./Format/eJSON.md): extended JavaScript Object Notation
+* [eJSTN](./Format/eJSTN.md): extended JavaScript Type Notation
+* [Type definition](./Format/DataTypeFormat.md): Data type definition such as @enum@.
+* [Table format](./Format/Table.md): The file format which is used by [Table class](./Class/Table.md).
+
+m4_include(`Footer.md')
+

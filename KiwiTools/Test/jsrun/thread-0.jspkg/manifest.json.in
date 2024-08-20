@@ -1,0 +1,7 @@
+{
+  application: "main.ts"
+  threads: {
+    thread_0: "thread-0.ts"
+  }
+}
+

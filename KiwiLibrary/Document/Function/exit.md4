@@ -1,0 +1,12 @@
+# Exit function
+
+## `exit` function
+Finish process with exit code.
+
+### Prototype
+<pre>
+m4_include(func-exit.d.ts)
+</pre>
+
+m4_include(Footer.md)
+

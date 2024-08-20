@@ -1,0 +1,9 @@
+# Function: isNumber
+Check the given string paramter contains only digit numbers.
+
+<pre>
+m4_include(func-isNumber.d.ts)
+</pre>
+
+m4_include(Footer.md)
+

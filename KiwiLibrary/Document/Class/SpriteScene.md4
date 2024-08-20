@@ -1,0 +1,14 @@
+# class: SpriteScene
+
+## Interface
+<pre>
+m4_include(interface-SpriteSceneIF.d.ts)
+</pre>
+
+## Source code
+<pre>
+m4_include(SpriteScene.ts)
+</pre>
+
+m4_include(Footer.md)
+

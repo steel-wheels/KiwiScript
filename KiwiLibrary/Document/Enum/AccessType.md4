@@ -1,0 +1,8 @@
+# AccessType
+
+<pre>
+m4_include(enum-AccessType.d.ts)
+</pre>
+
+m4_include(Footer.md)
+

@@ -1,0 +1,7 @@
+include:l0
+include:l1
+include:l2
+include:@include(inc-0.txt)
+include:l3
+include:@include(include/inc-1.txt)
+include:l4

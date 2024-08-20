@@ -1,0 +1,41 @@
+# JSON class
+The *JSON* class is used to parse JSON string, encode JSON data into string. This class also supports read/write JSON file.
+This class is implemented as JavaScript class.
+You have to allocate the object to use it.
+
+<pre>
+let file = new JSONFile() ;
+file.write(stdout, object) ;
+</pre>
+
+## read class method
+Read text from file and parse it into JSON object.
+<pre>
+var object: Object = JSON.read(file: File): value | null
+</pre>
+### Parameter(s)
+|Parameter    |Type   |Description                    |
+|:---         |:---   |:---                           |
+|file         |[File](./File.md) |The file object to read JSON data|
+### Return value
+The JSON object is returned when the read and parse operation was succeeded, otherwise this value will be *null*.
+
+## write class method
+Encode JSON data into string and write it to text file.
+<pre>
+var result: Bool = JSON.write(file: File, obj: Object)
+</pre>
+
+### Parameter(s)
+|Parameter    |Type   |Description                    |
+|:---         |:---   |:---                           |
+|file         |[File](./File.md) |The file object to write.|
+|object       |Object |The source object to be encoded |
+### Return value
+The the file writing is finished without any errors, this value will be true.
+
+# Related links
+* [Steel Wheels Project](https://gitlab.com/steewheels/project/-/blob/main/README.md): Developer's home page
+* [KiwiLibrary Framework](https://gitlab.com/steewheels/kiwiscript/-/blob/main/KiwiLibrary/README.md): The framework contains this library.
+
+

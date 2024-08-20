@@ -1,0 +1,9 @@
+# Function: isObject
+Check the given object is instance of any class or not.
+
+<pre>
+m4_include(func-isObject.d.ts)
+</pre>
+
+m4_include(Footer.md)
+

@@ -1,0 +1,16 @@
+# class: SFSymbol
+
+## Constructor
+The parameter must be mached with <code>SFSymbol</code> function name.
+
+<pre>
+m4_include(SFSymbol.d.ts)
+</pre>
+
+## Interface
+<pre>
+m4_include(interface-SymbolIF.d.ts)
+</pre>
+
+m4_include(Footer.md)
+

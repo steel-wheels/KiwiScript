@@ -1,0 +1,8 @@
+# AlertType
+
+<pre>
+m4_include(enum-AlertType.d.ts)
+</pre>
+
+m4_include(Footer.md)
+

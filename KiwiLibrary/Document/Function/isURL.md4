@@ -1,0 +1,9 @@
+# Function: isURL
+Check the given object is [URL](../Class/URL.md) object or not.
+
+<pre>
+m4_include(func-isURL.d.ts)
+</pre>
+
+m4_include(Footer.md)
+

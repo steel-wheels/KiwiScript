@@ -1,0 +1,9 @@
+# classk: Semaphore
+
+## Interface
+<pre>
+m4_include(Semaphore.d.ts)
+</pre>
+
+m4_include(Footer.md)
+

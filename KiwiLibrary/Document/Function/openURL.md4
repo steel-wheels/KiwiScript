@@ -1,0 +1,10 @@
+# function: openURL
+Open Web browser and show page for given URL
+
+## Interface
+<pre>
+m4_include(openURL.d.ts)
+</pre>
+
+m4_include(Footer.md)
+

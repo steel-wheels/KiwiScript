@@ -1,0 +1,9 @@
+# class: GraphicsContext
+
+## Interface
+<pre>
+m4_include(interface-GraphicsContextIF.d.ts)
+</pre>
+
+m4_include(Footer.md)
+

@@ -1,0 +1,6 @@
+{
+  application: "main.js",
+  threads: {
+      thread_0: "thread-0.js"
+    }
+}

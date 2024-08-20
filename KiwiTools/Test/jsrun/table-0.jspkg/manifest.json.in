@@ -1,0 +1,10 @@
+{
+  application: "main.ts"
+  tables: {
+    table_1: {
+      type: "table-0.d.ts"
+      data: "table-0.json"
+    }
+  }
+}
+

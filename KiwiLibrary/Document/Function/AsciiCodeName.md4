@@ -1,0 +1,22 @@
+# asciiCodeName function
+
+## <code>asciiCodeName</code> function
+Get the ascii code name for the given character.
+
+### Prototype
+
+<pre>
+asciiCodeName(code: Int32) -> String?
+</pre>
+
+### Parameter(s)
+|Name |Type   |Description                      |
+|:--- |:----  |:----                            |
+|code |Int32  |Character code to get the name   |
+
+### Return value
+The ascii code name of the given parameter.
+If it has no name, this value will be <code>null</code>.
+
+m4_include(Footer.md)
+

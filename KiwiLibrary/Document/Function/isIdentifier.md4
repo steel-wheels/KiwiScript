@@ -1,0 +1,10 @@
+# Function: isIdentifier
+Check the given string is identifier or not.
+The identifier contains letters, numbers or underline (<code>_</code>).
+
+<pre>
+m4_include(func-isIdentifier.d.ts)
+</pre>
+
+m4_include(Footer.md)
+

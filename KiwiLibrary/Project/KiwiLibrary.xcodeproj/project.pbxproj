@@ -1,0 +1,2128 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		050662F628E5D740008DBA32 /* KLValueType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050662F528E5D740008DBA32 /* KLValueType.swift */; };
+		050662F728E5D740008DBA32 /* KLValueType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050662F528E5D740008DBA32 /* KLValueType.swift */; };
+		050CD84A2AE2ABF400EEAEDC /* KLSpriteField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050CD8492AE2ABF400EEAEDC /* KLSpriteField.swift */; };
+		050CD84B2AE2ABF400EEAEDC /* KLSpriteField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050CD8492AE2ABF400EEAEDC /* KLSpriteField.swift */; };
+		0520F46127742701004DDA28 /* KLPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0520F46027742701004DDA28 /* KLPoint.swift */; };
+		0520F46227742701004DDA28 /* KLPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0520F46027742701004DDA28 /* KLPoint.swift */; };
+		0520F46D277429FA004DDA28 /* KLRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0520F46C277429FA004DDA28 /* KLRect.swift */; };
+		0520F46E277429FA004DDA28 /* KLRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0520F46C277429FA004DDA28 /* KLRect.swift */; };
+		0520F47327744F23004DDA28 /* KLSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0520F47227744F22004DDA28 /* KLSize.swift */; };
+		0520F47427744F23004DDA28 /* KLSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0520F47227744F22004DDA28 /* KLSize.swift */; };
+		0520F479277450F7004DDA28 /* KLRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0520F478277450F7004DDA28 /* KLRange.swift */; };
+		0520F47A277450F7004DDA28 /* KLRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0520F478277450F7004DDA28 /* KLRange.swift */; };
+		052A7F6629C492E500EC13F8 /* KiwiLibrary.js in CopyFiles */ = {isa = PBXBuildFile; fileRef = 052A7F6529C492D400EC13F8 /* KiwiLibrary.js */; };
+		052A7F6729C492F800EC13F8 /* KiwiLibrary.js in CopyFiles */ = {isa = PBXBuildFile; fileRef = 052A7F6529C492D400EC13F8 /* KiwiLibrary.js */; };
+		052CF60529CF19E500C67401 /* KLEscapeSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052CF60429CF19E500C67401 /* KLEscapeSequence.swift */; };
+		052CF60629CF19E500C67401 /* KLEscapeSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052CF60429CF19E500C67401 /* KLEscapeSequence.swift */; };
+		053D2DB8277A8E42008B6DA2 /* KLEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053D2DB7277A8E42008B6DA2 /* KLEnum.swift */; };
+		053D2DB9277A8E42008B6DA2 /* KLEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053D2DB7277A8E42008B6DA2 /* KLEnum.swift */; };
+		053F2C49253BDDCE009CFCA1 /* UTType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053F2C48253BDDCE009CFCA1 /* UTType.swift */; };
+		053F2C4F253BDEA8009CFCA1 /* UTURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053F2C4E253BDEA8009CFCA1 /* UTURL.swift */; };
+		0540D67D2516D4A100C5AE52 /* CoconutData.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0540D67C2516D4A100C5AE52 /* CoconutData.xcframework */; };
+		0540D6822516D4B300C5AE52 /* KiwiEngine.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0540D6812516D4B300C5AE52 /* KiwiEngine.xcframework */; };
+		0540D6852516D4D200C5AE52 /* CoconutData.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0540D67C2516D4A100C5AE52 /* CoconutData.xcframework */; };
+		0540D6882516D4E100C5AE52 /* KiwiEngine.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0540D6812516D4B300C5AE52 /* KiwiEngine.xcframework */; };
+		0543B051253B3A5D00A9BAA1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0543B050253B3A5D00A9BAA1 /* main.swift */; };
+		0546FF3729A4FF9C00573F95 /* KLStringStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0546FF3629A4FF9C00573F95 /* KLStringStream.swift */; };
+		0546FF3829A4FF9C00573F95 /* KLStringStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0546FF3629A4FF9C00573F95 /* KLStringStream.swift */; };
+		0547B6702A7A7C3700C67BA4 /* KLSpriteScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0547B66F2A7A7C3700C67BA4 /* KLSpriteScene.swift */; };
+		0547B6712A7A7C3700C67BA4 /* KLSpriteScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0547B66F2A7A7C3700C67BA4 /* KLSpriteScene.swift */; };
+		0549BFA82A680B1700939058 /* KLSpriteNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0549BFA72A680B1700939058 /* KLSpriteNode.swift */; };
+		0549BFA92A680B1700939058 /* KLSpriteNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0549BFA72A680B1700939058 /* KLSpriteNode.swift */; };
+		055D5170268CA8F700304205 /* KLContactDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055D516F268CA8F700304205 /* KLContactDatabase.swift */; };
+		055D5171268CA8F700304205 /* KLContactDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055D516F268CA8F700304205 /* KLContactDatabase.swift */; };
+		05657B5C272452990035235D /* KLCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05657B5B272452990035235D /* KLCollection.swift */; };
+		05657B5D272452990035235D /* KLCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05657B5B272452990035235D /* KLCollection.swift */; };
+		056D40002A708CB500B6B915 /* KLOval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056D3FFF2A708CB500B6B915 /* KLOval.swift */; };
+		056D40012A708CB500B6B915 /* KLOval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056D3FFF2A708CB500B6B915 /* KLOval.swift */; };
+		0576877B29CDEB86002D74E0 /* KLDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0576877A29CDEB86002D74E0 /* KLDate.swift */; };
+		0576877C29CDEB86002D74E0 /* KLDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0576877A29CDEB86002D74E0 /* KLDate.swift */; };
+		0578BA8D2A6CB30000F75E0E /* KLVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0578BA8C2A6CB30000F75E0E /* KLVector.swift */; };
+		0578BA8E2A6CB30000F75E0E /* KLVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0578BA8C2A6CB30000F75E0E /* KLVector.swift */; };
+		0579E34129A037AB00757977 /* KLToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0579E34029A037AB00757977 /* KLToken.swift */; };
+		0579E34229A037AB00757977 /* KLToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0579E34029A037AB00757977 /* KLToken.swift */; };
+		0591752A2ADBDBC5008DF945 /* KLSpriteAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059175292ADBDBC5008DF945 /* KLSpriteAction.swift */; };
+		0591752B2ADBDBC5008DF945 /* KLSpriteAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059175292ADBDBC5008DF945 /* KLSpriteAction.swift */; };
+		05950CA125C4304500D659A1 /* KLGraphicsContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05950CA025C4304500D659A1 /* KLGraphicsContext.swift */; };
+		05950CA225C4304500D659A1 /* KLGraphicsContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05950CA025C4304500D659A1 /* KLGraphicsContext.swift */; };
+		05974202295359880024EC5A /* CoconutData.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 050D1DB72581C64A00D968ED /* CoconutData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05974203295359900024EC5A /* KiwiLibrary.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 050D1DBE2581C71000D968ED /* KiwiLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05974204295359960024EC5A /* KiwiEngine.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 050D1DBB2581C6FF00D968ED /* KiwiEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0598000525CB5F5F00499B6E /* KLBitmapContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0598000425CB5F5F00499B6E /* KLBitmapContext.swift */; };
+		0598000625CB5F5F00499B6E /* KLBitmapContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0598000425CB5F5F00499B6E /* KLBitmapContext.swift */; };
+		05A1F452253BBBD500D4789F /* UTFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A1F451253BBBD400D4789F /* UTFileManager.swift */; };
+		05A1F456253BC0F500D4789F /* UTFontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A1F455253BC0F500D4789F /* UTFontManager.swift */; };
+		05A1F45A253BC19A00D4789F /* UTMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A1F459253BC19A00D4789F /* UTMath.swift */; };
+		05A1F45E253BC23900D4789F /* UTNativeValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A1F45D253BC23800D4789F /* UTNativeValue.swift */; };
+		05A1F479253BC76E00D4789F /* unit-test-0.js in Resources */ = {isa = PBXBuildFile; fileRef = 05A1F478253BC76E00D4789F /* unit-test-0.js */; };
+		05A1F47F253BCCC400D4789F /* unit-test-1.js in Resources */ = {isa = PBXBuildFile; fileRef = 05A1F47E253BCCC400D4789F /* unit-test-1.js */; };
+		05A1F489253BCE2600D4789F /* UTPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A1F488253BCE2600D4789F /* UTPreference.swift */; };
+		05A1F48F253BCEE200D4789F /* UTRun.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A1F48E253BCEE200D4789F /* UTRun.swift */; };
+		05A1F495253BD01300D4789F /* sample-1.js in Resources */ = {isa = PBXBuildFile; fileRef = 05A1F494253BD01300D4789F /* sample-1.js */; };
+		05A1F49F253BD75A00D4789F /* UTThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A1F49E253BD75A00D4789F /* UTThread.swift */; };
+		05A1F4A5253BD8BC00D4789F /* sample-0.jspkg in Resources */ = {isa = PBXBuildFile; fileRef = 05A1F4A4253BD8BC00D4789F /* sample-0.jspkg */; };
+		05A269E32A32197100BD5623 /* KLMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A269E22A32197100BD5623 /* KLMenuItem.swift */; };
+		05A269E42A32197100BD5623 /* KLMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A269E22A32197100BD5623 /* KLMenuItem.swift */; };
+		05A95B1A2516CD2800775737 /* KiwiLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 05A95B182516CD2800775737 /* KiwiLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05A95B282516CF4500775737 /* KiwiLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 05A95B262516CF4500775737 /* KiwiLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05A95B322516CF9900775737 /* KLFontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A95B302516CF9900775737 /* KLFontManager.swift */; };
+		05A95B332516CF9900775737 /* KLFontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A95B302516CF9900775737 /* KLFontManager.swift */; };
+		05A95B342516CF9900775737 /* KLCurses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A95B312516CF9900775737 /* KLCurses.swift */; };
+		05A95B352516CF9900775737 /* KLCurses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A95B312516CF9900775737 /* KLCurses.swift */; };
+		05A95B3D2516CFD400775737 /* KLCompiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A95B3B2516CFD400775737 /* KLCompiler.swift */; };
+		05A95B3E2516CFD400775737 /* KLCompiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A95B3B2516CFD400775737 /* KLCompiler.swift */; };
+		05A95B4E2516CFF300775737 /* KLProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A95B462516CFF300775737 /* KLProcess.swift */; };
+		05A95B4F2516CFF300775737 /* KLProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A95B462516CFF300775737 /* KLProcess.swift */; };
+		05A95B542516CFF300775737 /* KLThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A95B492516CFF300775737 /* KLThread.swift */; };
+		05A95B552516CFF300775737 /* KLThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A95B492516CFF300775737 /* KLThread.swift */; };
+		05A95B5A2516D01700775737 /* KLPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A95B592516D01700775737 /* KLPreference.swift */; };
+		05A95B5B2516D01700775737 /* KLPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A95B592516D01700775737 /* KLPreference.swift */; };
+		05A95B682516D03300775737 /* KLConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A95B602516D03300775737 /* KLConsole.swift */; };
+		05A95B692516D03300775737 /* KLConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A95B602516D03300775737 /* KLConsole.swift */; };
+		05A95B6A2516D03300775737 /* KLFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A95B612516D03300775737 /* KLFile.swift */; };
+		05A95B6B2516D03300775737 /* KLFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A95B612516D03300775737 /* KLFile.swift */; };
+		05A95B6C2516D03300775737 /* KLPipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A95B622516D03300775737 /* KLPipe.swift */; };
+		05A95B6D2516D03300775737 /* KLPipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A95B622516D03300775737 /* KLPipe.swift */; };
+		05A95B6E2516D03300775737 /* KLFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A95B632516D03300775737 /* KLFileManager.swift */; };
+		05A95B6F2516D03300775737 /* KLFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A95B632516D03300775737 /* KLFileManager.swift */; };
+		05A95B702516D03300775737 /* KLNativeValueFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A95B642516D03300775737 /* KLNativeValueFile.swift */; };
+		05A95B712516D03300775737 /* KLNativeValueFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A95B642516D03300775737 /* KLNativeValueFile.swift */; };
+		05A95B722516D03300775737 /* KLURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A95B652516D03300775737 /* KLURL.swift */; };
+		05A95B732516D03300775737 /* KLURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A95B652516D03300775737 /* KLURL.swift */; };
+		05A95B812516D06900775737 /* KLImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A95B7D2516D06900775737 /* KLImage.swift */; };
+		05A95B822516D06900775737 /* KLImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A95B7D2516D06900775737 /* KLImage.swift */; };
+		05A95B852516D06900775737 /* KLChar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A95B7F2516D06900775737 /* KLChar.swift */; };
+		05A95B862516D06900775737 /* KLChar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A95B7F2516D06900775737 /* KLChar.swift */; };
+		05A95B962516D08500775737 /* KLNativeValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A95B8E2516D08500775737 /* KLNativeValue.swift */; };
+		05A95B972516D08500775737 /* KLNativeValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A95B8E2516D08500775737 /* KLNativeValue.swift */; };
+		05A95B982516D08500775737 /* KLScriptValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A95B8F2516D08500775737 /* KLScriptValue.swift */; };
+		05A95B992516D08500775737 /* KLScriptValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A95B8F2516D08500775737 /* KLScriptValue.swift */; };
+		05A95B9C2516D08500775737 /* KLType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A95B912516D08500775737 /* KLType.swift */; };
+		05A95B9D2516D08500775737 /* KLType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A95B912516D08500775737 /* KLType.swift */; };
+		05AEC61A286FCFE900A1ED09 /* KLComparisonResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AEC619286FCFE900A1ED09 /* KLComparisonResult.swift */; };
+		05AEC61B286FCFE900A1ED09 /* KLComparisonResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AEC619286FCFE900A1ED09 /* KLComparisonResult.swift */; };
+		05B4EF47267F886A00E5D08F /* CoconutDatabase.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05B4EF46267F886A00E5D08F /* CoconutDatabase.xcframework */; };
+		05B4EF4B267F888100E5D08F /* CoconutDatabase.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05B4EF46267F886A00E5D08F /* CoconutDatabase.xcframework */; };
+		05BD118126C0179B00961535 /* KLRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BD118026C0179B00961535 /* KLRecord.swift */; };
+		05BD118226C0179B00961535 /* KLRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BD118026C0179B00961535 /* KLRecord.swift */; };
+		05BD118726C01AD200961535 /* KLTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BD118626C01AD200961535 /* KLTable.swift */; };
+		05BD118826C01AD200961535 /* KLTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BD118626C01AD200961535 /* KLTable.swift */; };
+		05C14F5B28577CE7009C05D4 /* KLValueSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C14F5A28577CE7009C05D4 /* KLValueSet.swift */; };
+		05C14F5C28577CE7009C05D4 /* KLValueSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C14F5A28577CE7009C05D4 /* KLValueSet.swift */; };
+		05CB8E1E29AB798100F1C85B /* KLEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CB8E1D29AB798100F1C85B /* KLEnvironment.swift */; };
+		05CB8E1F29AB798100F1C85B /* KLEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CB8E1D29AB798100F1C85B /* KLEnvironment.swift */; };
+		05CBE6E42AB7394F00A4EB98 /* KLErrorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CBE6E32AB7394F00A4EB98 /* KLErrorCode.swift */; };
+		05CBE6E52AB7394F00A4EB98 /* KLErrorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CBE6E32AB7394F00A4EB98 /* KLErrorCode.swift */; };
+		05DE577B2969B56600C87A31 /* KLValueInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DE577A2969B56600C87A31 /* KLValueInterface.swift */; };
+		05DE577C2969B56600C87A31 /* KLValueInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DE577A2969B56600C87A31 /* KLValueInterface.swift */; };
+		05DEABBA297D230600EA4D73 /* KLTerminalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DEABB9297D230600EA4D73 /* KLTerminalController.swift */; };
+		05DEABBB297D230600EA4D73 /* KLTerminalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DEABB9297D230600EA4D73 /* KLTerminalController.swift */; };
+		05E08D7C25F904DB001E48EE /* UTProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E08D7B25F904DB001E48EE /* UTProcess.swift */; };
+		05E6BB3629E0E6E200543428 /* KLProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E6BB3529E0E6E200543428 /* KLProperties.swift */; };
+		05E6BB3729E0E6E200543428 /* KLProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E6BB3529E0E6E200543428 /* KLProperties.swift */; };
+		05EA7CFF2AEC783B00E317A9 /* KLTrigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7CFE2AEC783B00E317A9 /* KLTrigger.swift */; };
+		05EA7D002AEC783B00E317A9 /* KLTrigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA7CFE2AEC783B00E317A9 /* KLTrigger.swift */; };
+		05EBD8B625E4982200CA1480 /* KLColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EBD8B525E4982200CA1480 /* KLColor.swift */; };
+		05EBD8B725E4982200CA1480 /* KLColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EBD8B525E4982200CA1480 /* KLColor.swift */; };
+		05ECF76129EA58EF0031C60A /* KiwiLibrary.d.ts in CopyFiles */ = {isa = PBXBuildFile; fileRef = 05ECF75F29EA58B80031C60A /* KiwiLibrary.d.ts */; };
+		05ECF76329EA59110031C60A /* KiwiLibrary.d.ts in CopyFiles */ = {isa = PBXBuildFile; fileRef = 05ECF75F29EA58B80031C60A /* KiwiLibrary.d.ts */; };
+		05EE5C8526E79316005026B3 /* KLText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EE5C8426E79316005026B3 /* KLText.swift */; };
+		05EE5C8626E79316005026B3 /* KLText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EE5C8426E79316005026B3 /* KLText.swift */; };
+		05F3DC3725D8C004003EBD1E /* KLBitmapData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F3DC3625D8C004003EBD1E /* KLBitmapData.swift */; };
+		05F3DC3825D8C004003EBD1E /* KLBitmapData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F3DC3625D8C004003EBD1E /* KLBitmapData.swift */; };
+		05F8571A2609BA61003D14FF /* UTColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F857192609BA61003D14FF /* UTColor.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0543305228A326DE0096642B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05A95B0A2516CD0300775737 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0543B04D253B3A5D00A9BAA1;
+			remoteInfo = UnitTest;
+		};
+		056068012517597D0034F8BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05A95B0A2516CD0300775737 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05A95B142516CD2800775737;
+			remoteInfo = KiwiLibrary_macOS;
+		};
+		05606803251759820034F8BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05A95B0A2516CD0300775737 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05A95B232516CF4500775737;
+			remoteInfo = KiwiLibrary_iOS;
+		};
+		05720622263E4EDF00CC4BBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05A95B0A2516CD0300775737 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 050A3E48263BED72008172E7;
+			remoteInfo = Transpile;
+		};
+		05720624263E4EE500CC4BBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05A95B0A2516CD0300775737 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 050A3E48263BED72008172E7;
+			remoteInfo = Transpile;
+		};
+		05A1F473253BC6F600D4789F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05A95B0A2516CD0300775737 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05A1F468253BC6E100D4789F;
+			remoteInfo = UnitTestBundle;
+		};
+		05A1F475253BC6FC00D4789F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05A95B0A2516CD0300775737 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 056067FD251759740034F8BD;
+			remoteInfo = Install;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		05292786263D6DF600A8CD49 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Library;
+			dstSubfolderSpec = 7;
+			files = (
+				052A7F6729C492F800EC13F8 /* KiwiLibrary.js in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		052927EA263D6F2900A8CD49 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Library;
+			dstSubfolderSpec = 7;
+			files = (
+				052A7F6629C492E500EC13F8 /* KiwiLibrary.js in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		059741F92953584B0024EC5A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				05974204295359960024EC5A /* KiwiEngine.framework in CopyFiles */,
+				05974203295359900024EC5A /* KiwiLibrary.framework in CopyFiles */,
+				05974202295359880024EC5A /* CoconutData.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05ECF76029EA58DA0031C60A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Library/types;
+			dstSubfolderSpec = 7;
+			files = (
+				05ECF76129EA58EF0031C60A /* KiwiLibrary.d.ts in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05ECF76229EA59010031C60A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Library/types;
+			dstSubfolderSpec = 7;
+			files = (
+				05ECF76329EA59110031C60A /* KiwiLibrary.d.ts in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		050662F528E5D740008DBA32 /* KLValueType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLValueType.swift; sourceTree = "<group>"; };
+		050CD8492AE2ABF400EEAEDC /* KLSpriteField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLSpriteField.swift; sourceTree = "<group>"; };
+		050D1DB72581C64A00D968ED /* CoconutData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoconutData.framework; path = ../../../../local/Frameworks/macos/CoconutData.framework; sourceTree = "<group>"; };
+		050D1DBB2581C6FF00D968ED /* KiwiEngine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KiwiEngine.framework; path = ../../../../local/Frameworks/macos/KiwiEngine.framework; sourceTree = "<group>"; };
+		050D1DBE2581C71000D968ED /* KiwiLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KiwiLibrary.framework; path = ../../../../local/Frameworks/macos/KiwiLibrary.framework; sourceTree = "<group>"; };
+		0520F46027742701004DDA28 /* KLPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLPoint.swift; sourceTree = "<group>"; };
+		0520F46C277429FA004DDA28 /* KLRect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLRect.swift; sourceTree = "<group>"; };
+		0520F47227744F22004DDA28 /* KLSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLSize.swift; sourceTree = "<group>"; };
+		0520F478277450F7004DDA28 /* KLRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLRange.swift; sourceTree = "<group>"; };
+		052A7F6529C492D400EC13F8 /* KiwiLibrary.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = KiwiLibrary.js; sourceTree = "<group>"; };
+		052CF60429CF19E500C67401 /* KLEscapeSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLEscapeSequence.swift; sourceTree = "<group>"; };
+		053D2DB7277A8E42008B6DA2 /* KLEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLEnum.swift; sourceTree = "<group>"; };
+		053F2C48253BDDCE009CFCA1 /* UTType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UTType.swift; sourceTree = "<group>"; };
+		053F2C4E253BDEA8009CFCA1 /* UTURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UTURL.swift; sourceTree = "<group>"; };
+		0540D67C2516D4A100C5AE52 /* CoconutData.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CoconutData.xcframework; path = ../../../../Library/Frameworks/CoconutData.xcframework; sourceTree = "<group>"; };
+		0540D6812516D4B300C5AE52 /* KiwiEngine.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KiwiEngine.xcframework; path = ../../../../Library/Frameworks/KiwiEngine.xcframework; sourceTree = "<group>"; };
+		0543B04E253B3A5D00A9BAA1 /* UnitTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = UnitTest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0543B050253B3A5D00A9BAA1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		0543B058253B3A9F00A9BAA1 /* KiwiLibrary.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KiwiLibrary.xcframework; path = ../../../../Library/Frameworks/KiwiLibrary.xcframework; sourceTree = "<group>"; };
+		0546FF3629A4FF9C00573F95 /* KLStringStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLStringStream.swift; sourceTree = "<group>"; };
+		0547B66F2A7A7C3700C67BA4 /* KLSpriteScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLSpriteScene.swift; sourceTree = "<group>"; };
+		0549BFA72A680B1700939058 /* KLSpriteNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLSpriteNode.swift; sourceTree = "<group>"; };
+		055D516F268CA8F700304205 /* KLContactDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLContactDatabase.swift; sourceTree = "<group>"; };
+		05657B5B272452990035235D /* KLCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLCollection.swift; sourceTree = "<group>"; };
+		056D3FFF2A708CB500B6B915 /* KLOval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLOval.swift; sourceTree = "<group>"; };
+		0576877A29CDEB86002D74E0 /* KLDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLDate.swift; sourceTree = "<group>"; };
+		0578BA8C2A6CB30000F75E0E /* KLVector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLVector.swift; sourceTree = "<group>"; };
+		0579E34029A037AB00757977 /* KLToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLToken.swift; sourceTree = "<group>"; };
+		059175292ADBDBC5008DF945 /* KLSpriteAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLSpriteAction.swift; sourceTree = "<group>"; };
+		05950CA025C4304500D659A1 /* KLGraphicsContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLGraphicsContext.swift; sourceTree = "<group>"; };
+		0598000425CB5F5F00499B6E /* KLBitmapContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLBitmapContext.swift; sourceTree = "<group>"; };
+		05A1F451253BBBD400D4789F /* UTFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UTFileManager.swift; sourceTree = "<group>"; };
+		05A1F455253BC0F500D4789F /* UTFontManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UTFontManager.swift; sourceTree = "<group>"; };
+		05A1F459253BC19A00D4789F /* UTMath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UTMath.swift; sourceTree = "<group>"; };
+		05A1F45D253BC23800D4789F /* UTNativeValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UTNativeValue.swift; sourceTree = "<group>"; };
+		05A1F469253BC6E100D4789F /* UnitTest.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTest.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		05A1F46B253BC6E200D4789F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05A1F478253BC76E00D4789F /* unit-test-0.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "unit-test-0.js"; sourceTree = "<group>"; };
+		05A1F47E253BCCC400D4789F /* unit-test-1.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "unit-test-1.js"; sourceTree = "<group>"; };
+		05A1F488253BCE2600D4789F /* UTPreference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UTPreference.swift; sourceTree = "<group>"; };
+		05A1F48E253BCEE200D4789F /* UTRun.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UTRun.swift; sourceTree = "<group>"; };
+		05A1F494253BD01300D4789F /* sample-1.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "sample-1.js"; sourceTree = "<group>"; };
+		05A1F49E253BD75A00D4789F /* UTThread.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UTThread.swift; sourceTree = "<group>"; };
+		05A1F4A4253BD8BC00D4789F /* sample-0.jspkg */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "sample-0.jspkg"; sourceTree = "<group>"; };
+		05A269E22A32197100BD5623 /* KLMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLMenuItem.swift; sourceTree = "<group>"; };
+		05A95B152516CD2800775737 /* KiwiLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KiwiLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		05A95B182516CD2800775737 /* KiwiLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KiwiLibrary.h; sourceTree = "<group>"; };
+		05A95B192516CD2800775737 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05A95B242516CF4500775737 /* KiwiLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KiwiLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		05A95B262516CF4500775737 /* KiwiLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KiwiLibrary.h; sourceTree = "<group>"; };
+		05A95B272516CF4500775737 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05A95B302516CF9900775737 /* KLFontManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLFontManager.swift; sourceTree = "<group>"; };
+		05A95B312516CF9900775737 /* KLCurses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLCurses.swift; sourceTree = "<group>"; };
+		05A95B3B2516CFD400775737 /* KLCompiler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLCompiler.swift; sourceTree = "<group>"; };
+		05A95B462516CFF300775737 /* KLProcess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLProcess.swift; sourceTree = "<group>"; };
+		05A95B492516CFF300775737 /* KLThread.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLThread.swift; sourceTree = "<group>"; };
+		05A95B592516D01700775737 /* KLPreference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLPreference.swift; sourceTree = "<group>"; };
+		05A95B602516D03300775737 /* KLConsole.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLConsole.swift; sourceTree = "<group>"; };
+		05A95B612516D03300775737 /* KLFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLFile.swift; sourceTree = "<group>"; };
+		05A95B622516D03300775737 /* KLPipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLPipe.swift; sourceTree = "<group>"; };
+		05A95B632516D03300775737 /* KLFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLFileManager.swift; sourceTree = "<group>"; };
+		05A95B642516D03300775737 /* KLNativeValueFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLNativeValueFile.swift; sourceTree = "<group>"; };
+		05A95B652516D03300775737 /* KLURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLURL.swift; sourceTree = "<group>"; };
+		05A95B7D2516D06900775737 /* KLImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLImage.swift; sourceTree = "<group>"; };
+		05A95B7F2516D06900775737 /* KLChar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLChar.swift; sourceTree = "<group>"; };
+		05A95B8E2516D08500775737 /* KLNativeValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLNativeValue.swift; sourceTree = "<group>"; };
+		05A95B8F2516D08500775737 /* KLScriptValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLScriptValue.swift; sourceTree = "<group>"; };
+		05A95B912516D08500775737 /* KLType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLType.swift; sourceTree = "<group>"; };
+		05AEC619286FCFE900A1ED09 /* KLComparisonResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLComparisonResult.swift; sourceTree = "<group>"; };
+		05B4EF46267F886A00E5D08F /* CoconutDatabase.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CoconutDatabase.xcframework; path = ../../../../Library/Frameworks/CoconutDatabase.xcframework; sourceTree = "<group>"; };
+		05B4EF4F267F88F300E5D08F /* CoconutDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoconutDatabase.framework; path = "../../../../Library/Frameworks/CoconutDatabase.xcframework/macos-arm64_x86_64/CoconutDatabase.framework"; sourceTree = "<group>"; };
+		05BD118026C0179B00961535 /* KLRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLRecord.swift; sourceTree = "<group>"; };
+		05BD118626C01AD200961535 /* KLTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLTable.swift; sourceTree = "<group>"; };
+		05C14F5A28577CE7009C05D4 /* KLValueSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLValueSet.swift; sourceTree = "<group>"; };
+		05CB8E1D29AB798100F1C85B /* KLEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLEnvironment.swift; sourceTree = "<group>"; };
+		05CBE6E32AB7394F00A4EB98 /* KLErrorCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLErrorCode.swift; sourceTree = "<group>"; };
+		05DE577A2969B56600C87A31 /* KLValueInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLValueInterface.swift; sourceTree = "<group>"; };
+		05DEABB9297D230600EA4D73 /* KLTerminalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLTerminalController.swift; sourceTree = "<group>"; };
+		05E08D7B25F904DB001E48EE /* UTProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UTProcess.swift; sourceTree = "<group>"; };
+		05E6BB3529E0E6E200543428 /* KLProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLProperties.swift; sourceTree = "<group>"; };
+		05EA7CFE2AEC783B00E317A9 /* KLTrigger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLTrigger.swift; sourceTree = "<group>"; };
+		05EBD8B525E4982200CA1480 /* KLColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLColor.swift; sourceTree = "<group>"; };
+		05ECF75F29EA58B80031C60A /* KiwiLibrary.d.ts */ = {isa = PBXFileReference; lastKnownFileType = text; path = KiwiLibrary.d.ts; sourceTree = "<group>"; };
+		05EE5C8426E79316005026B3 /* KLText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLText.swift; sourceTree = "<group>"; };
+		05F3DC3625D8C004003EBD1E /* KLBitmapData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLBitmapData.swift; sourceTree = "<group>"; };
+		05F857192609BA61003D14FF /* UTColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UTColor.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0543B04B253B3A5D00A9BAA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05A1F466253BC6E100D4789F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05A95B122516CD2800775737 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05B4EF47267F886A00E5D08F /* CoconutDatabase.xcframework in Frameworks */,
+				0540D67D2516D4A100C5AE52 /* CoconutData.xcframework in Frameworks */,
+				0540D6822516D4B300C5AE52 /* KiwiEngine.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05A95B212516CF4500775737 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05B4EF4B267F888100E5D08F /* CoconutDatabase.xcframework in Frameworks */,
+				0540D6852516D4D200C5AE52 /* CoconutData.xcframework in Frameworks */,
+				0540D6882516D4E100C5AE52 /* KiwiEngine.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0540D67B2516D4A100C5AE52 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05B4EF4F267F88F300E5D08F /* CoconutDatabase.framework */,
+				050D1DBE2581C71000D968ED /* KiwiLibrary.framework */,
+				050D1DBB2581C6FF00D968ED /* KiwiEngine.framework */,
+				050D1DB72581C64A00D968ED /* CoconutData.framework */,
+				05B4EF46267F886A00E5D08F /* CoconutDatabase.xcframework */,
+				0543B058253B3A9F00A9BAA1 /* KiwiLibrary.xcframework */,
+				0540D6812516D4B300C5AE52 /* KiwiEngine.xcframework */,
+				0540D67C2516D4A100C5AE52 /* CoconutData.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0543B04F253B3A5D00A9BAA1 /* UnitTest */ = {
+			isa = PBXGroup;
+			children = (
+				0543B050253B3A5D00A9BAA1 /* main.swift */,
+				05F857192609BA61003D14FF /* UTColor.swift */,
+				05A1F451253BBBD400D4789F /* UTFileManager.swift */,
+				05A1F455253BC0F500D4789F /* UTFontManager.swift */,
+				05A1F459253BC19A00D4789F /* UTMath.swift */,
+				05A1F45D253BC23800D4789F /* UTNativeValue.swift */,
+				05A1F488253BCE2600D4789F /* UTPreference.swift */,
+				05E08D7B25F904DB001E48EE /* UTProcess.swift */,
+				05A1F48E253BCEE200D4789F /* UTRun.swift */,
+				05A1F49E253BD75A00D4789F /* UTThread.swift */,
+				053F2C48253BDDCE009CFCA1 /* UTType.swift */,
+				053F2C4E253BDEA8009CFCA1 /* UTURL.swift */,
+			);
+			path = UnitTest;
+			sourceTree = "<group>";
+		};
+		0543B064253B3B3100A9BAA1 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				05A1F46A253BC6E200D4789F /* UnitTestBundle */,
+				0543B04F253B3A5D00A9BAA1 /* UnitTest */,
+			);
+			name = Test;
+			path = ../Test;
+			sourceTree = "<group>";
+		};
+		0579E33F29A0376200757977 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				0579E34029A037AB00757977 /* KLToken.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		05950C9F25C42FE500D659A1 /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				0598000425CB5F5F00499B6E /* KLBitmapContext.swift */,
+				05950CA025C4304500D659A1 /* KLGraphicsContext.swift */,
+				056D3FFF2A708CB500B6B915 /* KLOval.swift */,
+				0520F46027742701004DDA28 /* KLPoint.swift */,
+				0520F46C277429FA004DDA28 /* KLRect.swift */,
+				0520F47227744F22004DDA28 /* KLSize.swift */,
+				059175292ADBDBC5008DF945 /* KLSpriteAction.swift */,
+				050CD8492AE2ABF400EEAEDC /* KLSpriteField.swift */,
+				0549BFA72A680B1700939058 /* KLSpriteNode.swift */,
+				0547B66F2A7A7C3700C67BA4 /* KLSpriteScene.swift */,
+				0578BA8C2A6CB30000F75E0E /* KLVector.swift */,
+			);
+			path = Graphics;
+			sourceTree = "<group>";
+		};
+		05A1F46A253BC6E200D4789F /* UnitTestBundle */ = {
+			isa = PBXGroup;
+			children = (
+				05A1F477253BC73D00D4789F /* Resource */,
+				05A1F46B253BC6E200D4789F /* Info.plist */,
+			);
+			path = UnitTestBundle;
+			sourceTree = "<group>";
+		};
+		05A1F477253BC73D00D4789F /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				05A1F4A4253BD8BC00D4789F /* sample-0.jspkg */,
+				05A1F494253BD01300D4789F /* sample-1.js */,
+				05A1F47E253BCCC400D4789F /* unit-test-1.js */,
+				05A1F478253BC76E00D4789F /* unit-test-0.js */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		05A95B092516CD0300775737 = {
+			isa = PBXGroup;
+			children = (
+				05A95B2E2516CF5100775737 /* Source */,
+				05C0378425186FB0002A9C41 /* Resource */,
+				05A95B172516CD2800775737 /* KiwiLibrary_macOS */,
+				05A95B252516CF4500775737 /* KiwiLibrary_iOS */,
+				0543B064253B3B3100A9BAA1 /* Test */,
+				05A95B162516CD2800775737 /* Products */,
+				0540D67B2516D4A100C5AE52 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		05A95B162516CD2800775737 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05A95B152516CD2800775737 /* KiwiLibrary.framework */,
+				05A95B242516CF4500775737 /* KiwiLibrary.framework */,
+				0543B04E253B3A5D00A9BAA1 /* UnitTest */,
+				05A1F469253BC6E100D4789F /* UnitTest.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		05A95B172516CD2800775737 /* KiwiLibrary_macOS */ = {
+			isa = PBXGroup;
+			children = (
+				05A95B182516CD2800775737 /* KiwiLibrary.h */,
+				05A95B192516CD2800775737 /* Info.plist */,
+			);
+			path = KiwiLibrary_macOS;
+			sourceTree = "<group>";
+		};
+		05A95B252516CF4500775737 /* KiwiLibrary_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				05A95B262516CF4500775737 /* KiwiLibrary.h */,
+				05A95B272516CF4500775737 /* Info.plist */,
+			);
+			path = KiwiLibrary_iOS;
+			sourceTree = "<group>";
+		};
+		05A95B2E2516CF5100775737 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				05A95B8B2516D06E00775737 /* Base */,
+				05A95B7C2516D05A00775737 /* Data */,
+				05B4EF54267F896100E5D08F /* Database */,
+				05A95B5E2516D02100775737 /* File */,
+				05950C9F25C42FE500D659A1 /* Graphics */,
+				0579E33F29A0376200757977 /* Parser */,
+				05A95B582516D00600775737 /* Preference */,
+				05A95B432516CFE000775737 /* Process */,
+				05A95B3A2516CFC000775737 /* Setup */,
+				05A95B2F2516CF8300775737 /* Terminal */,
+			);
+			name = Source;
+			path = ../Source;
+			sourceTree = "<group>";
+		};
+		05A95B2F2516CF8300775737 /* Terminal */ = {
+			isa = PBXGroup;
+			children = (
+				05A95B312516CF9900775737 /* KLCurses.swift */,
+				05A95B302516CF9900775737 /* KLFontManager.swift */,
+			);
+			path = Terminal;
+			sourceTree = "<group>";
+		};
+		05A95B3A2516CFC000775737 /* Setup */ = {
+			isa = PBXGroup;
+			children = (
+				05A95B3B2516CFD400775737 /* KLCompiler.swift */,
+			);
+			path = Setup;
+			sourceTree = "<group>";
+		};
+		05A95B432516CFE000775737 /* Process */ = {
+			isa = PBXGroup;
+			children = (
+				05CBE6E32AB7394F00A4EB98 /* KLErrorCode.swift */,
+				05A95B462516CFF300775737 /* KLProcess.swift */,
+				05A95B492516CFF300775737 /* KLThread.swift */,
+				05EA7CFE2AEC783B00E317A9 /* KLTrigger.swift */,
+				05CB8E1D29AB798100F1C85B /* KLEnvironment.swift */,
+			);
+			path = Process;
+			sourceTree = "<group>";
+		};
+		05A95B582516D00600775737 /* Preference */ = {
+			isa = PBXGroup;
+			children = (
+				05A95B592516D01700775737 /* KLPreference.swift */,
+			);
+			path = Preference;
+			sourceTree = "<group>";
+		};
+		05A95B5E2516D02100775737 /* File */ = {
+			isa = PBXGroup;
+			children = (
+				05A95B602516D03300775737 /* KLConsole.swift */,
+				05A95B612516D03300775737 /* KLFile.swift */,
+				05A95B632516D03300775737 /* KLFileManager.swift */,
+				05A95B642516D03300775737 /* KLNativeValueFile.swift */,
+				05A95B622516D03300775737 /* KLPipe.swift */,
+				05DEABB9297D230600EA4D73 /* KLTerminalController.swift */,
+				05A95B652516D03300775737 /* KLURL.swift */,
+			);
+			path = File;
+			sourceTree = "<group>";
+		};
+		05A95B7C2516D05A00775737 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				05F3DC3625D8C004003EBD1E /* KLBitmapData.swift */,
+				05657B5B272452990035235D /* KLCollection.swift */,
+				05EBD8B525E4982200CA1480 /* KLColor.swift */,
+				05AEC619286FCFE900A1ED09 /* KLComparisonResult.swift */,
+				05A95B7F2516D06900775737 /* KLChar.swift */,
+				0576877A29CDEB86002D74E0 /* KLDate.swift */,
+				053D2DB7277A8E42008B6DA2 /* KLEnum.swift */,
+				052CF60429CF19E500C67401 /* KLEscapeSequence.swift */,
+				05A95B7D2516D06900775737 /* KLImage.swift */,
+				05A269E22A32197100BD5623 /* KLMenuItem.swift */,
+				05E6BB3529E0E6E200543428 /* KLProperties.swift */,
+				0520F478277450F7004DDA28 /* KLRange.swift */,
+				05BD118026C0179B00961535 /* KLRecord.swift */,
+				0546FF3629A4FF9C00573F95 /* KLStringStream.swift */,
+				05BD118626C01AD200961535 /* KLTable.swift */,
+				05EE5C8426E79316005026B3 /* KLText.swift */,
+				05DE577A2969B56600C87A31 /* KLValueInterface.swift */,
+				05C14F5A28577CE7009C05D4 /* KLValueSet.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		05A95B8B2516D06E00775737 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				05A95B8E2516D08500775737 /* KLNativeValue.swift */,
+				05A95B8F2516D08500775737 /* KLScriptValue.swift */,
+				050662F528E5D740008DBA32 /* KLValueType.swift */,
+				05A95B912516D08500775737 /* KLType.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		05B4EF54267F896100E5D08F /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				055D516F268CA8F700304205 /* KLContactDatabase.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		05C0378425186FB0002A9C41 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				05C0378525186FD9002A9C41 /* Library */,
+			);
+			name = Resource;
+			path = ../Resource;
+			sourceTree = "<group>";
+		};
+		05C0378525186FD9002A9C41 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				05ECF75E29EA58700031C60A /* types */,
+				052A7F6529C492D400EC13F8 /* KiwiLibrary.js */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		05ECF75E29EA58700031C60A /* types */ = {
+			isa = PBXGroup;
+			children = (
+				05ECF75F29EA58B80031C60A /* KiwiLibrary.d.ts */,
+			);
+			path = types;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		05A95B102516CD2800775737 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05A95B1A2516CD2800775737 /* KiwiLibrary.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05A95B1F2516CF4500775737 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05A95B282516CF4500775737 /* KiwiLibrary.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXLegacyTarget section */
+		050A3E48263BED72008172E7 /* Transpile */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "-f ../../Script/transpile.mk";
+			buildConfigurationList = 050A3E4B263BED72008172E7 /* Build configuration list for PBXLegacyTarget "Transpile" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = Transpile;
+			passBuildSettingsInEnvironment = 1;
+			productName = Transpile;
+		};
+		0543304B28A326CC0096642B /* Check */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "-f ../../Script/unit_test.mk";
+			buildConfigurationList = 0543304C28A326CC0096642B /* Build configuration list for PBXLegacyTarget "Check" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "";
+			dependencies = (
+				0543305328A326DE0096642B /* PBXTargetDependency */,
+			);
+			name = Check;
+			passBuildSettingsInEnvironment = 1;
+			productName = Check;
+		};
+		056067FD251759740034F8BD /* Install */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "-f ../../Script/install_xc.mk";
+			buildConfigurationList = 05606800251759740034F8BD /* Build configuration list for PBXLegacyTarget "Install" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "";
+			dependencies = (
+				05606804251759820034F8BD /* PBXTargetDependency */,
+				056068022517597D0034F8BD /* PBXTargetDependency */,
+			);
+			name = Install;
+			passBuildSettingsInEnvironment = 1;
+			productName = Install;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		0543B04D253B3A5D00A9BAA1 /* UnitTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0543B054253B3A5D00A9BAA1 /* Build configuration list for PBXNativeTarget "UnitTest" */;
+			buildPhases = (
+				0543B04A253B3A5D00A9BAA1 /* Sources */,
+				0543B04B253B3A5D00A9BAA1 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05A1F474253BC6F600D4789F /* PBXTargetDependency */,
+			);
+			name = UnitTest;
+			productName = UnitTest;
+			productReference = 0543B04E253B3A5D00A9BAA1 /* UnitTest */;
+			productType = "com.apple.product-type.tool";
+		};
+		05A1F468253BC6E100D4789F /* UnitTestBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05A1F46C253BC6E200D4789F /* Build configuration list for PBXNativeTarget "UnitTestBundle" */;
+			buildPhases = (
+				05A1F465253BC6E100D4789F /* Sources */,
+				05A1F466253BC6E100D4789F /* Frameworks */,
+				05A1F467253BC6E100D4789F /* Resources */,
+				059741F92953584B0024EC5A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05A1F476253BC6FC00D4789F /* PBXTargetDependency */,
+			);
+			name = UnitTestBundle;
+			productName = UnitTestBundle;
+			productReference = 05A1F469253BC6E100D4789F /* UnitTest.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		05A95B142516CD2800775737 /* KiwiLibrary_macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05A95B1B2516CD2800775737 /* Build configuration list for PBXNativeTarget "KiwiLibrary_macOS" */;
+			buildPhases = (
+				05A95B102516CD2800775737 /* Headers */,
+				05A95B112516CD2800775737 /* Sources */,
+				05A95B122516CD2800775737 /* Frameworks */,
+				05292786263D6DF600A8CD49 /* CopyFiles */,
+				05ECF76029EA58DA0031C60A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05720623263E4EDF00CC4BBB /* PBXTargetDependency */,
+			);
+			name = KiwiLibrary_macOS;
+			productName = KiwiLibrary_macOS;
+			productReference = 05A95B152516CD2800775737 /* KiwiLibrary.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		05A95B232516CF4500775737 /* KiwiLibrary_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05A95B292516CF4500775737 /* Build configuration list for PBXNativeTarget "KiwiLibrary_iOS" */;
+			buildPhases = (
+				05A95B1F2516CF4500775737 /* Headers */,
+				05A95B202516CF4500775737 /* Sources */,
+				05A95B212516CF4500775737 /* Frameworks */,
+				052927EA263D6F2900A8CD49 /* CopyFiles */,
+				05ECF76229EA59010031C60A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05720625263E4EE500CC4BBB /* PBXTargetDependency */,
+			);
+			name = KiwiLibrary_iOS;
+			productName = KiwiLibrary_iOS;
+			productReference = 05A95B242516CF4500775737 /* KiwiLibrary.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		05A95B0A2516CD0300775737 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					050A3E48263BED72008172E7 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					0543304B28A326CC0096642B = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					0543B04D253B3A5D00A9BAA1 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					056067FD251759740034F8BD = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					05A1F468253BC6E100D4789F = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					05A95B142516CD2800775737 = {
+						CreatedOnToolsVersion = 12.0;
+						LastSwiftMigration = 1200;
+					};
+					05A95B232516CF4500775737 = {
+						CreatedOnToolsVersion = 12.0;
+						LastSwiftMigration = 1200;
+					};
+				};
+			};
+			buildConfigurationList = 05A95B0D2516CD0300775737 /* Build configuration list for PBXProject "KiwiLibrary" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 05A95B092516CD0300775737;
+			productRefGroup = 05A95B162516CD2800775737 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				05A95B142516CD2800775737 /* KiwiLibrary_macOS */,
+				05A95B232516CF4500775737 /* KiwiLibrary_iOS */,
+				050A3E48263BED72008172E7 /* Transpile */,
+				056067FD251759740034F8BD /* Install */,
+				05A1F468253BC6E100D4789F /* UnitTestBundle */,
+				0543B04D253B3A5D00A9BAA1 /* UnitTest */,
+				0543304B28A326CC0096642B /* Check */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		05A1F467253BC6E100D4789F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05A1F47F253BCCC400D4789F /* unit-test-1.js in Resources */,
+				05A1F479253BC76E00D4789F /* unit-test-0.js in Resources */,
+				05A1F4A5253BD8BC00D4789F /* sample-0.jspkg in Resources */,
+				05A1F495253BD01300D4789F /* sample-1.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0543B04A253B3A5D00A9BAA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05A1F49F253BD75A00D4789F /* UTThread.swift in Sources */,
+				05E08D7C25F904DB001E48EE /* UTProcess.swift in Sources */,
+				05F8571A2609BA61003D14FF /* UTColor.swift in Sources */,
+				05A1F456253BC0F500D4789F /* UTFontManager.swift in Sources */,
+				0543B051253B3A5D00A9BAA1 /* main.swift in Sources */,
+				05A1F45E253BC23900D4789F /* UTNativeValue.swift in Sources */,
+				05A1F45A253BC19A00D4789F /* UTMath.swift in Sources */,
+				053F2C4F253BDEA8009CFCA1 /* UTURL.swift in Sources */,
+				053F2C49253BDDCE009CFCA1 /* UTType.swift in Sources */,
+				05A1F452253BBBD500D4789F /* UTFileManager.swift in Sources */,
+				05A1F489253BCE2600D4789F /* UTPreference.swift in Sources */,
+				05A1F48F253BCEE200D4789F /* UTRun.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05A1F465253BC6E100D4789F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05A95B112516CD2800775737 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0591752A2ADBDBC5008DF945 /* KLSpriteAction.swift in Sources */,
+				05A95B852516D06900775737 /* KLChar.swift in Sources */,
+				05A95B6E2516D03300775737 /* KLFileManager.swift in Sources */,
+				05A95B722516D03300775737 /* KLURL.swift in Sources */,
+				05657B5C272452990035235D /* KLCollection.swift in Sources */,
+				05950CA125C4304500D659A1 /* KLGraphicsContext.swift in Sources */,
+				05A95B6A2516D03300775737 /* KLFile.swift in Sources */,
+				05C14F5B28577CE7009C05D4 /* KLValueSet.swift in Sources */,
+				050CD84A2AE2ABF400EEAEDC /* KLSpriteField.swift in Sources */,
+				05A95B982516D08500775737 /* KLScriptValue.swift in Sources */,
+				05BD118126C0179B00961535 /* KLRecord.swift in Sources */,
+				05AEC61A286FCFE900A1ED09 /* KLComparisonResult.swift in Sources */,
+				05A95B322516CF9900775737 /* KLFontManager.swift in Sources */,
+				05A95B3D2516CFD400775737 /* KLCompiler.swift in Sources */,
+				05EBD8B625E4982200CA1480 /* KLColor.swift in Sources */,
+				05A95B542516CFF300775737 /* KLThread.swift in Sources */,
+				0520F47327744F23004DDA28 /* KLSize.swift in Sources */,
+				056D40002A708CB500B6B915 /* KLOval.swift in Sources */,
+				05A95B682516D03300775737 /* KLConsole.swift in Sources */,
+				0549BFA82A680B1700939058 /* KLSpriteNode.swift in Sources */,
+				05E6BB3629E0E6E200543428 /* KLProperties.swift in Sources */,
+				0547B6702A7A7C3700C67BA4 /* KLSpriteScene.swift in Sources */,
+				053D2DB8277A8E42008B6DA2 /* KLEnum.swift in Sources */,
+				05EA7CFF2AEC783B00E317A9 /* KLTrigger.swift in Sources */,
+				0546FF3729A4FF9C00573F95 /* KLStringStream.swift in Sources */,
+				0520F479277450F7004DDA28 /* KLRange.swift in Sources */,
+				052CF60529CF19E500C67401 /* KLEscapeSequence.swift in Sources */,
+				05A95B702516D03300775737 /* KLNativeValueFile.swift in Sources */,
+				0578BA8D2A6CB30000F75E0E /* KLVector.swift in Sources */,
+				0598000525CB5F5F00499B6E /* KLBitmapContext.swift in Sources */,
+				05A95B342516CF9900775737 /* KLCurses.swift in Sources */,
+				05A95B962516D08500775737 /* KLNativeValue.swift in Sources */,
+				055D5170268CA8F700304205 /* KLContactDatabase.swift in Sources */,
+				05A95B6C2516D03300775737 /* KLPipe.swift in Sources */,
+				0520F46127742701004DDA28 /* KLPoint.swift in Sources */,
+				05DE577B2969B56600C87A31 /* KLValueInterface.swift in Sources */,
+				0520F46D277429FA004DDA28 /* KLRect.swift in Sources */,
+				050662F628E5D740008DBA32 /* KLValueType.swift in Sources */,
+				05A269E32A32197100BD5623 /* KLMenuItem.swift in Sources */,
+				05A95B5A2516D01700775737 /* KLPreference.swift in Sources */,
+				05F3DC3725D8C004003EBD1E /* KLBitmapData.swift in Sources */,
+				05A95B812516D06900775737 /* KLImage.swift in Sources */,
+				0579E34129A037AB00757977 /* KLToken.swift in Sources */,
+				0576877B29CDEB86002D74E0 /* KLDate.swift in Sources */,
+				05CB8E1E29AB798100F1C85B /* KLEnvironment.swift in Sources */,
+				05CBE6E42AB7394F00A4EB98 /* KLErrorCode.swift in Sources */,
+				05EE5C8526E79316005026B3 /* KLText.swift in Sources */,
+				05A95B4E2516CFF300775737 /* KLProcess.swift in Sources */,
+				05DEABBA297D230600EA4D73 /* KLTerminalController.swift in Sources */,
+				05BD118726C01AD200961535 /* KLTable.swift in Sources */,
+				05A95B9C2516D08500775737 /* KLType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05A95B202516CF4500775737 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0591752B2ADBDBC5008DF945 /* KLSpriteAction.swift in Sources */,
+				05A95B862516D06900775737 /* KLChar.swift in Sources */,
+				05A95B6F2516D03300775737 /* KLFileManager.swift in Sources */,
+				05A95B732516D03300775737 /* KLURL.swift in Sources */,
+				05657B5D272452990035235D /* KLCollection.swift in Sources */,
+				05950CA225C4304500D659A1 /* KLGraphicsContext.swift in Sources */,
+				05A95B6B2516D03300775737 /* KLFile.swift in Sources */,
+				05C14F5C28577CE7009C05D4 /* KLValueSet.swift in Sources */,
+				050CD84B2AE2ABF400EEAEDC /* KLSpriteField.swift in Sources */,
+				05A95B992516D08500775737 /* KLScriptValue.swift in Sources */,
+				05BD118226C0179B00961535 /* KLRecord.swift in Sources */,
+				05AEC61B286FCFE900A1ED09 /* KLComparisonResult.swift in Sources */,
+				05A95B332516CF9900775737 /* KLFontManager.swift in Sources */,
+				05A95B3E2516CFD400775737 /* KLCompiler.swift in Sources */,
+				05EBD8B725E4982200CA1480 /* KLColor.swift in Sources */,
+				05A95B552516CFF300775737 /* KLThread.swift in Sources */,
+				0520F47427744F23004DDA28 /* KLSize.swift in Sources */,
+				056D40012A708CB500B6B915 /* KLOval.swift in Sources */,
+				05A95B692516D03300775737 /* KLConsole.swift in Sources */,
+				0549BFA92A680B1700939058 /* KLSpriteNode.swift in Sources */,
+				05E6BB3729E0E6E200543428 /* KLProperties.swift in Sources */,
+				0547B6712A7A7C3700C67BA4 /* KLSpriteScene.swift in Sources */,
+				053D2DB9277A8E42008B6DA2 /* KLEnum.swift in Sources */,
+				05EA7D002AEC783B00E317A9 /* KLTrigger.swift in Sources */,
+				0546FF3829A4FF9C00573F95 /* KLStringStream.swift in Sources */,
+				0520F47A277450F7004DDA28 /* KLRange.swift in Sources */,
+				052CF60629CF19E500C67401 /* KLEscapeSequence.swift in Sources */,
+				05A95B712516D03300775737 /* KLNativeValueFile.swift in Sources */,
+				0578BA8E2A6CB30000F75E0E /* KLVector.swift in Sources */,
+				0598000625CB5F5F00499B6E /* KLBitmapContext.swift in Sources */,
+				05A95B352516CF9900775737 /* KLCurses.swift in Sources */,
+				05A95B972516D08500775737 /* KLNativeValue.swift in Sources */,
+				055D5171268CA8F700304205 /* KLContactDatabase.swift in Sources */,
+				05A95B6D2516D03300775737 /* KLPipe.swift in Sources */,
+				0520F46227742701004DDA28 /* KLPoint.swift in Sources */,
+				05DE577C2969B56600C87A31 /* KLValueInterface.swift in Sources */,
+				0520F46E277429FA004DDA28 /* KLRect.swift in Sources */,
+				050662F728E5D740008DBA32 /* KLValueType.swift in Sources */,
+				05A269E42A32197100BD5623 /* KLMenuItem.swift in Sources */,
+				05A95B5B2516D01700775737 /* KLPreference.swift in Sources */,
+				05F3DC3825D8C004003EBD1E /* KLBitmapData.swift in Sources */,
+				05A95B822516D06900775737 /* KLImage.swift in Sources */,
+				0579E34229A037AB00757977 /* KLToken.swift in Sources */,
+				0576877C29CDEB86002D74E0 /* KLDate.swift in Sources */,
+				05CB8E1F29AB798100F1C85B /* KLEnvironment.swift in Sources */,
+				05CBE6E52AB7394F00A4EB98 /* KLErrorCode.swift in Sources */,
+				05EE5C8626E79316005026B3 /* KLText.swift in Sources */,
+				05A95B4F2516CFF300775737 /* KLProcess.swift in Sources */,
+				05DEABBB297D230600EA4D73 /* KLTerminalController.swift in Sources */,
+				05BD118826C01AD200961535 /* KLTable.swift in Sources */,
+				05A95B9D2516D08500775737 /* KLType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0543305328A326DE0096642B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0543B04D253B3A5D00A9BAA1 /* UnitTest */;
+			targetProxy = 0543305228A326DE0096642B /* PBXContainerItemProxy */;
+		};
+		056068022517597D0034F8BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05A95B142516CD2800775737 /* KiwiLibrary_macOS */;
+			targetProxy = 056068012517597D0034F8BD /* PBXContainerItemProxy */;
+		};
+		05606804251759820034F8BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05A95B232516CF4500775737 /* KiwiLibrary_iOS */;
+			targetProxy = 05606803251759820034F8BD /* PBXContainerItemProxy */;
+		};
+		05720623263E4EDF00CC4BBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 050A3E48263BED72008172E7 /* Transpile */;
+			targetProxy = 05720622263E4EDF00CC4BBB /* PBXContainerItemProxy */;
+		};
+		05720625263E4EE500CC4BBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 050A3E48263BED72008172E7 /* Transpile */;
+			targetProxy = 05720624263E4EE500CC4BBB /* PBXContainerItemProxy */;
+		};
+		05A1F474253BC6F600D4789F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05A1F468253BC6E100D4789F /* UnitTestBundle */;
+			targetProxy = 05A1F473253BC6F600D4789F /* PBXContainerItemProxy */;
+		};
+		05A1F476253BC6FC00D4789F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 056067FD251759740034F8BD /* Install */;
+			targetProxy = 05A1F475253BC6FC00D4789F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		050A3E49263BED72008172E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		050A3E4A263BED72008172E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0543304D28A326CC0096642B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0543304E28A326CC0096642B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0543B052253B3A5D00A9BAA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=*]" = x86_64;
+				FRAMEWORK_SEARCH_PATHS = "$(TARGET_BUILD_DIR)/$(PRODUCT_NAME).bundle/Contents/Frameworks";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/UnitTest.bundle/Contents/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = github.com.steelwheels.UnitTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0543B053253B3A5D00A9BAA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=*]" = x86_64;
+				FRAMEWORK_SEARCH_PATHS = "$(TARGET_BUILD_DIR)/$(PRODUCT_NAME).bundle/Contents/Frameworks";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/UnitTest.bundle/Contents/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = github.com.steelwheels.UnitTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		056067FE251759740034F8BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		056067FF251759740034F8BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		05A1F46D253BC6E200D4789F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Frameworks/",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = ../Test/UnitTestBundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = github.com.steelwheels.UnitTestBundle;
+				PRODUCT_NAME = UnitTest;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		05A1F46E253BC6E200D4789F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Frameworks/",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = ../Test/UnitTestBundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = github.com.steelwheels.UnitTestBundle;
+				PRODUCT_NAME = UnitTest;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		05A95B0E2516CD0300775737 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		05A95B0F2516CD0300775737 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		05A95B1C2516CD2800775737 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = KiwiLibrary_macOS/Info.plist;
+				INSTALL_PATH = "$(HOME)/local/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CODE_SIGN_FLAGS = "--timestamp";
+				PRODUCT_BUNDLE_IDENTIFIER = "gitlab.com.steelwheels.KiwiLibrary-macOS";
+				PRODUCT_NAME = KiwiLibrary;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		05A95B1D2516CD2800775737 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = KiwiLibrary_macOS/Info.plist;
+				INSTALL_PATH = "$(HOME)/local/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_CODE_SIGN_FLAGS = "--timestamp";
+				PRODUCT_BUNDLE_IDENTIFIER = "gitlab.com.steelwheels.KiwiLibrary-macOS";
+				PRODUCT_NAME = KiwiLibrary;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		05A95B2A2516CF4500775737 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = KiwiLibrary_iOS/Info.plist;
+				INSTALL_PATH = "$(HOME)/local/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CODE_SIGN_FLAGS = "--timestamp";
+				PRODUCT_BUNDLE_IDENTIFIER = "github.com.steelwheels.KiwiLibrary-iOS";
+				PRODUCT_NAME = KiwiLibrary;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		05A95B2B2516CF4500775737 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = KiwiLibrary_iOS/Info.plist;
+				INSTALL_PATH = "$(HOME)/local/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_CODE_SIGN_FLAGS = "--timestamp";
+				PRODUCT_BUNDLE_IDENTIFIER = "github.com.steelwheels.KiwiLibrary-iOS";
+				PRODUCT_NAME = KiwiLibrary;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		050A3E4B263BED72008172E7 /* Build configuration list for PBXLegacyTarget "Transpile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				050A3E49263BED72008172E7 /* Debug */,
+				050A3E4A263BED72008172E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0543304C28A326CC0096642B /* Build configuration list for PBXLegacyTarget "Check" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0543304D28A326CC0096642B /* Debug */,
+				0543304E28A326CC0096642B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0543B054253B3A5D00A9BAA1 /* Build configuration list for PBXNativeTarget "UnitTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0543B052253B3A5D00A9BAA1 /* Debug */,
+				0543B053253B3A5D00A9BAA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05606800251759740034F8BD /* Build configuration list for PBXLegacyTarget "Install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				056067FE251759740034F8BD /* Debug */,
+				056067FF251759740034F8BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05A1F46C253BC6E200D4789F /* Build configuration list for PBXNativeTarget "UnitTestBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05A1F46D253BC6E200D4789F /* Debug */,
+				05A1F46E253BC6E200D4789F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05A95B0D2516CD0300775737 /* Build configuration list for PBXProject "KiwiLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05A95B0E2516CD0300775737 /* Debug */,
+				05A95B0F2516CD0300775737 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05A95B1B2516CD2800775737 /* Build configuration list for PBXNativeTarget "KiwiLibrary_macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05A95B1C2516CD2800775737 /* Debug */,
+				05A95B1D2516CD2800775737 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05A95B292516CF4500775737 /* Build configuration list for PBXNativeTarget "KiwiLibrary_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05A95B2A2516CF4500775737 /* Debug */,
+				05A95B2B2516CF4500775737 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 05A95B0A2516CD0300775737 /* Project object */;
+}

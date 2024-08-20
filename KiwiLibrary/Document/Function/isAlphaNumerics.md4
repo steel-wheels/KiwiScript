@@ -1,0 +1,10 @@
+# Function: isAlphaNumerics
+Check the given string is alha-uumetics or not.
+The alpha-numerics contains letters and numbers.
+
+<pre>
+m4_include(func-isAlphaNumerics.d.ts)
+</pre>
+
+m4_include(Footer.md)
+

@@ -1,0 +1,9 @@
+# Image
+
+## Interface
+<pre>
+m4_include(interface-ImageIF.d.ts)
+</pre>
+
+m4_include(Footer.md)
+

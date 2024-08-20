@@ -1,0 +1,8 @@
+# TokenType
+
+<pre>
+m4_include(enum-TokenType.d.ts)
+</pre>
+
+m4_include(Footer.md)
+

@@ -1,0 +1,31 @@
+# Preference
+The *Preference* class is used access system preference values.
+
+## Global variables
+<pre>
+m4_include(var-Preference.d.ts)
+</pre>
+
+The singleton object of Preference class.
+<pre>
+m4_include(interface-PreferenceIF.d.ts)
+</pre>
+
+## Sub-preferences
+### System preference
+<pre>
+m4_include(interface-SystemPreferenceIF.d.ts)
+</pre>
+
+### User preference
+<pre>
+m4_include(interface-UserPreferenceIF.d.ts)
+</pre>
+
+### View preference
+<pre>
+m4_include(interface-ViewPreferenceIF.d.ts)
+</pre>
+
+m4_include(Footer.md)
+

@@ -1,0 +1,9 @@
+# Type: Result
+The return value of the function which contains success or failure result.
+
+<pre>
+m4_include(Result.d.ts)
+</pre>
+
+m4_include(Footer.md)
+

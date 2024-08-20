@@ -1,0 +1,9 @@
+# Function: isArray
+Check the given object is array or not.
+
+<pre>
+m4_include(func-isArray.d.ts)
+</pre>
+
+m4_include(Footer.md)
+

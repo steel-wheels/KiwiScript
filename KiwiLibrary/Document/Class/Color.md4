@@ -1,0 +1,9 @@
+# Color
+
+## Interface
+<pre>
+m4_include(`interface-ColorIF.d.ts')
+</pre>
+
+m4_include(`Footer.md')
+

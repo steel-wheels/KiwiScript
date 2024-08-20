@@ -1,0 +1,8 @@
+# Axis
+
+<pre>
+m4_include(enum-Axis.d.ts)
+</ore>
+
+m4_include(Footer.md)
+

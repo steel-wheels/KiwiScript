@@ -1,0 +1,15 @@
+This is content of header-0.txt
+
+include:l0
+include:l1
+include:l2
+include:inc0:This is contents of inc-0.txt
+inc0:a
+
+include:l3
+include:inc1:This is contents of inc-1.txt
+inc1:b
+
+include:l4
+This is content of footer-0.txt
+

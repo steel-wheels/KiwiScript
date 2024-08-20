@@ -1,0 +1,10 @@
+# Overview
+The *FileManager* is a singleton object which implementes @FileManagerIF@.
+It manages the file operation.
+The [File object](./File.md) is allocated by this class.
+
+## Interface
+<pre>
+m4_include(interface-FileManagerIF.d.ts)
+</pre>
+

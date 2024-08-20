@@ -1,0 +1,2 @@
+inc1:This is contents of inc-1.txt
+inc1:b

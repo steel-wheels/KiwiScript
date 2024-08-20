@@ -1,0 +1,6 @@
+{
+  application: "main.js",
+  libraries: [
+      "library.js"
+    ]
+}

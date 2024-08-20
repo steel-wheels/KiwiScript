@@ -1,0 +1,8 @@
+# Symbols
+
+<ore>
+m4_include(enum-Symbols.d.ts)
+</ore>
+
+m4_include(Footer.md)
+
