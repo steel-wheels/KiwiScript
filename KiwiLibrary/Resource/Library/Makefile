@@ -14,6 +14,7 @@ srcs	= Result.ts \
 	  Semaphore.ts \
 	  Cancel.ts \
 	  openURL.ts \
+	  Readline.ts \
 	  Thread.ts \
 	  SpriteField.ts \
 	  SpriteNode.ts \

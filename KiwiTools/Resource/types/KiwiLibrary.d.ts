@@ -640,6 +640,7 @@ declare function asciiCodeName(code: number): string | null ;
 declare function _openURL(title: URLIF | string, cbfunc: any): void ;
 
 declare function tokenize(str: string): TokenIF[] | null ;
+declare function readline(): string ;
 
 /**
  * @file Result.ts

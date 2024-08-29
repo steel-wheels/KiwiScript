@@ -13,12 +13,12 @@ import Foundation
 
 public class KHShell
 {
-	private var mApplication:	KEApplicationType
+        private var mApplication:	CNReadline.ApplicationType
 	private var mConsole:		CNFileConsole
 	private var mPromptBase:	String
 	private var mIsRunning:		Bool
 	private var mDoExec:		Bool
-	private var mReadline:		CNReadline
+        private var mReadline:		CNReadline
 	private var mVirtualMachine:	JSVirtualMachine
 	private var mContext:		KEContext
 	private var mEnvironment:	CNEnvironment
@@ -32,7 +32,7 @@ public class KHShell
 	}}
 
 	public init(application aptype: KEApplicationType, console cons: CNFileConsole) {
-		mApplication	= aptype
+                mApplication	= aptype == .terminal ? .terminal : .window
 		mConsole	= cons
 		mPromptBase	= "js"
 		mIsRunning	= false
@@ -71,7 +71,12 @@ public class KHShell
 				switch CNEscapeCode.decode(string: s) {
 				case .ok(let codes):
 					for code in codes {
-						execute(escapeCode: code, context: mContext, console: mConsole)
+                                                if let str = mReadline.execute(escapeCode: code, console: mConsole, type: mApplication) {
+                                                        if !str.isEmpty {
+                                                                self.execute(line: str, context: self.mContext, console: mConsole)
+                                                                print(string: self.prompt, console: mConsole)
+                                                        }
+                                                }
 					}
 				case .error(let err):
 					mConsole.error(string: "[Error] " + err.toString() + mNewline)
@@ -90,54 +95,23 @@ public class KHShell
 		mIsRunning = false
 	}
 
-	private func execute(escapeCode ecode: CNEscapeCode, context ctxt: KEContext, console cons: CNFileConsole){
-		/* decode the command */
-		//NSLog("ecode = \(ecode.description())")
-		switch ecode {
-		case .string(let str):
-			mReadline.insert(string: str)
-			let ins: CNEscapeCode = .insertSpace(str.count)
-			print(string: ins.encode(), console: cons)
-			print(string: ecode.encode(), console: cons)
-		case .delete:
-			if mReadline.delete() {
-				switch mApplication {
-				case .terminal:
-					let bs = CNEscapeCode.backspace.encode()
-					print(string: bs,  console: cons)
-					print(string: " ", console: cons)
-					print(string: bs,  console: cons)
-				default:
-					let dcode: CNEscapeCode = .delete
-					print(string: dcode.encode(), console: cons)
-				}
-			}
-		case .newline:
-			print(string: ecode.encode(), console: cons)
-			/* execute the command */
-			if !mReadline.isEmpty {
-				execute(line: mReadline.line, context: ctxt, console: cons)
-				mReadline.clear()
-			}
-			print(string: self.prompt, console: cons)
-		case .cursorForward(let num):
-			let delta = mReadline.cursorForward(num)
-			if delta > 0 {
-				let newcode: CNEscapeCode = .cursorForward(delta)
-				print(string: newcode.encode(), console: cons)
-			}
-		case .cursorBackward(let num):
-			let delta = mReadline.cursorBackward(num)
-			if delta > 0 {
-				let newcode: CNEscapeCode = .cursorBackward(delta)
-				print(string: newcode.encode(), console: cons)
-			}
-		default:
-			print(string: ecode.encode(), console: cons)
-		}
-	}
+        public func run(scriptAt url: URL, resource res: KEResource, arguments args: Array<CNValue>) {
+                switch FileManager.default.checkFileType(pathString: url.path) {
+                case .success(let ftype):
+                        switch ftype {
+                        case .file:
+                                run(scriptFile: url, resource: res, arguments: args)
+                        case .directory:
+                                run(packageDirectory: url, resource: res, arguments: args)
+                        @unknown default:
+                                CNLog(logLevel: .error, message: "Can not happen", atFunction: #function, inFile: #file)
+                        }
+                case .failure(let err):
+                        CNLog(logLevel: .error, message: err.toString(), atFunction: #function, inFile: #file)
+                }
+        }
 
-	public func run(scriptAt url: URL, resource res: KEResource, arguments args: Array<CNValue>) {
+        public func run(scriptFile url: URL, resource res: KEResource, arguments args: Array<CNValue>) {
 		/* allocate the trhread */
 		let thread = KLScriptThread(scriptFile: url, resource: res, virtualMachine: mContext.virtualMachine, console: mConsole, environment: mEnvironment, config: mConfig)
 		/* start the thread */
@@ -150,6 +124,42 @@ public class KHShell
 		print(string: CNEscapeCode.newline.encode(), console: mConsole)
 		print(string: self.prompt, console: mConsole)
 	}
+
+        public func run(packageDirectory url: URL, resource res: KEResource, arguments args: Array<CNValue>) {
+                let newres = KEResource(packageDirectory: url)
+                if let err = newres.loadManifest() {
+                        CNLog(logLevel: .error, message: err.toString(), atFunction: #function, inFile: #file)
+                        return
+                }
+                switch self.mainScriptInResource(newres) {
+                case .success(let mainfile):
+                        let newenv = CNEnvironment(parent: mEnvironment)
+                        newenv.setPackageDirectory(path: url.path)
+
+                        let newconf = KEConfig(applicationType: .terminal, doStrict: true, logLevel: mConfig.logLevel)
+
+                        let thread = KLScriptThread(scriptFile: mainfile, resource: newres, virtualMachine: mVirtualMachine, console: mConsole, environment: newenv, config: newconf)
+
+                        /* start the thread */
+                        thread.start(arguments: args)
+
+                        /* wait until the end */
+                        while thread.status == .running {
+                                Thread.sleep(forTimeInterval: 0.01)
+                        }
+                case .failure(let err):
+                        CNLog(logLevel: .error, message: err.toString())
+                }
+        }
+
+        private func mainScriptInResource(_ res: KEResource) -> Result<URL, NSError> {
+                if let url = res.application() {
+                        return .success(url)
+                } else {
+                        let err = NSError.fileError(message: "No application section in resource: \(res.packageDirectory.path())")
+                        return .failure(err)
+                }
+        }
 
 	private func execute(line ln: String, context ctxt: KEContext, console cons: CNFileConsole) {
 		let executor = KHExecutor(context: ctxt, console: cons)
