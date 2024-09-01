@@ -1,8 +1,8 @@
 /**
- * @file	KLThread.swift
- * @brief	Define KLThread class
+ * @file	KLEnvironment .swift
+ * @brief	Define KLEnvironment class
  * @par Copyright
- *   Copyright (C) 2019 Steel Wheels Project
+ *   Copyright (C) 2019-2014  Steel Wheels Project
  */
 
 import CoconutData

@@ -38,7 +38,8 @@ open class KLScriptThread: CNThread
 		}
 		mConfig      = conf
 		mDidCompiled = false
-		super.init(console: cons, environment: env)
+
+                super.init(console: cons, environment: env)
 
 		/* set application directory to environment */
 		self.environment.setPackageDirectory(path: mResource.packageDirectory.path)

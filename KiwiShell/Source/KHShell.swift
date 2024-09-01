@@ -13,7 +13,7 @@ import Foundation
 
 public class KHShell
 {
-        private var mApplication:	CNReadline.ApplicationType
+        private var mApplication:	CNApplicationType
 	private var mConsole:		CNFileConsole
 	private var mPromptBase:	String
 	private var mIsRunning:		Bool
@@ -31,7 +31,7 @@ public class KHShell
 		return mPromptBase +  "$ "
 	}}
 
-	public init(application aptype: KEApplicationType, console cons: CNFileConsole) {
+	public init(application aptype: CNApplicationType, console cons: CNFileConsole) {
                 mApplication	= aptype == .terminal ? .terminal : .window
 		mConsole	= cons
 		mPromptBase	= "js"
@@ -145,7 +145,7 @@ public class KHShell
 
                         /* wait until the end */
                         while thread.status == .running {
-                                Thread.sleep(forTimeInterval: 0.01)
+                                Thread.sleep(forTimeInterval: 0.1)
                         }
                 case .failure(let err):
                         CNLog(logLevel: .error, message: err.toString())

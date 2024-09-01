@@ -14,6 +14,8 @@ function readline(): string {
 		let str = _readlineCore.execute() ;
 		if(str != null){
 			return str ;
+		} else {
+			sleep(0.1) ;
 		}
 	}
 	return "" ;

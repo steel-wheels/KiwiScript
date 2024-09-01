@@ -45,7 +45,7 @@ declare function _openURL(title: URLIF | string, cbfunc: any): void ;
 declare function tokenize(str: string): TokenIF[] | null ;
 
 interface ReadlineCoreIF {
-	execute(): string | null ;	
+	execute(): string | null ;
 }
 declare var _readlineCore:	ReadlineCoreIF
 

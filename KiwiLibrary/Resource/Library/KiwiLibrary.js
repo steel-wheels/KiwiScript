@@ -548,6 +548,9 @@ function readline() {
         if (str != null) {
             return str;
         }
+        else {
+            sleep(0.1);
+        }
     }
     return "";
 }

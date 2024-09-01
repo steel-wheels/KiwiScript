@@ -735,6 +735,10 @@ open class KLLibraryCompiler: KECompiler
 		/* EscapeSequences */
 		let eseq = KLEscapeSequences(context: ctxt)
 		ctxt.set(name: "EscapeSequences", object: eseq)
+
+                /* _readlineCore */
+                let readline = KLReadline(console: cons, applicationType: conf.applicationType, context: ctxt)
+                ctxt.set(name: "_readlineCore", object: readline)
 	}
 
 	private func defineGlobalObjects(context ctxt: KEContext, console cons: CNFileConsole, environment env: CNEnvironment, config conf: KEConfig) {

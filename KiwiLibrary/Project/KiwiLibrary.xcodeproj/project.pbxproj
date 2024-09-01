@@ -38,6 +38,8 @@
 		0547B6712A7A7C3700C67BA4 /* KLSpriteScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0547B66F2A7A7C3700C67BA4 /* KLSpriteScene.swift */; };
 		0549BFA82A680B1700939058 /* KLSpriteNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0549BFA72A680B1700939058 /* KLSpriteNode.swift */; };
 		0549BFA92A680B1700939058 /* KLSpriteNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0549BFA72A680B1700939058 /* KLSpriteNode.swift */; };
+		054C3BC12C7F76100032C6DB /* KLReadline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054C3BC02C7F76100032C6DB /* KLReadline.swift */; };
+		054C3BC22C7F76100032C6DB /* KLReadline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054C3BC02C7F76100032C6DB /* KLReadline.swift */; };
 		055D5170268CA8F700304205 /* KLContactDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055D516F268CA8F700304205 /* KLContactDatabase.swift */; };
 		055D5171268CA8F700304205 /* KLContactDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055D516F268CA8F700304205 /* KLContactDatabase.swift */; };
 		05657B5C272452990035235D /* KLCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05657B5B272452990035235D /* KLCollection.swift */; };
@@ -272,6 +274,7 @@
 		0546FF3629A4FF9C00573F95 /* KLStringStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLStringStream.swift; sourceTree = "<group>"; };
 		0547B66F2A7A7C3700C67BA4 /* KLSpriteScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLSpriteScene.swift; sourceTree = "<group>"; };
 		0549BFA72A680B1700939058 /* KLSpriteNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLSpriteNode.swift; sourceTree = "<group>"; };
+		054C3BC02C7F76100032C6DB /* KLReadline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLReadline.swift; sourceTree = "<group>"; };
 		055D516F268CA8F700304205 /* KLContactDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLContactDatabase.swift; sourceTree = "<group>"; };
 		05657B5B272452990035235D /* KLCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLCollection.swift; sourceTree = "<group>"; };
 		056D3FFF2A708CB500B6B915 /* KLOval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLOval.swift; sourceTree = "<group>"; };
@@ -571,6 +574,7 @@
 				05A95B632516D03300775737 /* KLFileManager.swift */,
 				05A95B642516D03300775737 /* KLNativeValueFile.swift */,
 				05A95B622516D03300775737 /* KLPipe.swift */,
+				054C3BC02C7F76100032C6DB /* KLReadline.swift */,
 				05DEABB9297D230600EA4D73 /* KLTerminalController.swift */,
 				05A95B652516D03300775737 /* KLURL.swift */,
 			);
@@ -903,6 +907,7 @@
 				05A95B722516D03300775737 /* KLURL.swift in Sources */,
 				05657B5C272452990035235D /* KLCollection.swift in Sources */,
 				05950CA125C4304500D659A1 /* KLGraphicsContext.swift in Sources */,
+				054C3BC12C7F76100032C6DB /* KLReadline.swift in Sources */,
 				05A95B6A2516D03300775737 /* KLFile.swift in Sources */,
 				05C14F5B28577CE7009C05D4 /* KLValueSet.swift in Sources */,
 				050CD84A2AE2ABF400EEAEDC /* KLSpriteField.swift in Sources */,
@@ -961,6 +966,7 @@
 				05A95B732516D03300775737 /* KLURL.swift in Sources */,
 				05657B5D272452990035235D /* KLCollection.swift in Sources */,
 				05950CA225C4304500D659A1 /* KLGraphicsContext.swift in Sources */,
+				054C3BC22C7F76100032C6DB /* KLReadline.swift in Sources */,
 				05A95B6B2516D03300775737 /* KLFile.swift in Sources */,
 				05C14F5C28577CE7009C05D4 /* KLValueSet.swift in Sources */,
 				050CD84B2AE2ABF400EEAEDC /* KLSpriteField.swift in Sources */,
