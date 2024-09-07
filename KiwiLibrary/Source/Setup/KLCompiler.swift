@@ -950,27 +950,34 @@ open class KLLibraryCompiler: KECompiler
 		/* _runThread */
 		let runfunc: @convention(block) (_ pathval: JSValue, _ consval: JSValue) -> JSValue = {
 			(_ pathval: JSValue, _ consval: JSValue) -> JSValue in
-			if let path = self.valueToFullPath(path: pathval),
-			   let cons = self.valueToConsole(value: consval) {
-				switch self.resourceFromFile(path) {
-				case .success(let resource):
-					switch self.mainScriptInResource(resource) {
-					case .success(let script):
-						return self.runThread(scriptFile: script, resource: resource, context: ctxt, console: cons, environment: env, config: conf)
-					case .failure(let err):
-						cons.print(string: "[Error] \(err.toString())\n")
-					}
-				case .failure(let err):
-					cons.print(string: "[Error] \(err.toString())\n")
-				}
-			} else {
-				CNLog(logLevel: .error, message: "Unexpected parameters", atFunction: #function, inFile: #file)
-			}
-			return JSValue(nullIn: ctxt)
+                        return self.runThread(pathValue: pathval, consoleValue: consval, context: ctxt, environment: env, config: conf)
 		}
 		ctxt.set(name: "_runThread", function: runfunc)
 		return true
 	}
+
+        private func runThread(pathValue pathval: JSValue, consoleValue consval: JSValue, context ctxt: KEContext, environment env: CNEnvironment, config conf: KEConfig) -> JSValue {
+                NSLog("* rT 0")
+                if let path = self.valueToFullPath(path: pathval),
+                   let cons = self.valueToConsole(value: consval) {
+                        NSLog("* rT 1")
+                        switch self.resourceFromFile(path) {
+                        case .success(let resource):
+                                switch self.mainScriptInResource(resource) {
+                                case .success(let script):
+                                        return self.runThread(scriptFile: script, resource: resource, context: ctxt, console: cons, environment: env, config: conf)
+                                case .failure(let err):
+                                        cons.print(string: "[Error] \(err.toString())\n")
+                                }
+                        case .failure(let err):
+                                cons.print(string: "[Error] \(err.toString())\n")
+                        }
+                } else {
+                        NSLog("* rT 2")
+                        CNLog(logLevel: .error, message: "Unexpected parameters", atFunction: #function, inFile: #file)
+                }
+                return JSValue(nullIn: ctxt)
+        }
 
 	private func runThread(scriptFile scrurl: URL, resource res: KEResource, context ctxt: KEContext, console cons: CNFileConsole, environment env: CNEnvironment, config conf: KEConfig) -> JSValue {
 		let thread = KLScriptThread(scriptFile: scrurl, resource: res, virtualMachine: ctxt.virtualMachine, console: cons, environment: env, config: conf)

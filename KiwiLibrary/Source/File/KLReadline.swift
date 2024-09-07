@@ -30,7 +30,12 @@ import Foundation
         }
 
         public func execute() -> JSValue {
-                if let str = mReadline.execute(console: mConsole, type: mType) {
+                var result: String? = nil
+                let _ = mReadline.execute(executionFunction: {
+                        (_ line: String) -> Void in
+                        result = line
+                }, console: mConsole, applicationType: mType)
+                if let str = result {
                         return JSValue(object: str, in: mContext)
                 } else {
                         return JSValue(nullIn: mContext)

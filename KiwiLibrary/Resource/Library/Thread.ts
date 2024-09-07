@@ -20,3 +20,16 @@ function waitThread(thread: ThreadIF): void
 	}
 }
 
+function runThread(path: URLIF | string, args: string[],
+		   				cons: ConsoleIF): number {
+
+	let thread = _runThread(path, cons) ;
+	if(thread != null){
+		thread.start(args) ;
+		waitThread(thread) ;
+		return thread.exitCode ;
+	} else {
+		return -1 ;
+	}
+}
+

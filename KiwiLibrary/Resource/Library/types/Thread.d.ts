@@ -6,3 +6,4 @@
 /// <reference path="func-sleep.d.ts" />
 declare function Thread(name: string, console: ConsoleIF): ThreadIF | null;
 declare function waitThread(thread: ThreadIF): void;
+declare function runThread(path: URLIF | string, args: string[], cons: ConsoleIF): number;

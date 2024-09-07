@@ -771,6 +771,7 @@ declare function openURL(url: URLIF | string): boolean;
 declare function readline(): string;
 declare function Thread(name: string, console: ConsoleIF): ThreadIF | null;
 declare function waitThread(thread: ThreadIF): void;
+declare function runThread(path: URLIF | string, args: string[], cons: ConsoleIF): number;
 /**
  * @field SpriteField.ts
  */
@@ -830,4 +831,3 @@ declare class SpriteRadar {
     distanceFromNode(node: SpriteNodeRefIF): number;
     private isThisNode;
 }
-declare function run(path: URLIF | string, args: string[], cons: ConsoleIF): number;

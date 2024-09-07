@@ -19,8 +19,7 @@ srcs	= Result.ts \
 	  SpriteField.ts \
 	  SpriteNode.ts \
 	  SpriteScene.ts \
-	  SpriteRadar.ts \
-	  run.ts
+	  SpriteRadar.ts
 
 func_files	= types/func-exit.d.ts \
 		  types/func-isAlphaNumerics.d.ts \

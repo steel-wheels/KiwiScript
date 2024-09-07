@@ -16,3 +16,14 @@ function waitThread(thread) {
         sleep(0.001);
     }
 }
+function runThread(path, args, cons) {
+    let thread = _runThread(path, cons);
+    if (thread != null) {
+        thread.start(args);
+        waitThread(thread);
+        return thread.exitCode;
+    }
+    else {
+        return -1;
+    }
+}

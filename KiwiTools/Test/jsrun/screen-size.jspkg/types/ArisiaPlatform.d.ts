@@ -641,6 +641,11 @@ declare function _openURL(title: URLIF | string, cbfunc: any): void ;
 
 declare function tokenize(str: string): TokenIF[] | null ;
 
+interface ReadlineCoreIF {
+	execute(): string | null ;
+}
+declare var _readlineCore:	ReadlineCoreIF
+
 /**
  * @file Result.ts
  */
@@ -763,6 +768,7 @@ declare class CancelException extends Error {
 }
 declare function _cancel(): void;
 declare function openURL(url: URLIF | string): boolean;
+declare function readline(): string;
 declare function Thread(name: string, console: ConsoleIF): ThreadIF | null;
 declare function waitThread(thread: ThreadIF): void;
 /**
@@ -928,7 +934,6 @@ interface RadioButtonsIF extends FrameIF {
 declare function _alloc_RadioButtons(): RadioButtonsIF ;
 interface ShellIF extends FrameIF {
   console : ConsoleIF ;
-  run(p0 : URLIF): void ;
 }
 declare function _alloc_Shell(): ShellIF ;
 interface SpriteIF extends FrameIF {
