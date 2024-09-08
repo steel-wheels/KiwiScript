@@ -36,6 +36,17 @@ open class KEResource: CNResource
         }
     }
 
+        /*
+         * Utility
+         */
+        public var applicationType: CNApplicationType { get {
+                if self.totalCountOfViews() > 0 {
+                        return .window
+                } else {
+                        return .terminal
+                }
+        }}
+
     /*
      * application
      */
@@ -80,17 +91,21 @@ open class KEResource: CNResource
         return ths.count > 0 ? ths[0] : nil
     }
 
-    /*
-     * view
-     */
-    public func setView(identifier ident: String, path pth: String) -> NSError? {
-        return super.setURL(category: KEResource.ViewsCategory, identifier: ident, at: 0, path: pth)
-    }
+        /*
+         * view
+         */
+        public func totalCountOfViews() -> Int {
+                return super.totalCountOfURLs(category: KEResource.ViewsCategory)
+        }
 
-    public func view(identifier ident: String) -> URL? {
-        let views = super.urlValues(category: KEResource.ViewsCategory, identifier: ident)
-        return views.count > 0 ? views[0] : nil
-    }
+        public func setView(identifier ident: String, path pth: String) -> NSError? {
+            return super.setURL(category: KEResource.ViewsCategory, identifier: ident, at: 0, path: pth)
+        }
+
+        public func view(identifier ident: String) -> URL? {
+            let views = super.urlValues(category: KEResource.ViewsCategory, identifier: ident)
+            return views.count > 0 ? views[0] : nil
+        }
 
     /*
      * Definitions

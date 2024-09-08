@@ -957,10 +957,8 @@ open class KLLibraryCompiler: KECompiler
 	}
 
         private func runThread(pathValue pathval: JSValue, consoleValue consval: JSValue, context ctxt: KEContext, environment env: CNEnvironment, config conf: KEConfig) -> JSValue {
-                NSLog("* rT 0")
                 if let path = self.valueToFullPath(path: pathval),
                    let cons = self.valueToConsole(value: consval) {
-                        NSLog("* rT 1")
                         switch self.resourceFromFile(path) {
                         case .success(let resource):
                                 switch self.mainScriptInResource(resource) {
@@ -973,7 +971,6 @@ open class KLLibraryCompiler: KECompiler
                                 cons.print(string: "[Error] \(err.toString())\n")
                         }
                 } else {
-                        NSLog("* rT 2")
                         CNLog(logLevel: .error, message: "Unexpected parameters", atFunction: #function, inFile: #file)
                 }
                 return JSValue(nullIn: ctxt)
