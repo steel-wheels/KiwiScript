@@ -58,21 +58,24 @@ public class KHShell
 
         public func execute() {
                 while true {
-                        var doexec = true
+                        var docont: Bool = true
                         print(string: self.prompt, console: mConsole)
-                        while doexec {
-                                doexec = mReadline.execute(executionFunction: {
-                                        (_ str: String) -> Void in
-                                        self.execute(line: str, context: mContext, console: mConsole)
-                                }, console: mConsole, applicationType: mApplication)
+                        while docont {
+                                docont = false
+                                switch mReadline.execute(console: mConsole, applicationType: mApplication) {
+                                case .doExecute(let str):
+                                        let executor = KHExecutor(context: mContext, console: mConsole)
+                                        executor.exec(line: str)
+                                case .doContinue:
+                                        docont = true
+                                case .doExit:
+                                        break
+                                @unknown default:
+                                        NSLog("[Error] Internal error")
+                                }
                         }
                 }
         }
-
-	private func execute(line ln: String, context ctxt: KEContext, console cons: CNFileConsole) {
-		let executor = KHExecutor(context: ctxt, console: cons)
-		executor.exec(line: ln)
-	}
 
 	private func print(string str: String, console cons: CNFileConsole){
 		/* I dont know why this interval is required */

@@ -30,11 +30,16 @@ import Foundation
         }
 
         public func execute() -> JSValue {
-                var result: String? = nil
-                let _ = mReadline.execute(executionFunction: {
-                        (_ line: String) -> Void in
-                        result = line
-                }, console: mConsole, applicationType: mType)
+                let result: String?
+                switch mReadline.execute(console: mConsole, applicationType: mType) {
+                case .doExecute(let str):
+                        result = str
+                case .doContinue, .doExit:
+                        result = nil
+                @unknown default:
+                        NSLog("[Error] internal error")
+                        result = nil
+                }
                 if let str = result {
                         return JSValue(object: str, in: mContext)
                 } else {
