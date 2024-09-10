@@ -79,14 +79,14 @@ open class KLLibraryCompiler: KECompiler
 	private func compileLibraryFiles(context ctxt: KEContext, resource res: KEResource, console cons: CNConsole, config conf: KEConfig) -> Bool {
 		/* Compile library */
 		var result = true
-        for url in res.libraries() {
-            if let scr = url.loadContents() as? String {
-                let _  = self.compileStatement(context: ctxt, statement: scr, sourceFile: url, console: cons, config: conf)
-            } else {
-                cons.error(string: "Failed to load script from \(url.path)")
-                result = false
-            }
-        }
+                for url in res.libraries() {
+                        if let scr = url.loadContents() as? String {
+                                let _  = self.compileStatement(context: ctxt, statement: scr, sourceFile: url, console: cons, config: conf)
+                        } else {
+                                cons.error(string: "Failed to load script from \(url.path)")
+                                result = false
+                        }
+                }
 		return result && (ctxt.errorCount == 0)
 	}
 
