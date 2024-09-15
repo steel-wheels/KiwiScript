@@ -29,13 +29,18 @@ declare function Icon(tag: number, symbol: Symbols, label: String): IconIF ;
 
 declare function MenuItem(title: string, value: number): MenuItemIF ;
 
+declare function Oval(x: number, y: number, radius:number): OvalIF ;
 declare function Pipe(): PipeIF ;
 
+declare function Point(x: number, y: number): PointIF ;
 declare function Properties(name: string): PropertiesIF | null ;
-
+declare function Rect(x: number, y: number, width: number, height: number): RectIF ;
+declare function Size(width: number, height: number): SizeIF ;
 declare function SpriteActions(): SpriteActionsIF ;
 
 declare function Table(name: string): TableIF | null ;
 
 declare function _Thread(path: string, console: ConsoleIF): ThreadIF | null ;
 
+declare function URL(path: string): URLIF | null ;
+declare function Vector(dx: number, dy: number): VectorIF ;

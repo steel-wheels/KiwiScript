@@ -1,13 +1,23 @@
 # URL class
 
-## Constructor
-<pre>
-URL(str: string): URLIF | null ;
-</pre>
-
 ## Interface
 <pre>
-@include(interface-URLIF.d.ts)
+interface URLIF {
+  isNull : boolean ;
+  absoluteStriung : string ;
+  path : string ;
+  appending(p0 : string): URLIF ;
+  lastPathComponent : string ;
+  deletingLastPathComponent : URLIF ;
+  loadText(): string | null ;
+}
+
+</pre>
+
+## Constructor
+<pre>
+declare function URL(path: string): URLIF | null ;
+
 </pre>
 
 # Related links

@@ -1,13 +1,13 @@
-# class: Console
-
-## Global variables
-<pre>
-declare var console: ConsoleIF ;
-</pre>
+# Console
 
 ## Interface
 <pre>
 m4_include(interface-ConsoleIF.d.ts)
+</pre>
+
+## Global variable
+<pre>
+m4_include(var-Console.d.ts)
 </pre>
 
 m4_include(Footer.md)

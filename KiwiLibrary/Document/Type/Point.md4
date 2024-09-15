@@ -1,7 +1,13 @@
 # Point
 
+## Type
 <pre>
 m4_include(interface-PointIF.d.ts)
+</pre>
+
+## Constructor
+<pre>
+m4_include(func-Point.d.ts)
 </pre>
 
 m4_include(Footer.md)

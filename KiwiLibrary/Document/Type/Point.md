@@ -1,10 +1,17 @@
 # Point
 
+## Type
 <pre>
 interface PointIF {
   x : number ;
   y : number ;
 }
+
+</pre>
+
+## Constructor
+<pre>
+declare function Point(x: number, y: number): PointIF ;
 
 </pre>
 

@@ -1,9 +1,5 @@
 # Environment class
 
-## Constructor
-<pre>
-declare var env: EnvironmentIF ;
-</pre>
 
 ## Interface
 <pre>
@@ -15,6 +11,12 @@ interface EnvironmentIF {
   currentDirectory : URLIF ;
   searchPackage(p0 : string): URLIF | null ;
 }
+
+</pre>
+
+## Global variable
+<pre>
+declare var env:		EnvironmentIF ;
 
 </pre>
 

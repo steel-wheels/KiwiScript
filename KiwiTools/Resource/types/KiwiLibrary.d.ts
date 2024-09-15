@@ -552,6 +552,11 @@ interface PreferenceIF {
   user : UserPreferenceIF ;
   view : ViewPreferenceIF ;
 }
+declare var Colors:      	ColorsIF ;
+declare var console:		ConsoleIF ;
+declare var Curses:     	CursesIF ;
+declare var env:		EnvironmentIF ;
+declare var FileManagerCore:	FileManagerIF ;
 declare var Preference:         PreferenceIF ;
 
 declare function exit(code: number): void ;
@@ -585,39 +590,28 @@ declare function Icon(tag: number, symbol: Symbols, label: String): IconIF ;
 
 declare function MenuItem(title: string, value: number): MenuItemIF ;
 
+declare function Oval(x: number, y: number, radius:number): OvalIF ;
 declare function Pipe(): PipeIF ;
 
+declare function Point(x: number, y: number): PointIF ;
 declare function Properties(name: string): PropertiesIF | null ;
-
+declare function Rect(x: number, y: number, width: number, height: number): RectIF ;
+declare function Size(width: number, height: number): SizeIF ;
 declare function SpriteActions(): SpriteActionsIF ;
 
 declare function Table(name: string): TableIF | null ;
 
 declare function _Thread(path: string, console: ConsoleIF): ThreadIF | null ;
 
+declare function URL(path: string): URLIF | null ;
+declare function Vector(dx: number, dy: number): VectorIF ;
 /**
  * Builtin.d.ts
  */
 
-/* Singleton object*/
-declare var console:		ConsoleIF ;
-declare var Colors:      	ColorsIF ;
-declare var Curses:     	CursesIF ;
-declare var FileManagerCore:	FileManagerIF ;
-declare var TerminalController:	EscapeCodesIF ;
-declare var EscapeSequences:	EscapeSequencesIF ;
-
-declare var env:		EnvironmentIF ;
-
-
-declare function Point(x: number, y: number): PointIF ;
-declare function Rect(x: number, y: number, width: number, height: number): RectIF ;
-declare function Oval(x: number, y: number, radius:number): OvalIF ;
-declare function Vector(dx: number, dy: number): VectorIF ;
-declare function Size(width: number, height: number): SizeIF ;
-declare function URL(path: string): URLIF | null ;
-
+declare var EscapeSequences:   EscapeSequencesIF
 declare function StringStream(str: string): StringStreamIF ;
+declare var TerminalController:        EscapeCodesIF ;
 
 declare function toArray(value: any): any[] | null ;
 declare function toBitmap(value: any): BitmapContextIF | null ;

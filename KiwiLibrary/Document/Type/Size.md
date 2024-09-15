@@ -1,5 +1,6 @@
 # Type: Size
-The <code>Size</code> is data structure to store 2D size.
+
+The *Size* is data structure to prent the size of 2D object.
 
 ## Interface
 <pre>
@@ -7,6 +8,12 @@ interface SizeIF {
   width : number ;
   height : number ;
 }
+
+</pre>
+
+## Constructor
+<pre>
+declare function Size(width: number, height: number): SizeIF ;
 
 </pre>
 

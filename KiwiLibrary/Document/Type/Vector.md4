@@ -1,0 +1,14 @@
+# Vector
+
+## Type
+<pre>
+m4_include(interface-VectorIF.d.ts)
+</pre>
+
+## Constructor
+<pre>
+m4_include(func-Vector.d.ts)
+</pre>
+
+m4_include(Footer.md)
+

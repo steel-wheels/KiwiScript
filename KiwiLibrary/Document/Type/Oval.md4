@@ -1,7 +1,13 @@
 # Oval
 
+## Type
 <pre>
 m4_include(interface-OvalIF.d.ts)
+</pre>
+
+## Constructor
+<pre>
+m4_include(func-Oval.d.ts)
 </pre>
 
 m4_include(Footer.md)

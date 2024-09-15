@@ -5,5 +5,10 @@
 m4_include(interface-CursesIF.d.ts)
 </pre>
 
+## Global variable
+<pre>
+m4_include(var-Curses.d.ts)
+</pre>
+
 m4_include(Footer.md)
 

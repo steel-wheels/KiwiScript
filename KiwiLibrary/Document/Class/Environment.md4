@@ -1,13 +1,14 @@
 # Environment class
 
-## Constructor
-<pre>
-declare var env: EnvironmentIF ;
-</pre>
 
 ## Interface
 <pre>
 m4_include(interface-EnvironmentIF.d.ts)
+</pre>
+
+## Global variable
+<pre>
+m4_include(var-env.d.ts)
 </pre>
 
 m4_include(Footer.md)

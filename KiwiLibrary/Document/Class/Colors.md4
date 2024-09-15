@@ -2,7 +2,7 @@
 
 ## Global variable
 <pre>
-declare var Colors: ColorsIF ;
+m4_includ(var-Colors.d.ts)
 </pre>
 
 ## Interface

@@ -1,10 +1,17 @@
 # Oval
 
+## Type
 <pre>
 interface OvalIF {
   center : PointIF ;
   radius : number ;
 }
+
+</pre>
+
+## Constructor
+<pre>
+declare function Oval(x: number, y: number, radius:number): OvalIF ;
 
 </pre>
 

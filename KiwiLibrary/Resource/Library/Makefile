@@ -46,11 +46,17 @@ func_files	= types/func-exit.d.ts \
 		  types/func-sleep.d.ts \
 		  types/func-Icon.d.ts \
 		  types/func-MenuItem.d.ts \
+		  types/func-Oval.d.ts \
 		  types/func-Pipe.d.ts \
+		  types/func-Point.d.ts \
 		  types/func-Properties.d.ts \
+		  types/func-Rect.d.ts \
+		  types/func-Size.d.ts \
 		  types/func-SpriteActions.d.ts \
 		  types/func-Table.d.ts \
 		  types/func-_Thread.d.ts \
+		  types/func-URL.d.ts \
+		  types/func-Vector.d.ts
 
 interface_files	= types/Frame.d.ts \
 		  types/interface-EnvironmentIF.d.ts \
@@ -99,7 +105,12 @@ interface_files	= types/Frame.d.ts \
 		  types/interface-ViewPreferenceIF.d.ts \
 		  types/interface-PreferenceIF.d.ts
 
-var_files	= types/var-Preference.d.ts
+var_files	= types/var-Colors.d.ts \
+		  types/var-Console.d.ts \
+		  types/var-Curses.d.ts \
+		  types/var-env.d.ts \
+		  types/var-FileManagerCore.d.ts \
+		  types/var-Preference.d.ts
 
 dsts	= $(srcs:.ts=.js)
 decls	= $(srcs:.ts=.d.ts)

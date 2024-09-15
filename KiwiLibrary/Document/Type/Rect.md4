@@ -7,5 +7,10 @@ The *Rect* is data structure for 2D rectangle.
 m4_include(interface-RectIF.d.ts)
 </pre>
 
+## Constructor
+<pre>
+m4_include(func-Rect.d.ts)
+</pre>
+
 m4_include(Footer.md)
 

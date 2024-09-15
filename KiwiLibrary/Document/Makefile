@@ -13,6 +13,7 @@ all: $(dsts)
 	(cd Class && make)
 	(cd Format && make)
 	(cd Function && make)
+	(cd Type && make)
 
 clean:
 	rm -f $(dsts)
@@ -20,4 +21,5 @@ clean:
 	(cd Class && make clean)
 	(cd Format && make clean)
 	(cd Function && make clean)
+	(cd Type && make clean)
 

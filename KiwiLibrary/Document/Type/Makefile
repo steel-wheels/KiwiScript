@@ -11,7 +11,8 @@ srcs	= Char.md4 \
 	  Range.md4 \
 	  Rect.md4 \
 	  Result.md4 \
-	  Size.md4
+	  Size.md4 \
+	  Vector.md4
 dsts	= $(srcs:.md4=.md)
 
 all: $(dsts)

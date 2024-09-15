@@ -2,11 +2,12 @@
 The built-in class, function, data types for JavaScript.
 
 ## Types
-* [Point](./Type/Point.md): 2D point data presented as (x, y).
+* [Oval](./Type/Oval.md): 2D point data presents the oval.
+* [Point](./Type/Point.md): 2D point data presents the point.
 * [Range](./Type/Range.md): The data range presented by the location and the length.
-* [Rect](./Type/Rect.md): 2D rectangle data presented as (width. height)
+* [Rect](./Type/Rect.md): 2D rectangle data presents the rectangle.
 * [Result](./Type/Result.md): The return value of the function which contains success or failure result.
-* [Size](./Type/Size.md): 2D object size data presented as (width. height)
+* [Size](./Type/Size.md): The size of 2D object 
 
 ## Enums
 This is a list of built-in enum types.
@@ -71,7 +72,7 @@ This is a list of built-in enum types.
 * [console](./Class/Console.md)
 
 There are some pre-defined objects. They are instance of built-in classes:
-* [Curses](./Curses.md): The object to control terminal.
+* [Curses](./Class/Curses.md): The object to control terminal.
 * [Math](./Class/Math.md): The singleton object which has class methods for mathematical operation and such as @PI@, @sin()@, @cos()@.
 * [SFSymbol](./Class/SFSymbol.md): The class operates built-in symbol images.
 
@@ -92,7 +93,6 @@ There are some pre-defined objects. They are instance of built-in classes:
 * [URL](./Class/URL.md): Data representation of URL
 
 ### Terminal
-* [Curses](./Class/Curses.md): CUI management on the terminal.
 * [EscapeSequence](./Class/EscapeSequence.md): The object which operates [escape sequence](https://en.wikipedia.org/wiki/Escape_sequence).
 * [EscapeSequences](./Class/EscapeSequences.md): The constructor of [EscapeSequence](./Class/EscapeSequence.md) object.
 

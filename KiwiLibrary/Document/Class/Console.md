@@ -1,9 +1,4 @@
-# class: Console
-
-## Global variables
-<pre>
-declare var console: ConsoleIF ;
-</pre>
+# Console
 
 ## Interface
 <pre>
@@ -13,6 +8,12 @@ interface ConsoleIF {
   log(p0 : string): void ;
   scan(): string | null ;
 }
+
+</pre>
+
+## Global variable
+<pre>
+declare var console:		ConsoleIF ;
 
 </pre>
 

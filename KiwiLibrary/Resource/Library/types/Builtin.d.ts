@@ -2,25 +2,9 @@
  * Builtin.d.ts
  */
 
-/* Singleton object*/
-declare var console:		ConsoleIF ;
-declare var Colors:      	ColorsIF ;
-declare var Curses:     	CursesIF ;
-declare var FileManagerCore:	FileManagerIF ;
-declare var TerminalController:	EscapeCodesIF ;
-declare var EscapeSequences:	EscapeSequencesIF ;
-
-declare var env:		EnvironmentIF ;
-
-
-declare function Point(x: number, y: number): PointIF ;
-declare function Rect(x: number, y: number, width: number, height: number): RectIF ;
-declare function Oval(x: number, y: number, radius:number): OvalIF ;
-declare function Vector(dx: number, dy: number): VectorIF ;
-declare function Size(width: number, height: number): SizeIF ;
-declare function URL(path: string): URLIF | null ;
-
+declare var EscapeSequences:   EscapeSequencesIF
 declare function StringStream(str: string): StringStreamIF ;
+declare var TerminalController:        EscapeCodesIF ;
 
 declare function toArray(value: any): any[] | null ;
 declare function toBitmap(value: any): BitmapContextIF | null ;
