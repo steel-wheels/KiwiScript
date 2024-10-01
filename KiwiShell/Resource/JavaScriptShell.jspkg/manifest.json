@@ -1,0 +1,6 @@
+{
+  application: "jsh.js",
+  libraries: [
+      "lib/command.js"
+    ]
+}

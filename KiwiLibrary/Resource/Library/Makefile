@@ -21,7 +21,8 @@ srcs	= Result.ts \
 	  SpriteScene.ts \
 	  SpriteRadar.ts
 
-func_files	= types/func-exit.d.ts \
+func_files	= types/func-asciiCodeName.d.ts \
+		  types/func-exit.d.ts \
 		  types/func-isAlphaNumerics.d.ts \
 		  types/func-isArray.d.ts \
 		  types/func-isBitmap.d.ts \
@@ -53,7 +54,25 @@ func_files	= types/func-exit.d.ts \
 		  types/func-Rect.d.ts \
 		  types/func-Size.d.ts \
 		  types/func-SpriteActions.d.ts \
+		  types/func-StringStream.d.ts \
 		  types/func-Table.d.ts \
+		  types/func-tokenize.d.ts \
+		  types/func-toArray.d.ts \
+		  types/func-toBitmap.d.ts \
+		  types/func-toBoolean.d.ts \
+		  types/func-toDate.d.ts \
+		  types/func-toDictionary.d.ts \
+		  types/func-toNumber.d.ts \
+		  types/func-toObject.d.ts \
+		  types/func-toOval.d.ts \
+		  types/func-toPoint.d.ts \
+		  types/func-toRect.d.ts \
+		  types/func-toRecord.d.ts \
+		  types/func-toSize.d.ts \
+		  types/func-toString.d.ts \
+		  types/func-toURL.d.ts \
+		  types/func-toVector.d.ts \
+		  types/func-_openURL.d.ts \
 		  types/func-_Thread.d.ts \
 		  types/func-URL.d.ts \
 		  types/func-Vector.d.ts
@@ -82,6 +101,7 @@ interface_files	= types/Frame.d.ts \
 		  types/interface-RectIF.d.ts \
 		  types/interface-GraphicsContextIF.d.ts \
 		  types/interface-BitmapContextIF.d.ts \
+		  types/interface-ReadLineCoreIF.d.ts \
 		  types/interface-TriggerIF.d.ts \
 		  types/interface-SpriteNodeRefIF.d.ts \
 		  types/interface-SpriteFieldIF.d.ts \
@@ -109,8 +129,11 @@ var_files	= types/var-Colors.d.ts \
 		  types/var-Console.d.ts \
 		  types/var-Curses.d.ts \
 		  types/var-env.d.ts \
+		  types/var-EscapeSequences.d.ts \
 		  types/var-FileManagerCore.d.ts \
-		  types/var-Preference.d.ts
+		  types/var-TerminalController.d.ts \
+		  types/var-Preference.d.ts \
+		  types/var-_readlineCore.d.ts
 
 dsts	= $(srcs:.ts=.js)
 decls	= $(srcs:.ts=.d.ts)
@@ -158,7 +181,7 @@ types/Func.d.ts: $(func_files)
 
 $(dstdecl): dummy
 	(cd types && \
-	 cat Enum.d.ts Intf.d.ts Var.d.ts Func.d.ts Builtin.d.ts) > $@
+	 cat Enum.d.ts Intf.d.ts Var.d.ts Func.d.ts) > $@
 	# Remove reference because every declarations are concatenated
 	# before this declaration
 	(cd types && \

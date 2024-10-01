@@ -77,15 +77,17 @@ import Foundation
 
 @objc public class KLEscapeSequences: NSObject, KLEscapeSequencesProtocol
 {
-	private var mContext: KEContext
+	private var mContext:   KEContext
+        private var mSequences: CNEscapeSequences
 
 	public init(context ctxt: KEContext) {
-		mContext = ctxt
+		mContext   = ctxt
+                mSequences = CNEscapeSequences()
 	}
 
 	public func string(_ str: JSValue) -> JSValue {
 		if let s = valueToString(value: str) {
-			let eseq = CNEscapeSequences.shared.str(string: s)
+			let eseq = mSequences.str(string: s)
 			return sequenceToValue(sequence: eseq)
 		} else {
 			CNLog(logLevel: .error, message: "Invalid parameter", atFunction: #function, inFile: #file)
@@ -94,33 +96,33 @@ import Foundation
 	}
 
 	public func eot() -> JSValue {
-		let eseq = CNEscapeSequences.shared.eot()
+		let eseq = mSequences.eot()
 		return sequenceToValue(sequence: eseq)
 	}
 
 	public func newline() -> JSValue {
-		let eseq = CNEscapeSequences.shared.newline()
+		let eseq = mSequences.newline()
 		return sequenceToValue(sequence: eseq)
 	}
 
 	public func tab() -> JSValue {
-		let eseq = CNEscapeSequences.shared.tab()
+		let eseq = mSequences.tab()
 		return sequenceToValue(sequence: eseq)
 	}
 
 	public func backspace() -> JSValue {
-		let eseq = CNEscapeSequences.shared.backspace()
+		let eseq = mSequences.backspace()
 		return sequenceToValue(sequence: eseq)
 	}
 
 	public func delete() -> JSValue {
-		let eseq = CNEscapeSequences.shared.delete()
+		let eseq = mSequences.delete()
 		return sequenceToValue(sequence: eseq)
 	}
 
 	public func insertSpaces(_ cnt: JSValue) -> JSValue {
 		if let count = valueToInt(value: cnt) {
-			let eseq = CNEscapeSequences.shared.insertSpaces(count: count)
+			let eseq = mSequences.insertSpaces(count: count)
 			return sequenceToValue(sequence: eseq)
 		} else {
 			CNLog(logLevel: .error, message: "Invalid parameter", atFunction: #function, inFile: #file)
@@ -130,7 +132,7 @@ import Foundation
 
 	public func cursorUp(_ cnt: JSValue) -> JSValue {
 		if let count = valueToInt(value: cnt) {
-			let eseq = CNEscapeSequences.shared.cursorUp(count: count)
+			let eseq = mSequences.cursorUp(count: count)
 			return sequenceToValue(sequence: eseq)
 		} else {
 			CNLog(logLevel: .error, message: "Invalid parameter", atFunction: #function, inFile: #file)
@@ -140,7 +142,7 @@ import Foundation
 
 	public func cursorDown(_ cnt: JSValue) -> JSValue {
 		if let count = valueToInt(value: cnt) {
-			let eseq = CNEscapeSequences.shared.cursorDown(count: count)
+			let eseq = mSequences.cursorDown(count: count)
 			return sequenceToValue(sequence: eseq)
 		} else {
 			CNLog(logLevel: .error, message: "Invalid parameter", atFunction: #function, inFile: #file)
@@ -150,7 +152,7 @@ import Foundation
 
 	public func cursorForward(_ cnt: JSValue) -> JSValue {
 		if let count = valueToInt(value: cnt) {
-			let eseq = CNEscapeSequences.shared.cursorForward(count: count)
+			let eseq = mSequences.cursorForward(count: count)
 			return sequenceToValue(sequence: eseq)
 		} else {
 			CNLog(logLevel: .error, message: "Invalid parameter", atFunction: #function, inFile: #file)
@@ -160,7 +162,7 @@ import Foundation
 
 	public func cursorBackward(_ cnt: JSValue) -> JSValue {
 		if let count = valueToInt(value: cnt) {
-			let eseq = CNEscapeSequences.shared.cursorBackward(count: count)
+			let eseq = mSequences.cursorBackward(count: count)
 			return sequenceToValue(sequence: eseq)
 		} else {
 			CNLog(logLevel: .error, message: "Invalid parameter", atFunction: #function, inFile: #file)
@@ -170,7 +172,7 @@ import Foundation
 
 	public func cursorNextLine(_ cnt: JSValue) -> JSValue {
 		if let count = valueToInt(value: cnt) {
-			let eseq = CNEscapeSequences.shared.cursorNextLine(count: count)
+			let eseq = mSequences.cursorNextLine(count: count)
 			return sequenceToValue(sequence: eseq)
 		} else {
 			CNLog(logLevel: .error, message: "Invalid parameter", atFunction: #function, inFile: #file)
@@ -180,7 +182,7 @@ import Foundation
 
 	public func cursorPreviousLine(_ cnt: JSValue) -> JSValue {
 		if let count = valueToInt(value: cnt) {
-			let eseq = CNEscapeSequences.shared.cursorPreviousLine(count: count)
+			let eseq = mSequences.cursorPreviousLine(count: count)
 			return sequenceToValue(sequence: eseq)
 		} else {
 			CNLog(logLevel: .error, message: "Invalid parameter", atFunction: #function, inFile: #file)
@@ -190,7 +192,7 @@ import Foundation
 
 	public func cursorHolizontalAbsolute(_ cnt: JSValue) -> JSValue {
 		if let count = valueToInt(value: cnt) {
-			let eseq = CNEscapeSequences.shared.cursorHolizontalAbsolute(count: count)
+			let eseq = mSequences.cursorHolizontalAbsolute(count: count)
 			return sequenceToValue(sequence: eseq)
 		} else {
 			CNLog(logLevel: .error, message: "Invalid parameter", atFunction: #function, inFile: #file)
@@ -200,7 +202,7 @@ import Foundation
 
 	public func cursorVisible(_ flg: JSValue) -> JSValue {
 		if let flag = valueToBool(value: flg) {
-			let eseq = CNEscapeSequences.shared.cursorVisible(flag: flag)
+			let eseq = mSequences.cursorVisible(flag: flag)
 			return sequenceToValue(sequence: eseq)
 		} else {
 			CNLog(logLevel: .error, message: "Invalid parameter", atFunction: #function, inFile: #file)
@@ -209,18 +211,18 @@ import Foundation
 	}
 
 	public func saveCursorPosition() -> JSValue {
-		let eseq = CNEscapeSequences.shared.saveCursorPosition()
+		let eseq = mSequences.saveCursorPosition()
 		return sequenceToValue(sequence: eseq)
 	}
 
 	public func restoreCursorPosition() -> JSValue {
-		let eseq = CNEscapeSequences.shared.restoreCursorPosition()
+		let eseq = mSequences.restoreCursorPosition()
 		return sequenceToValue(sequence: eseq)
 	}
 
 	public func cursorPosition(_ rnum: JSValue, _ cnum: JSValue) -> JSValue {
 		if let r = valueToInt(value: rnum), let c = valueToInt(value: cnum) {
-			let eseq = CNEscapeSequences.shared.cursorPosition(row: r, column: c)
+                        let eseq = mSequences.cursorPosition(row: r, column: c)
 			return sequenceToValue(sequence: eseq)
 		} else {
 			CNLog(logLevel: .error, message: "Invalid parameter", atFunction: #function, inFile: #file)
@@ -229,38 +231,38 @@ import Foundation
 	}
 
 	public func eraceFromCursorToEnd() -> JSValue {
-		let eseq = CNEscapeSequences.shared.eraceFromCursorToEnd()
+		let eseq = mSequences.eraceFromCursorToEnd()
 		return sequenceToValue(sequence: eseq)
 	}
 
 	public func eraceFromCursorToBegin() -> JSValue {
-		let eseq = CNEscapeSequences.shared.eraceFromCursorToBegin()
+		let eseq = mSequences.eraceFromCursorToBegin()
 		return sequenceToValue(sequence: eseq)
 	}
 
 	public func eraceEntireBuffer() -> JSValue {
-		let eseq = CNEscapeSequences.shared.eraceEntireBuffer()
+		let eseq = mSequences.eraceEntireBuffer()
 		return sequenceToValue(sequence: eseq)
 	}
 
 	public func eraceFromCursorToRight() -> JSValue {
-		let eseq = CNEscapeSequences.shared.eraceFromCursorToRight()
+		let eseq = mSequences.eraceFromCursorToRight()
 		return sequenceToValue(sequence: eseq)
 	}
 
 	public func eraceFromCursorToLeft() -> JSValue {
-		let eseq = CNEscapeSequences.shared.eraceFromCursorToLeft()
+		let eseq = mSequences.eraceFromCursorToLeft()
 		return sequenceToValue(sequence: eseq)
 	}
 
 	public func eraceEntireLine() -> JSValue {
-		let eseq = CNEscapeSequences.shared.eraceEntireLine()
+		let eseq = mSequences.eraceEntireLine()
 		return sequenceToValue(sequence: eseq)
 	}
 
 	public func scrollUp(_ cnt: JSValue) -> JSValue {
 		if let count = valueToInt(value: cnt) {
-			let eseq = CNEscapeSequences.shared.scrollUp(count: count)
+			let eseq = mSequences.scrollUp(count: count)
 			return sequenceToValue(sequence: eseq)
 		} else {
 			CNLog(logLevel: .error, message: "Invalid parameter", atFunction: #function, inFile: #file)
@@ -270,7 +272,7 @@ import Foundation
 
 	public func scrollDown(_ cnt: JSValue) -> JSValue {
 		if let count = valueToInt(value: cnt) {
-			let eseq = CNEscapeSequences.shared.scrollDown(count: count)
+			let eseq = mSequences.scrollDown(count: count)
 			return sequenceToValue(sequence: eseq)
 		} else {
 			CNLog(logLevel: .error, message: "Invalid parameter", atFunction: #function, inFile: #file)
@@ -279,18 +281,18 @@ import Foundation
 	}
 
 	public func resetAll() -> JSValue {
-		let eseq = CNEscapeSequences.shared.resetAll()
+		let eseq = mSequences.resetAll()
 		return sequenceToValue(sequence: eseq)
 	}
 
 	public func resetCharacterAttribute() -> JSValue {
-		let eseq = CNEscapeSequences.shared.resetCharacterAttribute()
+		let eseq = mSequences.resetCharacterAttribute()
 		return sequenceToValue(sequence: eseq)
 	}
 
 	public func boldCharacter(_ flg: JSValue) -> JSValue {
 		if let flag = valueToBool(value: flg) {
-			let eseq = CNEscapeSequences.shared.boldCharacter(flag: flag)
+			let eseq = mSequences.boldCharacter(flag: flag)
 			return sequenceToValue(sequence: eseq)
 		} else {
 			CNLog(logLevel: .error, message: "Invalid parameter", atFunction: #function, inFile: #file)
@@ -300,7 +302,7 @@ import Foundation
 
 	public func underlineCharacter(_ flg: JSValue) -> JSValue {
 		if let flag = valueToBool(value: flg) {
-			let eseq = CNEscapeSequences.shared.underlineCharacter(flag: flag)
+			let eseq = mSequences.underlineCharacter(flag: flag)
 			return sequenceToValue(sequence: eseq)
 		} else {
 			CNLog(logLevel: .error, message: "Invalid parameter", atFunction: #function, inFile: #file)
@@ -310,7 +312,7 @@ import Foundation
 
 	public func blinkCharacter(_ flg: JSValue) -> JSValue {
 		if let flag = valueToBool(value: flg) {
-			let eseq = CNEscapeSequences.shared.blinkCharacter(flag: flag)
+			let eseq = mSequences.blinkCharacter(flag: flag)
 			return sequenceToValue(sequence: eseq)
 		} else {
 			CNLog(logLevel: .error, message: "Invalid parameter", atFunction: #function, inFile: #file)
@@ -320,7 +322,7 @@ import Foundation
 
 	public func reverseCharacter(_ flg: JSValue) -> JSValue {
 		if let flag = valueToBool(value: flg) {
-			let eseq = CNEscapeSequences.shared.reverseCharacter(flag: flag)
+			let eseq = mSequences.reverseCharacter(flag: flag)
 			return sequenceToValue(sequence: eseq)
 		} else {
 			CNLog(logLevel: .error, message: "Invalid parameter", atFunction: #function, inFile: #file)
@@ -330,7 +332,7 @@ import Foundation
 
 	public func foregroundColor(_ col: JSValue) -> JSValue {
 		if let color = valueToColor(value: col) {
-			let eseq = CNEscapeSequences.shared.foregroundColor(color: color)
+			let eseq = mSequences.foregroundColor(color: color)
 			return sequenceToValue(sequence: eseq)
 		} else {
 			CNLog(logLevel: .error, message: "Invalid parameter", atFunction: #function, inFile: #file)
@@ -339,13 +341,13 @@ import Foundation
 	}
 
 	public func defaultForegroundColor() -> JSValue {
-		let eseq = CNEscapeSequences.shared.defaultForegroundColor()
+		let eseq = mSequences.defaultForegroundColor()
 		return sequenceToValue(sequence: eseq)
 	}
 
 	public func backgroundColor(_ col: JSValue) -> JSValue {
 		if let color = valueToColor(value: col) {
-			let eseq = CNEscapeSequences.shared.backgroundColor(color: color)
+			let eseq = mSequences.backgroundColor(color: color)
 			return sequenceToValue(sequence: eseq)
 		} else {
 			CNLog(logLevel: .error, message: "Invalid parameter", atFunction: #function, inFile: #file)
@@ -354,18 +356,18 @@ import Foundation
 	}
 
 	public func defaultBackgroundColor() -> JSValue {
-		let eseq = CNEscapeSequences.shared.defaultBackgroundColor()
+		let eseq = mSequences.defaultBackgroundColor()
 		return sequenceToValue(sequence: eseq)
 	}
 
 	public func requestScreenSize() -> JSValue {
-		let eseq = CNEscapeSequences.shared.requestScreenSize()
+		let eseq = mSequences.requestScreenSize()
 		return sequenceToValue(sequence: eseq)
 	}
 
 	public func screenSize(_ wnum: JSValue, _ hnum: JSValue) -> JSValue {
 		if let w = valueToInt(value: wnum), let h = valueToInt(value: hnum) {
-			let eseq = CNEscapeSequences.shared.screenSize(width: w, height: h)
+			let eseq = mSequences.screenSize(width: w, height: h)
 			return sequenceToValue(sequence: eseq)
 		} else {
 			CNLog(logLevel: .error, message: "Invalid parameter", atFunction: #function, inFile: #file)
@@ -375,7 +377,7 @@ import Foundation
 
 	public func selectAltScreen(_ flg: JSValue) -> JSValue {
 		if let flag = valueToBool(value: flg) {
-			let eseq = CNEscapeSequences.shared.selectAltScreen(flag: flag)
+			let eseq = mSequences.selectAltScreen(flag: flag)
 			return sequenceToValue(sequence: eseq)
 		} else {
 			CNLog(logLevel: .error, message: "Invalid parameter", atFunction: #function, inFile: #file)
@@ -385,7 +387,7 @@ import Foundation
 
 	public func setFontStyle(_ stl: JSValue) -> JSValue {
 		if let style = valueToInt(value: stl) {
-			let eseq = CNEscapeSequences.shared.setFontStyle(style: style)
+			let eseq = mSequences.setFontStyle(style: style)
 			return sequenceToValue(sequence: eseq)
 		} else {
 			CNLog(logLevel: .error, message: "Invalid parameter", atFunction: #function, inFile: #file)
@@ -395,7 +397,7 @@ import Foundation
 
 	public func setFontSize(_ sz: JSValue) -> JSValue {
 		if let size = valueToInt(value: sz) {
-			let eseq = CNEscapeSequences.shared.setFontSize(size: size)
+			let eseq = mSequences.setFontSize(size: size)
 			return sequenceToValue(sequence: eseq)
 		} else {
 			CNLog(logLevel: .error, message: "Invalid parameter", atFunction: #function, inFile: #file)

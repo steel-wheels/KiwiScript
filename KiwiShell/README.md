@@ -9,7 +9,7 @@ Copyright (C) 2015-2023 [Steel Wheels Project](https://gitlab.com/steewheels/pro
 This software is distributed under [GNU LESSER GENERAL PUBLIC LICENSE Version 2.1](https://www.gnu.org/licenses/lgpl-2.1-standalone.html).
 
 ## Documents
-* [REPL](./Document/repl.md): Read-Eval-Print-Loop for interactive JavaScript.
+* [jsh](./Document/jsh.md): jsh (JavaScript shell) manual
 
 ## Related link
 * [Steel Wheels Project](https://gitlab.com/steewheels/project/-/wikis/The-Steel-Wheels-Project): Web site of developer.

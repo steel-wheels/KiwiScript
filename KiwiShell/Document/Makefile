@@ -1,15 +1,20 @@
 #
-# Makefile
+#
 #
 
-srcs = repl.md4
-
-dsts = $(srcs:.md4=.md)
-
+root_dir = .
 include Makefile.inc
+
+srcs	= jsh.md4
+dsts	= $(srcs:.md4=.md)
+
+%.md : %.md4
+	m4 $(m4_opt) $< > $@
 
 all: $(dsts)
 
-clean:
+clean: dummy
 	rm -f $(dsts)
+
+dummy:
 

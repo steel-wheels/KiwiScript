@@ -37,7 +37,7 @@ import Foundation
 	private var mContext:			KEContext
 	private var mConsole:			CNFileConsole
 
-	public init(context ctxt: KEContext, input ifile: CNFile, output ofile: CNFile, error efile: CNFile){
+	public init(context ctxt: KEContext, input ifile: CNInputFile, output ofile: CNOutputFile, error efile: CNOutputFile){
 		mContext		= ctxt
 		mConsole		= CNFileConsole(input: ifile, output: ofile, error: efile)
 	}

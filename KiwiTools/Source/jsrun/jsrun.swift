@@ -1,8 +1,8 @@
 /**
- * @file	main.swift
- * @brief	Define main function for edecl command
+ * @file	jsrun.swift
+ * @brief	Define main function for jsrun command
  * @par Copyright
- *   Copyright (C) 2022 Steel Wheels Project
+ *   Copyright (C) 2022-2024 Steel Wheels Project
  */
 
 import KiwiLibrary
@@ -11,7 +11,13 @@ import CoconutData
 import JavaScriptCore
 import Foundation
 
-func main(arguments args: Array<String>)
+@main struct AppBoxCLI {
+        static func main() async throws {
+                jsrun(arguments: CommandLine.arguments)
+        }
+}
+
+func jsrun(arguments args: Array<String>)
 {
 	let console = CNFileConsole()
 	let cmdline = CommandLineParser(console: console)
@@ -176,5 +182,3 @@ private func valueToInt(value valp: JSValue?) -> Int?
 	}
 	return nil
 }
-
-main(arguments: CommandLine.arguments)

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		050005A32929196B00813E82 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050005A22929196B00813E82 /* main.swift */; };
+		050005A32929196B00813E82 /* edecl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050005A22929196B00813E82 /* edecl.swift */; };
 		050F511929A1CB030021C7E1 /* Cobalt.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056F212629291AF90056186C /* Cobalt.xcframework */; };
 		050F511A29A1CB030021C7E1 /* CoconutData.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056F212C29291B230056186C /* CoconutData.xcframework */; };
 		050F511B29A1CB030021C7E1 /* CoconutDatabase.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056F212D29291B230056186C /* CoconutDatabase.xcframework */; };
@@ -26,9 +26,9 @@
 		05130F502A866C70003114B1 /* KiwiLibrary.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05F1014929A1CFB400DA6979 /* KiwiLibrary.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		05130F512A866C70003114B1 /* KiwiShell.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05130F3A2A866A62003114B1 /* KiwiShell.xcframework */; };
 		05130F522A866C70003114B1 /* KiwiShell.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05130F3A2A866A62003114B1 /* KiwiShell.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		05130F5E2A866CF7003114B1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05130F5D2A866CF7003114B1 /* main.swift */; };
+		05130F5E2A866CF7003114B1 /* jsh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05130F5D2A866CF7003114B1 /* jsh.swift */; };
 		05959257292A21CC00F431D3 /* config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05959256292A21CC00F431D3 /* config.swift */; };
-		05AD1BFA2997108F0045EBC0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AD1BF92997108F0045EBC0 /* main.swift */; };
+		05AD1BFA2997108F0045EBC0 /* jsrun.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AD1BF92997108F0045EBC0 /* jsrun.swift */; };
 		05AD1C01299713D90045EBC0 /* config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AD1C00299713D90045EBC0 /* config.swift */; };
 		05DFBBB829A1D1D3003502F1 /* Cobalt.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056F212629291AF90056186C /* Cobalt.xcframework */; };
 		05DFBBB929A1D1D3003502F1 /* Cobalt.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 056F212629291AF90056186C /* Cobalt.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -188,13 +188,13 @@
 
 /* Begin PBXFileReference section */
 		0500059F2929196B00813E82 /* edecl */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = edecl; sourceTree = BUILT_PRODUCTS_DIR; };
-		050005A22929196B00813E82 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		050005A22929196B00813E82 /* edecl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = edecl.swift; sourceTree = "<group>"; };
 		050F511429A1CA950021C7E1 /* jsrun_bundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jsrun_bundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		05130F3A2A866A62003114B1 /* KiwiShell.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KiwiShell.xcframework; path = ../../../../Library/Frameworks/KiwiShell.xcframework; sourceTree = "<group>"; };
 		05130F432A866C03003114B1 /* jsh_bundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jsh_bundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		05130F542A866C70003114B1 /* KiwiControls.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KiwiControls.xcframework; path = ../../../../Library/Frameworks/KiwiControls.xcframework; sourceTree = "<group>"; };
 		05130F5B2A866CF7003114B1 /* jsh */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = jsh; sourceTree = BUILT_PRODUCTS_DIR; };
-		05130F5D2A866CF7003114B1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		05130F5D2A866CF7003114B1 /* jsh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jsh.swift; sourceTree = "<group>"; };
 		056F211D29291ACA0056186C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		056F212629291AF90056186C /* Cobalt.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Cobalt.xcframework; path = ../../../../Library/Frameworks/Cobalt.xcframework; sourceTree = "<group>"; };
 		056F212C29291B230056186C /* CoconutData.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CoconutData.xcframework; path = ../../../../Library/Frameworks/CoconutData.xcframework; sourceTree = "<group>"; };
@@ -202,7 +202,7 @@
 		056F213529291B410056186C /* KiwiEngine.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KiwiEngine.xcframework; path = ../../../../Library/Frameworks/KiwiEngine.xcframework; sourceTree = "<group>"; };
 		05959256292A21CC00F431D3 /* config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = config.swift; sourceTree = "<group>"; };
 		05AD1BF72997108F0045EBC0 /* jsrun */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = jsrun; sourceTree = BUILT_PRODUCTS_DIR; };
-		05AD1BF92997108F0045EBC0 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		05AD1BF92997108F0045EBC0 /* jsrun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jsrun.swift; sourceTree = "<group>"; };
 		05AD1C00299713D90045EBC0 /* config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = config.swift; sourceTree = "<group>"; };
 		05DFBBB429A1D1B8003502F1 /* edecl_bundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = edecl_bundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		05F1014929A1CFB400DA6979 /* KiwiLibrary.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KiwiLibrary.xcframework; path = ../../../../Library/Frameworks/KiwiLibrary.xcframework; sourceTree = "<group>"; };
@@ -304,7 +304,7 @@
 		05130F642A866D29003114B1 /* jsh */ = {
 			isa = PBXGroup;
 			children = (
-				05130F5D2A866CF7003114B1 /* main.swift */,
+				05130F5D2A866CF7003114B1 /* jsh.swift */,
 			);
 			path = jsh;
 			sourceTree = "<group>";
@@ -323,7 +323,7 @@
 		056F211429291A5F0056186C /* edecl */ = {
 			isa = PBXGroup;
 			children = (
-				050005A22929196B00813E82 /* main.swift */,
+				050005A22929196B00813E82 /* edecl.swift */,
 				05959256292A21CC00F431D3 /* config.swift */,
 			);
 			path = edecl;
@@ -353,7 +353,7 @@
 		05AD1BF82997108F0045EBC0 /* jsrun */ = {
 			isa = PBXGroup;
 			children = (
-				05AD1BF92997108F0045EBC0 /* main.swift */,
+				05AD1BF92997108F0045EBC0 /* jsrun.swift */,
 				05AD1C00299713D90045EBC0 /* config.swift */,
 			);
 			path = jsrun;
@@ -669,7 +669,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				050005A32929196B00813E82 /* main.swift in Sources */,
+				050005A32929196B00813E82 /* edecl.swift in Sources */,
 				05959257292A21CC00F431D3 /* config.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -692,7 +692,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05130F5E2A866CF7003114B1 /* main.swift in Sources */,
+				05130F5E2A866CF7003114B1 /* jsh.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -700,7 +700,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05AD1BFA2997108F0045EBC0 /* main.swift in Sources */,
+				05AD1BFA2997108F0045EBC0 /* jsrun.swift in Sources */,
 				05AD1C01299713D90045EBC0 /* config.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

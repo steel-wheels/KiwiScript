@@ -335,6 +335,9 @@ interface BitmapContextIF {
   get(p0 : number, p1 : number): ColorIF ;
   set(p0 : number, p1 : number, p2 : ColorIF): void ;
 }
+interface ReadlineCoreIF {
+  execute(): string | null ;
+}
 interface TriggerIF {
   trigger(): void ;
   isRunning(): boolean ;
@@ -556,9 +559,13 @@ declare var Colors:      	ColorsIF ;
 declare var console:		ConsoleIF ;
 declare var Curses:     	CursesIF ;
 declare var env:		EnvironmentIF ;
+declare var EscapeSequences:   EscapeSequencesIF
 declare var FileManagerCore:	FileManagerIF ;
+declare var TerminalController:        EscapeCodesIF ;
 declare var Preference:         PreferenceIF ;
 
+declare var _readlineCore:	ReadlineCoreIF
+declare function asciiCodeName(code: number): string | null ;
 declare function exit(code: number): void ;
 
 declare function isAlphaNumerics(str: string): boolean ;
@@ -599,47 +606,30 @@ declare function Rect(x: number, y: number, width: number, height: number): Rect
 declare function Size(width: number, height: number): SizeIF ;
 declare function SpriteActions(): SpriteActionsIF ;
 
+declare function StringStream(str: string): StringStreamIF ;
 declare function Table(name: string): TableIF | null ;
 
-declare function _Thread(path: string, console: ConsoleIF): ThreadIF | null ;
-
-declare function URL(path: string): URLIF | null ;
-declare function Vector(dx: number, dy: number): VectorIF ;
-/**
- * Builtin.d.ts
- */
-
-declare var EscapeSequences:   EscapeSequencesIF
-declare function StringStream(str: string): StringStreamIF ;
-declare var TerminalController:        EscapeCodesIF ;
-
+declare function tokenize(str: string): TokenIF[] | null ;
 declare function toArray(value: any): any[] | null ;
 declare function toBitmap(value: any): BitmapContextIF | null ;
 declare function toBoolean(value: any): boolean | null ;
 declare function toDate(value: any): object | null ;
-declare function toNumber(value: any): number | null ;
 declare function toDictionary(value: any): {[name:string]: any} | null ;
-declare function toRecord(value: any): RecordIF | null ;
+declare function toNumber(value: any): number | null ;
 declare function toObject(value: any): object | null ;
+declare function toOval(value: any): OvalIF | null ;
 declare function toPoint(value: any): PointIF | null ;
 declare function toRect(value: any): RectIF | null ;
-declare function toOval(value: any): OvalIF | null ;
-declare function toVector(value: any): VectorIF | null ;
+declare function toRecord(value: any): RecordIF | null ;
 declare function toSize(value: any): SizeIF | null ;
 declare function toString(value: any): string | null ;
 declare function toURL(value: any): URLIF | null ;
-
-declare function asciiCodeName(code: number): string | null ;
-
+declare function toVector(value: any): VectorIF | null ;
 declare function _openURL(title: URLIF | string, cbfunc: any): void ;
+declare function _Thread(path: string, console: ConsoleIF): ThreadIF | null ;
 
-declare function tokenize(str: string): TokenIF[] | null ;
-
-interface ReadlineCoreIF {
-	execute(): string | null ;
-}
-declare var _readlineCore:	ReadlineCoreIF
-
+declare function URL(path: string): URLIF | null ;
+declare function Vector(dx: number, dy: number): VectorIF ;
 /**
  * @file Result.ts
  */

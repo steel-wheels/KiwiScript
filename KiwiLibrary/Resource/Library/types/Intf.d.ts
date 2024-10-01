@@ -167,6 +167,9 @@ interface BitmapContextIF {
   get(p0 : number, p1 : number): ColorIF ;
   set(p0 : number, p1 : number, p2 : ColorIF): void ;
 }
+interface ReadlineCoreIF {
+  execute(): string | null ;
+}
 interface TriggerIF {
   trigger(): void ;
   isRunning(): boolean ;

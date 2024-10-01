@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0517B2D42ABEB8E1006B0438 /* jsh.jspkg in Resources */ = {isa = PBXBuildFile; fileRef = 0517B2D32ABEB8E1006B0438 /* jsh.jspkg */; };
-		0517B2D52ABEB8E1006B0438 /* jsh.jspkg in Resources */ = {isa = PBXBuildFile; fileRef = 0517B2D32ABEB8E1006B0438 /* jsh.jspkg */; };
 		051AA3482A89047E00B4D7C3 /* CoconutDatabase.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C4C7E02A85A22D00E4E89D /* CoconutDatabase.xcframework */; };
 		0539018A2A9B7CFE00A6E8DE /* KHCompiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053901892A9B7CFE00A6E8DE /* KHCompiler.swift */; };
 		0539018B2A9B7CFE00A6E8DE /* KHCompiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053901892A9B7CFE00A6E8DE /* KHCompiler.swift */; };
+		05633DBF2CA01A80008C2C13 /* JavaScriptShell.jspkg in Resources */ = {isa = PBXBuildFile; fileRef = 05633DBE2CA01A6E008C2C13 /* JavaScriptShell.jspkg */; };
+		05633DC02CA01A86008C2C13 /* JavaScriptShell.jspkg in Resources */ = {isa = PBXBuildFile; fileRef = 05633DBE2CA01A6E008C2C13 /* JavaScriptShell.jspkg */; };
 		057F2D8E2A859EFF00EAE66D /* KiwiShell.h in Headers */ = {isa = PBXBuildFile; fileRef = 057F2D8D2A859EFF00EAE66D /* KiwiShell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		05A5B5C12AC1D1CC009A7E31 /* KHExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A5B5C02AC1D1CC009A7E31 /* KHExecutor.swift */; };
 		05A5B5C22AC1D1CC009A7E31 /* KHExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A5B5C02AC1D1CC009A7E31 /* KHExecutor.swift */; };
@@ -45,8 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0517B2D32ABEB8E1006B0438 /* jsh.jspkg */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = jsh.jspkg; sourceTree = "<group>"; };
 		053901892A9B7CFE00A6E8DE /* KHCompiler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KHCompiler.swift; sourceTree = "<group>"; };
+		05633DBE2CA01A6E008C2C13 /* JavaScriptShell.jspkg */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = JavaScriptShell.jspkg; sourceTree = "<group>"; };
 		057F2D8A2A859EFF00EAE66D /* KiwiShell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KiwiShell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		057F2D8D2A859EFF00EAE66D /* KiwiShell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KiwiShell.h; sourceTree = "<group>"; };
 		05A5B5C02AC1D1CC009A7E31 /* KHExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KHExecutor.swift; sourceTree = "<group>"; };
@@ -91,8 +91,8 @@
 		054F3A8A2A89076C00CCAD06 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				05633DBE2CA01A6E008C2C13 /* JavaScriptShell.jspkg */,
 				05AD1AD12C3A9868004050BD /* Library */,
-				0517B2D32ABEB8E1006B0438 /* jsh.jspkg */,
 			);
 			name = Resource;
 			path = ../Resource;
@@ -299,7 +299,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0517B2D42ABEB8E1006B0438 /* jsh.jspkg in Resources */,
+				05633DBF2CA01A80008C2C13 /* JavaScriptShell.jspkg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,7 +307,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0517B2D52ABEB8E1006B0438 /* jsh.jspkg in Resources */,
+				05633DC02CA01A86008C2C13 /* JavaScriptShell.jspkg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,7 +510,9 @@
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INCLUDE_PATHS = "";
-				SWIFT_VERSION = 5.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
@@ -553,7 +555,9 @@
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INCLUDE_PATHS = "";
-				SWIFT_VERSION = 5.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				SWIFT_VERSION = 6.0;
 			};
 			name = Release;
 		};
@@ -598,9 +602,9 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INCLUDE_PATHS = "";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -646,8 +650,9 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};

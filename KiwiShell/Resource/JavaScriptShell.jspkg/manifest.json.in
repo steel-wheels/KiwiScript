@@ -1,0 +1,7 @@
+{
+	application: "jsh.ts"
+	libraries: [
+		"lib/command.ts"
+	]
+}
+
