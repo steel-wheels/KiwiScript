@@ -28,15 +28,16 @@ import Foundation
 	}
 
 	public func trigger() {
-		mTrigger.trigger()
+                CNTrigger.trigger(object: mTrigger)
 	}
 
 	public func isRunning() -> JSValue {
-		return JSValue(bool: mTrigger.isRunning(), in: mContext)
+                let result = CNTrigger.isRunning(object: mTrigger)
+		return JSValue(bool: result, in: mContext)
 	}
 
 	public func ack() {
-		mTrigger.ack()
+                CNTrigger.ack(object: mTrigger)
 	}
 }
 
