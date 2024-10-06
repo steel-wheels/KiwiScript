@@ -10,6 +10,8 @@ import KiwiEngine
 import JavaScriptCore
 import Foundation
 
+private let sharedUniqueIdentifier = CNUniqueIdentifier(identifier: "_kiwilibrary_properties_temp_var")
+
 @objc public protocol KLPropertiesProtocol: JSExport
 {
 	var count:  JSValue { get }				// -> number
@@ -23,9 +25,6 @@ import Foundation
 {
 	private var mProperties: CNProperties
 	private var mContext:    KEContext
-
-	private static let TEMPORARY_VARIABLE_NAME = "_kiwilibrary_properties_temp_var"
-	private static var temporary_variable_id   = 0
 
 	public init(properties prop: CNProperties, context ctxt: KEContext){
 		mProperties = prop
@@ -42,7 +41,8 @@ import Foundation
 			CNLog(logLevel: .error, message: "allocate object failed", atFunction: #function, inFile: #file)
 			return nil
 		}
-		let propsname = temporaryVariableName()
+
+                let propsname = CNUniqueIdentifier.identifier(in: sharedUniqueIdentifier)
 		context.set(name: propsname, value: propsval)
 
 		var script = ""
@@ -60,12 +60,6 @@ import Foundation
 			CNLog(logLevel: .error, message: "execute method failed: \(script)", atFunction: #function, inFile: #file)
 			return nil
 		}
-	}
-
-	private static func temporaryVariableName() -> String {
-		let result = "\(KLProperties.TEMPORARY_VARIABLE_NAME)_\(KLProperties.temporary_variable_id)"
-		KLProperties.temporary_variable_id += 1
-		return result
 	}
 
 	public var count: JSValue { get {

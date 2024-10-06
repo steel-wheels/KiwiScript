@@ -10,14 +10,7 @@ import KiwiEngine
 import JavaScriptCore
 import Foundation
 
-private let TEMPORARY_VARIABLE_NAME = "_kiwilibrary_ifval_temp_var"
-private var temporary_variable_id   = 0
-
-private func temporaryName() -> String {
-	let result = TEMPORARY_VARIABLE_NAME + "\(temporary_variable_id)"
-	temporary_variable_id += 1
-	return result
-}
+private let sharedUniqueIdentifier = CNUniqueIdentifier(identifier: "_kiwilibrary_ifval_temp_var")
 
 @objc public protocol KLInterfaceValueProtocol: JSExport
 {
@@ -33,9 +26,6 @@ private func temporaryName() -> String {
 	private var mCore: 	CNInterfaceValue
 	private var mContext:	KEContext
 
-	private static let TEMPORARY_VARIABLE_NAME = "_kiwilibrary_ifval_temp_var"
-	private static var temporary_variable_id   = 0
-
 	static func allocate(interfaceValue core: CNInterfaceValue, context ctxt: KEContext) -> JSValue {
 		let ifobj = KLInterfaceValue(interfaceValue: core, context: ctxt)
 		guard let ifval = JSValue(object: ifobj, in: ctxt) else {
@@ -43,7 +33,8 @@ private func temporaryName() -> String {
 			return JSValue(undefinedIn: ctxt)
 		}
 
-		let varname = temporaryVariableName()
+                let varname = CNUniqueIdentifier.identifier(in: sharedUniqueIdentifier)
+
 		ctxt.set(name: varname, value: ifval)
 
 		var script = ""
@@ -62,12 +53,6 @@ private func temporaryName() -> String {
 			CNLog(logLevel: .error, message: "execute method failed: \(script)", atFunction: #function, inFile: #file)
 			return JSValue(undefinedIn: ctxt)
 		}
-	}
-
-	private static func temporaryVariableName() -> String {
-		let result = "\(KLInterfaceValue.TEMPORARY_VARIABLE_NAME)_\(KLInterfaceValue.temporary_variable_id)"
-		KLInterfaceValue.temporary_variable_id += 1
-		return result
 	}
 
 	public init(interfaceValue core: CNInterfaceValue, context ctxt: KEContext) {

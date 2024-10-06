@@ -10,6 +10,8 @@ import CoconutData
 import JavaScriptCore
 import Foundation
 
+private let sharedUniqueIdentifier = CNUniqueIdentifier(identifier: "_kiwilibrary_record_temp_var")
+
 @objc public protocol KLRecordProtocol: JSExport
 {
 	var fieldCount:		JSValue { get }
@@ -28,9 +30,6 @@ public protocol KLRecordCoreProtocol
 {
 	public static let ScriptInterfaceName = "RecordIF"
 
-	private static let TEMPORARY_VARIABLE_NAME = "_kiwilibrary_record_temp_var"
-	private static var temporary_variable_id   = 0
-
 	private var mRecord:	CNRecord
 	private var mContext:	KEContext
 
@@ -46,7 +45,7 @@ public protocol KLRecordCoreProtocol
 			CNLog(logLevel: .error, message: "allocate object failed", atFunction: #function, inFile: #file)
 			return nil
 		}
-		let rcdname = temporaryVariableName()
+                let rcdname = CNUniqueIdentifier.identifier(in: sharedUniqueIdentifier)
 		context.set(name: rcdname, value: rcdval)
 
 		var script = ""
@@ -71,11 +70,11 @@ public protocol KLRecordCoreProtocol
 			CNLog(logLevel: .error, message: "Failed to allocate array", atFunction: #function, inFile: #file)
 			return nil
 		}
-		let resname = temporaryVariableName()
+		let resname = CNUniqueIdentifier.identifier(in: sharedUniqueIdentifier)
 		ctxt.set(name: resname, value: result)
 		for rec in rcds {
 			if let elmval = allocate(record: rec) {
-				let elmname = temporaryVariableName()
+				let elmname = CNUniqueIdentifier.identifier(in: sharedUniqueIdentifier)
 				ctxt.set(name: elmname, value: elmval)
 				let script = "\(resname).push(\(elmname)) ;\n"
 				let _ = ctxt.evaluateScript(script: script, sourceFile: URL(fileURLWithPath: #file))
@@ -89,12 +88,6 @@ public protocol KLRecordCoreProtocol
 				return nil
 			}
 		}
-		return result
-	}
-
-	private static func temporaryVariableName() -> String {
-		let result = "\(KLRecord.TEMPORARY_VARIABLE_NAME)_\(KLRecord.temporary_variable_id)"
-		KLRecord.temporary_variable_id += 1
 		return result
 	}
 

@@ -14,8 +14,6 @@ import AppKit
 import UIKit
 #endif
 
-private var temp_record_id: UInt = 0
-
 extension JSValue
 {
 	public convenience init(URL url: URL, in context: KEContext) {
